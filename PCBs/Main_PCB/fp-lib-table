@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name "MCU_RaspberryPi_and_Boards")(type "KiCad")(uri "/home/sean/Downloads/KiCad-RP-Pico-main/RP-Pico Libraries/MCU_RaspberryPi_and_Boards.pretty")(options "")(descr ""))
+  (lib (name "Vertical_CR2032_Battery_Holder")(type "KiCad")(uri "${KIPRJMOD}/Footprints/Vertical_CR2032_Battery_Holder.pretty")(options "")(descr ""))
 )
