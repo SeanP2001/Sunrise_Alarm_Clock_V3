@@ -1,0 +1,2 @@
+Credits
+Pico Symbol and Footprint - https://github.com/ncarandini/KiCad-RP-Pico
