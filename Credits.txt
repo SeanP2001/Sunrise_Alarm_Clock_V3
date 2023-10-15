@@ -1,2 +1,3 @@
 Credits
 Pico Symbol and Footprint - https://github.com/ncarandini/KiCad-RP-Pico
+Waveshare OLED 3D Model - https://files.waveshare.com/upload/c/c5/1.5inch_RGB_OLED_3D_Drawing.zip
