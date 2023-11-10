@@ -77,24 +77,24 @@ The alarm needed to:
 #### Main PCB
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="./Images/PCB/Main_PCB_Design_Front.png" alt="Main PCB Front" style="width: 50%; object-fit: contain; margin-right: 5px;">
-    <img src="./Images/PCB/Main_PCB_Design_Back.png" alt="Main PCB Back" style="width: 50%; object-fit: contain; margin-left: 5px;">
+    <img src="./Images/PCB/Main_PCB_Design_Front.png" alt="Main PCB Front" style="width: 49%; object-fit: contain; margin-right: 5px;">
+    <img src="./Images/PCB/Main_PCB_Design_Back.png" alt="Main PCB Back" style="width: 49%; object-fit: contain; margin-left: 5px;">
 </div>
 <p align="center"><i>Main PCB Front and Back</i></p>
 
 #### Button PCB
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="./Images/PCB/Button_PCB_Design_Front.png" alt="Main PCB Front" style="width: 50%; object-fit: contain; margin-right: 5px;">
-    <img src="./Images/PCB/Button_PCB_Design_Back.png" alt="Main PCB Back" style="width: 50%; object-fit: contain; margin-left: 5px;">
+    <img src="./Images/PCB/Button_PCB_Design_Front.png" alt="Main PCB Front" style="width: 49%; object-fit: contain; margin-right: 5px;">
+    <img src="./Images/PCB/Button_PCB_Design_Back.png" alt="Main PCB Back" style="width: 49%; object-fit: contain; margin-left: 5px;">
 </div>
 <p align="center"><i>Button PCB Front and Back</i></p>
 
 #### Light PCB
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="./Images/PCB/Light_PCB_Design_Front.png" alt="Main PCB Front" style="width: 50%; object-fit: contain; margin-right: 5px;">
-    <img src="./Images/PCB/Light_PCB_Design_Back.png" alt="Main PCB Back" style="width: 50%; object-fit: contain; margin-left: 5px;">
+    <img src="./Images/PCB/Light_PCB_Design_Front.png" alt="Main PCB Front" style="width: 49%; object-fit: contain; margin-right: 5px;">
+    <img src="./Images/PCB/Light_PCB_Design_Back.png" alt="Main PCB Back" style="width: 49%; object-fit: contain; margin-left: 5px;">
 </div>
 <p align="center"><i>Light PCB Front and Back</i></p>
 
@@ -105,8 +105,8 @@ I was really impressed by the quality of the PCBs sent by PCBWay. To order high-
 #### Main PCB
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="./Images/PCB/Main_PCB_Front.jpg" alt="Main PCB Front" style="width: 50%; object-fit: cover; margin-right: 5px;">
-    <img src="./Images/PCB/Main_PCB_Back.jpg" alt="Main PCB Back" style="width: 50%; object-fit: cover; margin-left: 5px;">
+    <img src="./Images/PCB/Main_PCB_Front.jpg" alt="Main PCB Front" style="width: 49%; object-fit: cover; margin-right: 5px;">
+    <img src="./Images/PCB/Main_PCB_Back.jpg" alt="Main PCB Back" style="width: 49%; object-fit: cover; margin-left: 5px;">
 </div>
 <p align="center"><i>Main PCB Front and Back</i></p>
 
@@ -118,8 +118,8 @@ I was really impressed by the quality of the PCBs sent by PCBWay. To order high-
 #### Button PCB
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="./Images/PCB/Button_PCB_Front.jpg" alt="Main PCB Front" style="width: 50%; object-fit: cover; margin-right: 5px;">
-    <img src="./Images/PCB/Button_PCB_Back.jpg" alt="Main PCB Back" style="width: 50%; object-fit: cover; margin-left: 5px;">
+    <img src="./Images/PCB/Button_PCB_Front.jpg" alt="Main PCB Front" style="width: 49%; object-fit: cover; margin-right: 5px;">
+    <img src="./Images/PCB/Button_PCB_Back.jpg" alt="Main PCB Back" style="width: 49%; object-fit: cover; margin-left: 5px;">
 </div>
 <p align="center"><i>Button PCB Front and Back</i></p>
 
@@ -131,8 +131,8 @@ I was really impressed by the quality of the PCBs sent by PCBWay. To order high-
 #### Light PCB
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="./Images/PCB/Light_PCB_Front.jpg" alt="Main PCB Front" style="width: 50%; object-fit: cover; margin-right: 5px;">
-    <img src="./Images/PCB/Light_PCB_Back.jpg" alt="Main PCB Back" style="width: 50%; object-fit: cover; margin-left: 5px;">
+    <img src="./Images/PCB/Light_PCB_Front.jpg" alt="Main PCB Front" style="width: 49%; object-fit: cover; margin-right: 5px;">
+    <img src="./Images/PCB/Light_PCB_Back.jpg" alt="Main PCB Back" style="width: 49%; object-fit: cover; margin-left: 5px;">
 </div>
 <p align="center"><i>Light PCB Front and Back</i></p>
 
@@ -158,13 +158,13 @@ I was really impressed by the quality of the PCBs sent by PCBWay. To order high-
 
 ### Assembled Enclosure
 
-<div style="display: flex; justify-content: space-between;">
-    <img src="./Images/Alarm_2.jpg" style="width: 50%; object-fit: cover;">
-    <img src="./Images/Alarm_Light_On.jpg" style="width: 50%; object-fit: cover;">
+<div style="display: flex; justify-content: center;">
+    <img src="./Images/Alarm_2.jpg" style="width: 49%; object-fit: cover;">
+    <img src="./Images/Alarm_Light_On.jpg" style="width: 49%; object-fit: cover;">
 </div>
-<div style="display: flex; justify-content: space-between;">
-    <img src="./Images/Alarm_Front.jpg" alt="Alarm V1" style="width: 50%; object-fit: cover;">
-    <img src="./Images/Alarm_Front_Light_On.jpg" alt="Alarm V2" style="width: 50%; object-fit: cover;">
+<div style="display: flex; justify-content: center;">
+    <img src="./Images/Alarm_Front.jpg" alt="Alarm V1" style="width: 49%; object-fit: cover;">
+    <img src="./Images/Alarm_Front_Light_On.jpg" alt="Alarm V2" style="width: 49%; object-fit: cover;">
 </div>
 
 ## Further Work
