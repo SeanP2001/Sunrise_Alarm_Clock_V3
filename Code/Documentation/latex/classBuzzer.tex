@@ -1,0 +1,101 @@
+\hypertarget{classBuzzer}{}\doxysection{Buzzer Class Reference}
+\label{classBuzzer}\index{Buzzer@{Buzzer}}
+
+
+A class representing a buzzer connected to a pin on the microcontroller.  
+
+
+
+
+{\ttfamily \#include $<$Buzzer.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBuzzer_a0d09b235a82826074967224679fbad7c}{Buzzer}} (uint8\+\_\+t pin\+No)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classBuzzer}{Buzzer}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBuzzer_ab6bd853591c732f56cef5ec8a83beb25}{play\+Tone}} ()
+\begin{DoxyCompactList}\small\item\em Turn ON the buzzer and make it sound. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBuzzer_a60e7439353659cccc72ab618c2a41e90}{stop\+Tone}} ()
+\begin{DoxyCompactList}\small\item\em Turn OFF the buzzer and make it silent. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBuzzer_a52f9ce39a43b9b4e274624f1a3eecd43}{is\+Sounding}} ()
+\begin{DoxyCompactList}\small\item\em Get the current status of the buzzer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBuzzer_a343e1db1c56b36951a11c4c1ab8394bb}{toggle}} ()
+\begin{DoxyCompactList}\small\item\em Toggle the state of the buzzer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing a buzzer connected to a pin on the microcontroller. 
+
+This class implements basic functionality to control a passive buzzer. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBuzzer_a0d09b235a82826074967224679fbad7c}\label{classBuzzer_a0d09b235a82826074967224679fbad7c}} 
+\index{Buzzer@{Buzzer}!Buzzer@{Buzzer}}
+\index{Buzzer@{Buzzer}!Buzzer@{Buzzer}}
+\doxysubsubsection{\texorpdfstring{Buzzer()}{Buzzer()}}
+{\footnotesize\ttfamily Buzzer\+::\+Buzzer (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin\+No }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classBuzzer}{Buzzer}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin\+No} & The number of the pin which the buzzer is connected to. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBuzzer_a52f9ce39a43b9b4e274624f1a3eecd43}\label{classBuzzer_a52f9ce39a43b9b4e274624f1a3eecd43}} 
+\index{Buzzer@{Buzzer}!isSounding@{isSounding}}
+\index{isSounding@{isSounding}!Buzzer@{Buzzer}}
+\doxysubsubsection{\texorpdfstring{isSounding()}{isSounding()}}
+{\footnotesize\ttfamily bool Buzzer\+::is\+Sounding (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the current status of the buzzer. 
+
+\begin{DoxyReturn}{Returns}
+true if the buzzer is currently producing a sound. 
+
+false if the buzzer is currently silent. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBuzzer_ab6bd853591c732f56cef5ec8a83beb25}\label{classBuzzer_ab6bd853591c732f56cef5ec8a83beb25}} 
+\index{Buzzer@{Buzzer}!playTone@{playTone}}
+\index{playTone@{playTone}!Buzzer@{Buzzer}}
+\doxysubsubsection{\texorpdfstring{playTone()}{playTone()}}
+{\footnotesize\ttfamily void Buzzer\+::play\+Tone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Turn ON the buzzer and make it sound. 
+
+Uses the tone() function. \mbox{\Hypertarget{classBuzzer_a60e7439353659cccc72ab618c2a41e90}\label{classBuzzer_a60e7439353659cccc72ab618c2a41e90}} 
+\index{Buzzer@{Buzzer}!stopTone@{stopTone}}
+\index{stopTone@{stopTone}!Buzzer@{Buzzer}}
+\doxysubsubsection{\texorpdfstring{stopTone()}{stopTone()}}
+{\footnotesize\ttfamily void Buzzer\+::stop\+Tone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Turn OFF the buzzer and make it silent. 
+
+Uses the no\+Tone() function. \mbox{\Hypertarget{classBuzzer_a343e1db1c56b36951a11c4c1ab8394bb}\label{classBuzzer_a343e1db1c56b36951a11c4c1ab8394bb}} 
+\index{Buzzer@{Buzzer}!toggle@{toggle}}
+\index{toggle@{toggle}!Buzzer@{Buzzer}}
+\doxysubsubsection{\texorpdfstring{toggle()}{toggle()}}
+{\footnotesize\ttfamily void Buzzer\+::toggle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Toggle the state of the buzzer. 
+
+If the buzzer is sounding, stop it. If the buzzer is silent, play a tone. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Buzzer_8h}{Buzzer.\+h}}\item 
+Buzzer.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,83 @@
+\hypertarget{classDevice}{}\doxysection{Device Class Reference}
+\label{classDevice}\index{Device@{Device}}
+
+
+A class representing a digital output device connected to a pin on the microcontroller.  
+
+
+
+
+{\ttfamily \#include $<$Device.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDevice_a3a9a4c33baf85414c1be2ff603e672bb}{Device}} (uint8\+\_\+t pin\+No)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classDevice}{Device}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDevice_a6b0a2674f57504a5df08f62e85d98578}\label{classDevice_a6b0a2674f57504a5df08f62e85d98578}} 
+void {\bfseries turn\+On} ()
+\begin{DoxyCompactList}\small\item\em Turn ON the pin connected to the device. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDevice_a94ab5a01517645d57f8ddbf7218bde85}\label{classDevice_a94ab5a01517645d57f8ddbf7218bde85}} 
+void {\bfseries turn\+Off} ()
+\begin{DoxyCompactList}\small\item\em Turn OFF the pin connected to the device. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDevice_a986c707389d48b80ee07aa688cffeb10}{is\+On}} ()
+\begin{DoxyCompactList}\small\item\em Get the current status of the device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDevice_aea74c0f721041d784c16b487a955b314}{toggle}} ()
+\begin{DoxyCompactList}\small\item\em Toggle the state of the pin connected to the device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing a digital output device connected to a pin on the microcontroller. 
+
+This class implements basic functionality to control a digital output device. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDevice_a3a9a4c33baf85414c1be2ff603e672bb}\label{classDevice_a3a9a4c33baf85414c1be2ff603e672bb}} 
+\index{Device@{Device}!Device@{Device}}
+\index{Device@{Device}!Device@{Device}}
+\doxysubsubsection{\texorpdfstring{Device()}{Device()}}
+{\footnotesize\ttfamily Device\+::\+Device (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin\+No }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classDevice}{Device}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin\+No} & The number of the pin which the device is connected to. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDevice_a986c707389d48b80ee07aa688cffeb10}\label{classDevice_a986c707389d48b80ee07aa688cffeb10}} 
+\index{Device@{Device}!isOn@{isOn}}
+\index{isOn@{isOn}!Device@{Device}}
+\doxysubsubsection{\texorpdfstring{isOn()}{isOn()}}
+{\footnotesize\ttfamily bool Device\+::is\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the current status of the device. 
+
+\begin{DoxyReturn}{Returns}
+true if the device is currently switched ON. 
+
+false if the device is currently switched OFF. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDevice_aea74c0f721041d784c16b487a955b314}\label{classDevice_aea74c0f721041d784c16b487a955b314}} 
+\index{Device@{Device}!toggle@{toggle}}
+\index{toggle@{toggle}!Device@{Device}}
+\doxysubsubsection{\texorpdfstring{toggle()}{toggle()}}
+{\footnotesize\ttfamily void Device\+::toggle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Toggle the state of the pin connected to the device. 
+
+If the device is ON, turn it OFF. If the device is OFF, turn it ON. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Device_8h}{Device.\+h}}\item 
+Device.\+cpp\end{DoxyCompactItemize}

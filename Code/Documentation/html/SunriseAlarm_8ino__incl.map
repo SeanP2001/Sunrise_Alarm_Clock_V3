@@ -1,0 +1,9 @@
+<map id="SunriseAlarm.ino" name="SunriseAlarm.ino">
+<area shape="rect" id="node1" title="Software to run on the Sunrise Alarm V3." alt="" coords="167,5,301,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,60,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="85,80,167,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="192,80,276,107"/>
+<area shape="rect" id="node5" href="$Device_8h.html" title="Defines the Device class." alt="" coords="300,80,379,107"/>
+<area shape="rect" id="node7" href="$Buzzer_8h.html" title="Defines the Buzzer class." alt="" coords="403,80,481,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="348,155,432,181"/>
+</map>
