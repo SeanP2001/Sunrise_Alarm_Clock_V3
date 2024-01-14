@@ -4,6 +4,7 @@
 
 - [Introduction](#introduction)
 - [Brief](#brief)
+- [Development Roadmap](#development-roadmap)
 - [Circuitry](#circuitry)
   - [Schematics](#schematics)
     - [Main PCB](#main-pcb)
@@ -50,6 +51,28 @@ The alarm needed to:
 - Include a bright ringlight on the clock face
 - Include a buzzer
 - Have a premium feel
+
+## Development Roadmap
+
+The following roadmap outlines the planned milestones for the project. Each step includes testing and documenting.
+
+| **Version**   | **Description**                                            |
+|---------------|------------------------------------------------------------|
+| V3.1-alpha    | Capture Schematic                                          |
+| V3.2-alpha    | Design Main PCB                                            |
+| V3.3-alpha    | Design Light PCB                                           |
+| V3.4-alpha    | Design Button PCB                                          |
+| V3.5-alpha    | Design and Fabricate Enclosure                             |
+| V3.6-alpha    | Solder and Assemble                                        |
+| V3.7-alpha    | Test Hardware and Document                                 |
+| V3.8-alpha    | Program Inputs and Outputs                                 |
+| V3.9-alpha    | Implement App Infrastructure                               |
+| V3.10-alpha   | Develop Alarm App                                          |
+| V3.11-alpha   | Develop Light App                                          |
+| V3.12-alpha   | Develop USB App                                            |
+| V3.13-alpha   | Develop Settings App                                       |
+| V3.14-alpha   | Implement WiFi, NTP Time Sync and Settings Portal          |
+| V3.0-release  | Initial Release (Document, Test and Fix Bugs)              |
 
 ## Circuitry
 
@@ -179,4 +202,10 @@ View the Doxygen documentation for this project [here](https://raw.githack.com/S
 
 In future I would like to;
 - Change the design to not use vinyl as it is difficult to get a perfect result using it.
-- Add weather forecast functionality
+- Add software functions:
+  - Wake up games
+  - Daily weather forecast
+  - Daily calendar events
+  - Log sleep and wake times
+  - Mood tracker
+  - Habit tracker

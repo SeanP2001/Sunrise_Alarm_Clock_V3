@@ -26,10 +26,10 @@ class AlarmApp : public App
     bool alarmSet;      ///< Flag to determine whether the alarm has been set or not
     uint8_t alarmHour;  ///< The hour which the alarm is set to go off at
 
-    Ds1302::DateTime now;  ///< DateTime object to store the current time
+    Ds1302::DateTime now;  ///< DateTime struct to store the current time
 
-    const static char* WeekDays[];
-    const static uint8_t WeekDayXPos[];
+    const static char* WeekDays[];       ///< Array containing the names for each of the days of the week (Monday = 0)
+    const static uint8_t WeekDayXPos[];  ///< Array containing the x positions for each of the weekday strings (to centre them on the screen)
   
 
   public:
@@ -118,8 +118,8 @@ class AlarmApp : public App
     /**
      * @brief Perform background tasks associated with the Alarm App.
      * 
-     * There are currently no background tasks associated with the Alarm App.
-     * In future, this function will check whether the alarm is due to go off, and sound the alarm if it is.
+     * Retrieve the date and time from the RTC module. 
+     * Check whether the alarm is due to go off, and sound the alarm if it is.
      */
     void backgroundTasks() override;
 };

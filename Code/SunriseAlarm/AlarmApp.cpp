@@ -23,7 +23,7 @@ const char* AlarmApp::WeekDays[] =
 
 const uint8_t AlarmApp::WeekDayXPos[] = {45, 46, 38, 43, 49, 42, 47};
 
- //---------------------------------------------------- C O N S T R U C T O R ----------------------------------------------------
+//---------------------------------------------------- C O N S T R U C T O R ----------------------------------------------------
 AlarmApp::AlarmApp(Hardware& hardware) : App(hardware), alarmSet(false), alarmHour(7) {}  // WARNING: Temporary Magic Number (Will be rectified with settings struct)
 
 
@@ -38,8 +38,6 @@ void AlarmApp::init()
 //---------------------------------------------- D I S P L A Y   M E N U   P A G E -----------------------------------------------
 void AlarmApp::displayMenuPage()
 {
-  hw.rtc.getDateTime(&now); 
-
   hw.display.clearBuffer();  
   hw.display.setFont(u8g2_font_helvR08_tf);	
 
@@ -115,6 +113,12 @@ void AlarmApp::openApp()
 {
   App::openApp();
   alarmSet = !alarmSet;
+
+  if(!alarmSet)
+  {
+    hw.buzzer.stopTone();
+  }
+
   closeApp();
 }
 
@@ -129,5 +133,25 @@ bool AlarmApp::isSet()
 //----------------------------------------------- B A C K G R O U N D   T A S K S -----------------------------------------------
 void AlarmApp::backgroundTasks()
 {
+  hw.rtc.getDateTime(&now);                // Update the time
+
+  if((now.hour == alarmHour) && alarmSet)  // If the Alarm is due to go off
+  {
+    if(now.second % 2 == 0)                // Beep the alarm
+    {
+      if(!hw.buzzer.isSounding())
+      {
+        hw.buzzer.playTone();
+      }
+    }
+    else
+    {
+      if(hw.buzzer.isSounding())
+      {
+        hw.buzzer.stopTone();
+      }
+    }
+  }
+
   return;
 }
