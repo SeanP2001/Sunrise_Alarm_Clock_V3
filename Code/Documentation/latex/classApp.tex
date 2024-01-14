@@ -1,0 +1,232 @@
+\hypertarget{classApp}{}\doxysection{App Class Reference}
+\label{classApp}\index{App@{App}}
+
+
+Abstract base class for applications.  
+
+
+
+
+{\ttfamily \#include $<$App.\+h$>$}
+
+
+
+Inheritance diagram for App\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{classApp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for App\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classApp__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classApp_a68f77f8aa188556ec19441f04cdff346}{init}} ()=0
+\begin{DoxyCompactList}\small\item\em Initialise the application. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classApp_ae89494bd9b1a575529f13766c92a53a6}{display\+Menu\+Icon}} ()=0
+\begin{DoxyCompactList}\small\item\em Display the menu icon for the application. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classApp_a9b1cc434b82d52c7ef1d5b9de18e613e}{display}} ()=0
+\begin{DoxyCompactList}\small\item\em Display the main content of the application. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classApp_a2a32507fee501e2c11829523e7edbf7a}{left\+Action}} ()=0
+\begin{DoxyCompactList}\small\item\em Perform an action when the left button is pressed. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classApp_a56e902a0ca9101c666c1d426f59fa625}{middle\+Action}} ()=0
+\begin{DoxyCompactList}\small\item\em Perform an action when the middle button is pressed. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classApp_a85a1255904957c267539677f77b27cc5}{right\+Action}} ()=0
+\begin{DoxyCompactList}\small\item\em Perform an action when the right button is pressed. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classApp_a1adc67cf6911cc0b18a0a8853ab33ecc}{open\+App}} ()
+\begin{DoxyCompactList}\small\item\em Open the application. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classApp_aad52bf4410aa8e642833f4df3d6feff0}{close\+App}} ()
+\begin{DoxyCompactList}\small\item\em Close the application. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classApp_aee7e4f11abb130dcf54ccbaee34f6cdd}{is\+Open}} () const
+\begin{DoxyCompactList}\small\item\em Check if the application is open. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classApp_a985a33544db789c5332eb5c348965699}{background\+Functions}} ()=0
+\begin{DoxyCompactList}\small\item\em Perform background tasks associated with the application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classApp_aa7738bf5a152b71ed2f30ecad2245e65}{App}} (\mbox{\hyperlink{structHardware}{Hardware}} \&hardware)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classApp}{App}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classApp_aa73afafa3a5ff284f48b6cc1172c3738}\label{classApp_aa73afafa3a5ff284f48b6cc1172c3738}} 
+\mbox{\hyperlink{structHardware}{Hardware}} \& {\bfseries hw}
+\begin{DoxyCompactList}\small\item\em Reference to the \mbox{\hyperlink{structHardware}{Hardware}} struct containing all the hardware-\/related objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class for applications. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classApp_aa7738bf5a152b71ed2f30ecad2245e65}\label{classApp_aa7738bf5a152b71ed2f30ecad2245e65}} 
+\index{App@{App}!App@{App}}
+\index{App@{App}!App@{App}}
+\doxysubsubsection{\texorpdfstring{App()}{App()}}
+{\footnotesize\ttfamily App\+::\+App (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structHardware}{Hardware}} \&}]{hardware }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Construct a new \mbox{\hyperlink{classApp}{App}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hardware} & Reference to a \mbox{\hyperlink{structHardware}{Hardware}} struct containing all the hardware-\/related objects \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classApp_a985a33544db789c5332eb5c348965699}\label{classApp_a985a33544db789c5332eb5c348965699}} 
+\index{App@{App}!backgroundFunctions@{backgroundFunctions}}
+\index{backgroundFunctions@{backgroundFunctions}!App@{App}}
+\doxysubsubsection{\texorpdfstring{backgroundFunctions()}{backgroundFunctions()}}
+{\footnotesize\ttfamily virtual void App\+::background\+Functions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Perform background tasks associated with the application. 
+
+There is no default implementation and a specific behavior must be defined in the derived class. 
+
+Implemented in \mbox{\hyperlink{classLightApp_a3516711b7cd0662475455c9aad3045fc}{Light\+App}}.
+
+\mbox{\Hypertarget{classApp_aad52bf4410aa8e642833f4df3d6feff0}\label{classApp_aad52bf4410aa8e642833f4df3d6feff0}} 
+\index{App@{App}!closeApp@{closeApp}}
+\index{closeApp@{closeApp}!App@{App}}
+\doxysubsubsection{\texorpdfstring{closeApp()}{closeApp()}}
+{\footnotesize\ttfamily void App\+::close\+App (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Close the application. 
+
+This is the default implementation but it can be overridden in derived classes. \mbox{\Hypertarget{classApp_a9b1cc434b82d52c7ef1d5b9de18e613e}\label{classApp_a9b1cc434b82d52c7ef1d5b9de18e613e}} 
+\index{App@{App}!display@{display}}
+\index{display@{display}!App@{App}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily virtual void App\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Display the main content of the application. 
+
+There is no default implementation and a specific behavior must be defined in the derived class. 
+
+Implemented in \mbox{\hyperlink{classLightApp_a0831069f33a9b1024bd800a4d7e52522}{Light\+App}}.
+
+\mbox{\Hypertarget{classApp_ae89494bd9b1a575529f13766c92a53a6}\label{classApp_ae89494bd9b1a575529f13766c92a53a6}} 
+\index{App@{App}!displayMenuIcon@{displayMenuIcon}}
+\index{displayMenuIcon@{displayMenuIcon}!App@{App}}
+\doxysubsubsection{\texorpdfstring{displayMenuIcon()}{displayMenuIcon()}}
+{\footnotesize\ttfamily virtual void App\+::display\+Menu\+Icon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Display the menu icon for the application. 
+
+There is no default implementation and a specific behavior must be defined in the derived class. 
+
+Implemented in \mbox{\hyperlink{classLightApp_a89ab6e5e4cb875a53bd9d84914afcb2e}{Light\+App}}.
+
+\mbox{\Hypertarget{classApp_a68f77f8aa188556ec19441f04cdff346}\label{classApp_a68f77f8aa188556ec19441f04cdff346}} 
+\index{App@{App}!init@{init}}
+\index{init@{init}!App@{App}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily virtual void App\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Initialise the application. 
+
+There is no default implementation and a specific behavior must be defined in the derived class. 
+
+Implemented in \mbox{\hyperlink{classLightApp_abdedf005dc6e15b219934c109f4bd67b}{Light\+App}}.
+
+\mbox{\Hypertarget{classApp_aee7e4f11abb130dcf54ccbaee34f6cdd}\label{classApp_aee7e4f11abb130dcf54ccbaee34f6cdd}} 
+\index{App@{App}!isOpen@{isOpen}}
+\index{isOpen@{isOpen}!App@{App}}
+\doxysubsubsection{\texorpdfstring{isOpen()}{isOpen()}}
+{\footnotesize\ttfamily bool App\+::is\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Check if the application is open. 
+
+\begin{DoxyReturn}{Returns}
+true if the application is open 
+
+false if the application isn\textquotesingle{}t open 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classApp_a2a32507fee501e2c11829523e7edbf7a}\label{classApp_a2a32507fee501e2c11829523e7edbf7a}} 
+\index{App@{App}!leftAction@{leftAction}}
+\index{leftAction@{leftAction}!App@{App}}
+\doxysubsubsection{\texorpdfstring{leftAction()}{leftAction()}}
+{\footnotesize\ttfamily virtual void App\+::left\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Perform an action when the left button is pressed. 
+
+There is no default implementation and a specific behavior must be defined in the derived class. 
+
+Implemented in \mbox{\hyperlink{classLightApp_ae795b88ae7f71c166f6a7ce9d47ac14c}{Light\+App}}.
+
+\mbox{\Hypertarget{classApp_a56e902a0ca9101c666c1d426f59fa625}\label{classApp_a56e902a0ca9101c666c1d426f59fa625}} 
+\index{App@{App}!middleAction@{middleAction}}
+\index{middleAction@{middleAction}!App@{App}}
+\doxysubsubsection{\texorpdfstring{middleAction()}{middleAction()}}
+{\footnotesize\ttfamily virtual void App\+::middle\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Perform an action when the middle button is pressed. 
+
+There is no default implementation and a specific behavior must be defined in the derived class. 
+
+Implemented in \mbox{\hyperlink{classLightApp_a3d2df3ac7a23e364b6e752932e3cc6b7}{Light\+App}}.
+
+\mbox{\Hypertarget{classApp_a1adc67cf6911cc0b18a0a8853ab33ecc}\label{classApp_a1adc67cf6911cc0b18a0a8853ab33ecc}} 
+\index{App@{App}!openApp@{openApp}}
+\index{openApp@{openApp}!App@{App}}
+\doxysubsubsection{\texorpdfstring{openApp()}{openApp()}}
+{\footnotesize\ttfamily void App\+::open\+App (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Open the application. 
+
+This is the default implementation but it can be overridden in derived classes. 
+
+Reimplemented in \mbox{\hyperlink{classLightApp_a0b60b125d768e9838cbcc270ec4b2474}{Light\+App}}.
+
+\mbox{\Hypertarget{classApp_a85a1255904957c267539677f77b27cc5}\label{classApp_a85a1255904957c267539677f77b27cc5}} 
+\index{App@{App}!rightAction@{rightAction}}
+\index{rightAction@{rightAction}!App@{App}}
+\doxysubsubsection{\texorpdfstring{rightAction()}{rightAction()}}
+{\footnotesize\ttfamily virtual void App\+::right\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Perform an action when the right button is pressed. 
+
+There is no default implementation and a specific behavior must be defined in the derived class. 
+
+Implemented in \mbox{\hyperlink{classLightApp_a81ac32730fbd7d97c6a4915d9751ff61}{Light\+App}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{App_8h}{App.\+h}}\item 
+App.\+cpp\end{DoxyCompactItemize}

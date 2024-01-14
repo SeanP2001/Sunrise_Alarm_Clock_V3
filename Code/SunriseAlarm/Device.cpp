@@ -1,3 +1,13 @@
+/**
+ * @file Device.cpp
+ * @author Sean Price
+ * @brief Implements the Device class
+ * @version 0.1
+ * @date 13/01/2024
+ * 
+ * 
+ */
+
 #include "Device.h"
 
 //---------------------------------------------------- C O N S T R U C T O R ----------------------------------------------------

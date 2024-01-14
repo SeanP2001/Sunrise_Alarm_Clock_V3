@@ -1,4 +1,8 @@
 <map id="Buzzer.h" name="Buzzer.h">
-<area shape="rect" id="node1" title="Defines the Buzzer class." alt="" coords="33,5,111,32"/>
-<area shape="rect" id="node2" href="$SunriseAlarm_8ino.html" title="Software to run on the Sunrise Alarm V3." alt="" coords="5,80,139,107"/>
+<area shape="rect" id="node1" title="Defines the Buzzer class." alt="" coords="131,5,209,32"/>
+<area shape="rect" id="node2" href="$Buzzer_8cpp.html" title="Implements the Buzzer class." alt="" coords="5,80,97,107"/>
+<area shape="rect" id="node3" href="$Hardware_8h.html" title="Defines the Hardware struct." alt="" coords="121,80,219,107"/>
+<area shape="rect" id="node6" href="$SunriseAlarm_8ino.html" title="Software to run on the Sunrise Alarm V3." alt="" coords="114,304,247,331"/>
+<area shape="rect" id="node4" href="$App_8h.html" title="Implements the concrete functions from the App base class." alt="" coords="110,155,169,181"/>
+<area shape="rect" id="node5" href="$LightApp_8h.html" title="Implements the LightApp class." alt="" coords="27,229,118,256"/>
 </map>

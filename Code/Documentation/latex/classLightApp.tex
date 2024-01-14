@@ -1,0 +1,195 @@
+\hypertarget{classLightApp}{}\doxysection{Light\+App Class Reference}
+\label{classLightApp}\index{LightApp@{LightApp}}
+
+
+Represents an application for controlling a light, derived from the \mbox{\hyperlink{classApp}{App}} base class.  
+
+
+
+
+{\ttfamily \#include $<$Light\+App.\+h$>$}
+
+
+
+Inheritance diagram for Light\+App\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{classLightApp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Light\+App\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classLightApp__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLightApp_a60b1987a78d5da7ceeeef0fd1a568286}{Light\+App}} (\mbox{\hyperlink{structHardware}{Hardware}} \&hardware)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classLightApp}{Light\+App}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLightApp_abdedf005dc6e15b219934c109f4bd67b}{init}} () override
+\begin{DoxyCompactList}\small\item\em Initialises the \mbox{\hyperlink{classLightApp}{Light\+App}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLightApp_a89ab6e5e4cb875a53bd9d84914afcb2e}{display\+Menu\+Icon}} () override
+\begin{DoxyCompactList}\small\item\em Displays the menu icon for the application. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLightApp_a0831069f33a9b1024bd800a4d7e52522}{display}} () override
+\begin{DoxyCompactList}\small\item\em Displays the main content of the application. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLightApp_ae795b88ae7f71c166f6a7ce9d47ac14c}{left\+Action}} () override
+\begin{DoxyCompactList}\small\item\em Handles left button presses. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLightApp_a3d2df3ac7a23e364b6e752932e3cc6b7}{middle\+Action}} () override
+\begin{DoxyCompactList}\small\item\em Handles middle button presses. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLightApp_a81ac32730fbd7d97c6a4915d9751ff61}{right\+Action}} () override
+\begin{DoxyCompactList}\small\item\em Handles right button presses. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLightApp_a0b60b125d768e9838cbcc270ec4b2474}{open\+App}} () override
+\begin{DoxyCompactList}\small\item\em Open the application, turning on the light. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLightApp_a3516711b7cd0662475455c9aad3045fc}{background\+Functions}} () override
+\begin{DoxyCompactList}\small\item\em Perform background tasks associated with the Light \mbox{\hyperlink{classApp}{App}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents an application for controlling a light, derived from the \mbox{\hyperlink{classApp}{App}} base class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLightApp_a60b1987a78d5da7ceeeef0fd1a568286}\label{classLightApp_a60b1987a78d5da7ceeeef0fd1a568286}} 
+\index{LightApp@{LightApp}!LightApp@{LightApp}}
+\index{LightApp@{LightApp}!LightApp@{LightApp}}
+\doxysubsubsection{\texorpdfstring{LightApp()}{LightApp()}}
+{\footnotesize\ttfamily Light\+App\+::\+Light\+App (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structHardware}{Hardware}} \&}]{hardware }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classLightApp}{Light\+App}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hardware} & Reference to a \mbox{\hyperlink{structHardware}{Hardware}} struct containing all the hardware-\/related objects \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLightApp_a3516711b7cd0662475455c9aad3045fc}\label{classLightApp_a3516711b7cd0662475455c9aad3045fc}} 
+\index{LightApp@{LightApp}!backgroundFunctions@{backgroundFunctions}}
+\index{backgroundFunctions@{backgroundFunctions}!LightApp@{LightApp}}
+\doxysubsubsection{\texorpdfstring{backgroundFunctions()}{backgroundFunctions()}}
+{\footnotesize\ttfamily void Light\+App\+::background\+Functions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Perform background tasks associated with the Light \mbox{\hyperlink{classApp}{App}}. 
+
+There are no background tasks associated with the Light \mbox{\hyperlink{classApp}{App}}. 
+
+Implements \mbox{\hyperlink{classApp_a985a33544db789c5332eb5c348965699}{App}}.
+
+\mbox{\Hypertarget{classLightApp_a0831069f33a9b1024bd800a4d7e52522}\label{classLightApp_a0831069f33a9b1024bd800a4d7e52522}} 
+\index{LightApp@{LightApp}!display@{display}}
+\index{display@{display}!LightApp@{LightApp}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Light\+App\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays the main content of the application. 
+
+Currently this just prints the word \char`\"{}\+ON\char`\"{} to the display. In future this will show an icon of a glowing light bulb. 
+
+Implements \mbox{\hyperlink{classApp_a9b1cc434b82d52c7ef1d5b9de18e613e}{App}}.
+
+\mbox{\Hypertarget{classLightApp_a89ab6e5e4cb875a53bd9d84914afcb2e}\label{classLightApp_a89ab6e5e4cb875a53bd9d84914afcb2e}} 
+\index{LightApp@{LightApp}!displayMenuIcon@{displayMenuIcon}}
+\index{displayMenuIcon@{displayMenuIcon}!LightApp@{LightApp}}
+\doxysubsubsection{\texorpdfstring{displayMenuIcon()}{displayMenuIcon()}}
+{\footnotesize\ttfamily void Light\+App\+::display\+Menu\+Icon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays the menu icon for the application. 
+
+Currently this just prints the word \char`\"{}\+OFF\char`\"{} to the display. In future this will show an icon of a switched off light bulb. 
+
+Implements \mbox{\hyperlink{classApp_ae89494bd9b1a575529f13766c92a53a6}{App}}.
+
+\mbox{\Hypertarget{classLightApp_abdedf005dc6e15b219934c109f4bd67b}\label{classLightApp_abdedf005dc6e15b219934c109f4bd67b}} 
+\index{LightApp@{LightApp}!init@{init}}
+\index{init@{init}!LightApp@{LightApp}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Light\+App\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initialises the \mbox{\hyperlink{classLightApp}{Light\+App}}. 
+
+Nothing happens at initialisation. 
+
+Implements \mbox{\hyperlink{classApp_a68f77f8aa188556ec19441f04cdff346}{App}}.
+
+\mbox{\Hypertarget{classLightApp_ae795b88ae7f71c166f6a7ce9d47ac14c}\label{classLightApp_ae795b88ae7f71c166f6a7ce9d47ac14c}} 
+\index{LightApp@{LightApp}!leftAction@{leftAction}}
+\index{leftAction@{leftAction}!LightApp@{LightApp}}
+\doxysubsubsection{\texorpdfstring{leftAction()}{leftAction()}}
+{\footnotesize\ttfamily void Light\+App\+::left\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handles left button presses. 
+
+Currently this function does nothing. In future this will decrease the light brightness. 
+
+Implements \mbox{\hyperlink{classApp_a2a32507fee501e2c11829523e7edbf7a}{App}}.
+
+\mbox{\Hypertarget{classLightApp_a3d2df3ac7a23e364b6e752932e3cc6b7}\label{classLightApp_a3d2df3ac7a23e364b6e752932e3cc6b7}} 
+\index{LightApp@{LightApp}!middleAction@{middleAction}}
+\index{middleAction@{middleAction}!LightApp@{LightApp}}
+\doxysubsubsection{\texorpdfstring{middleAction()}{middleAction()}}
+{\footnotesize\ttfamily void Light\+App\+::middle\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handles middle button presses. 
+
+Turns off the light and closes the app. 
+
+Implements \mbox{\hyperlink{classApp_a56e902a0ca9101c666c1d426f59fa625}{App}}.
+
+\mbox{\Hypertarget{classLightApp_a0b60b125d768e9838cbcc270ec4b2474}\label{classLightApp_a0b60b125d768e9838cbcc270ec4b2474}} 
+\index{LightApp@{LightApp}!openApp@{openApp}}
+\index{openApp@{openApp}!LightApp@{LightApp}}
+\doxysubsubsection{\texorpdfstring{openApp()}{openApp()}}
+{\footnotesize\ttfamily void Light\+App\+::open\+App (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Open the application, turning on the light. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classApp_a1adc67cf6911cc0b18a0a8853ab33ecc}{App}}.
+
+\mbox{\Hypertarget{classLightApp_a81ac32730fbd7d97c6a4915d9751ff61}\label{classLightApp_a81ac32730fbd7d97c6a4915d9751ff61}} 
+\index{LightApp@{LightApp}!rightAction@{rightAction}}
+\index{rightAction@{rightAction}!LightApp@{LightApp}}
+\doxysubsubsection{\texorpdfstring{rightAction()}{rightAction()}}
+{\footnotesize\ttfamily void Light\+App\+::right\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handles right button presses. 
+
+Currently this function does nothing. In future this will increase the light brightness. 
+
+Implements \mbox{\hyperlink{classApp_a85a1255904957c267539677f77b27cc5}{App}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{LightApp_8h}{Light\+App.\+h}}\item 
+Light\+App.\+cpp\end{DoxyCompactItemize}

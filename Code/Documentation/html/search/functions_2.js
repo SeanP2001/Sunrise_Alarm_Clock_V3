@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['ison_0',['isOn',['../classDevice.html#a986c707389d48b80ee07aa688cffeb10',1,'Device']]],
-  ['issounding_1',['isSounding',['../classBuzzer.html#a52f9ce39a43b9b4e274624f1a3eecd43',1,'Buzzer']]]
+  ['closeapp_0',['closeApp',['../classApp.html#aad52bf4410aa8e642833f4df3d6feff0',1,'App']]]
 ];

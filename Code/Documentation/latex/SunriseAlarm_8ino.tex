@@ -10,7 +10,11 @@ Software to run on the Sunrise Alarm V3.
 {\ttfamily \#include $<$U8g2lib.\+h$>$}\newline
 {\ttfamily \#include \char`\"{}Device.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}Buzzer.\+h\char`\"{}}\newline
-Include dependency graph for Sunrise\+Alarm.\+ino\+:\nopagebreak
+{\ttfamily \#include \char`\"{}Hardware.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}App.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Light\+App.\+h\char`\"{}}\newline
+Include dependency graph for Sunrise\+Alarm.\+ino\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -86,6 +90,12 @@ void {\bfseries setup} ()
 \mbox{\Hypertarget{SunriseAlarm_8ino_afe461d27b9c48d5921c00d521181f12f}\label{SunriseAlarm_8ino_afe461d27b9c48d5921c00d521181f12f}} 
 void {\bfseries loop} ()
 \item 
+\mbox{\Hypertarget{SunriseAlarm_8ino_ab7eb3c8c2e8604801ee00f11d3af8c3f}\label{SunriseAlarm_8ino_ab7eb3c8c2e8604801ee00f11d3af8c3f}} 
+void {\bfseries update\+Display} ()
+\item 
+\mbox{\Hypertarget{SunriseAlarm_8ino_a3a9b647a28587c3704f3dc080cebe906}\label{SunriseAlarm_8ino_a3a9b647a28587c3704f3dc080cebe906}} 
+bool {\bfseries any\+Button\+Pressed} ()
+\item 
 \mbox{\Hypertarget{SunriseAlarm_8ino_ab2ce40bc0236a98ba8aeadb4a4e2733e}\label{SunriseAlarm_8ino_ab2ce40bc0236a98ba8aeadb4a4e2733e}} 
 void {\bfseries left\+ISR} ()
 \item 
@@ -109,6 +119,21 @@ void {\bfseries right\+ISR} ()
 \item 
 \mbox{\Hypertarget{SunriseAlarm_8ino_a9864dfd8340691ad3a7b9f6db2cd20e1}\label{SunriseAlarm_8ino_a9864dfd8340691ad3a7b9f6db2cd20e1}} 
 \mbox{\hyperlink{classBuzzer}{Buzzer}} {\bfseries buzzer} (BUZZER)
+\item 
+\mbox{\Hypertarget{SunriseAlarm_8ino_ae6cbe7d5ac57ec70044cee01ac1bd056}\label{SunriseAlarm_8ino_ae6cbe7d5ac57ec70044cee01ac1bd056}} 
+struct \mbox{\hyperlink{structHardware}{Hardware}} {\bfseries hw} = \{display, rtc, light, usb1, usb2, buzzer\}
+\item 
+\mbox{\Hypertarget{SunriseAlarm_8ino_aa491d2bef3ac3c1b81c07681aef5846b}\label{SunriseAlarm_8ino_aa491d2bef3ac3c1b81c07681aef5846b}} 
+\mbox{\hyperlink{classLightApp}{Light\+App}} {\bfseries light\+App} (hw)
+\item 
+\mbox{\Hypertarget{SunriseAlarm_8ino_a32aa95f939b279598dfe4730276853e2}\label{SunriseAlarm_8ino_a32aa95f939b279598dfe4730276853e2}} 
+const int {\bfseries no\+Of\+Apps} = 1
+\item 
+\mbox{\Hypertarget{SunriseAlarm_8ino_a2d27d9f0cb76dc546d082b5743fb0c9e}\label{SunriseAlarm_8ino_a2d27d9f0cb76dc546d082b5743fb0c9e}} 
+\mbox{\hyperlink{classApp}{App}} $\ast$ {\bfseries apps} \mbox{[}no\+Of\+Apps\mbox{]}
+\item 
+\mbox{\Hypertarget{SunriseAlarm_8ino_a9156ed676621e3b218e057a4e2094776}\label{SunriseAlarm_8ino_a9156ed676621e3b218e057a4e2094776}} 
+uint8\+\_\+t {\bfseries current\+App} = 0
 \item 
 \mbox{\Hypertarget{SunriseAlarm_8ino_af065086ee579e71ebd05952f6a4513f3}\label{SunriseAlarm_8ino_af065086ee579e71ebd05952f6a4513f3}} 
 volatile bool {\bfseries left\+Pressed} = false

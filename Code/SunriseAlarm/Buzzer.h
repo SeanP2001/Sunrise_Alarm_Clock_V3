@@ -14,6 +14,7 @@
 #include <Arduino.h>
 
 /**
+ * @class Buzzer
  * @brief A class representing a buzzer connected to a pin on the microcontroller.
  * 
  * This class implements basic functionality to control a passive buzzer.

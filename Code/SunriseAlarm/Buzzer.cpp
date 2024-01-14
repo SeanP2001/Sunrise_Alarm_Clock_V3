@@ -1,3 +1,13 @@
+/**
+ * @file Buzzer.cpp
+ * @author Sean Price
+ * @brief Implements the Buzzer class.
+ * @version 0.1
+ * @date 13/01/2024
+ * 
+ * 
+ */
+
 #include "Buzzer.h"
 
 const int Buzzer::DEFAULT_FREQUENCY = 2000; 

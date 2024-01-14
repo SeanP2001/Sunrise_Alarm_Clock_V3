@@ -20,6 +20,8 @@
 - [Enclosure](#enclosure)
   - [CAD Enclosure](#cad-enclosure)
   - [Assembled Enclosure](#assembled-enclosure)
+- [Code](#code)
+  - [Documentation](#documentation)
 - [Further Work](#further-work)
 
 
@@ -166,6 +168,12 @@ I was really impressed by the quality of the PCBs sent by PCBWay. To order high-
     <img src="./Images/Alarm_Front.jpg" alt="Alarm V1" style="width: 49%; object-fit: cover;">
     <img src="./Images/Alarm_Front_Light_On.jpg" alt="Alarm V2" style="width: 49%; object-fit: cover;">
 </div>
+
+## Code
+
+### Documentation
+
+View the Doxygen documentation for this project [here](https://raw.githack.com/SeanP2001/Sunrise_Alarm_Clock_V3/main/Code/Documentation/html/index.html).
 
 ## Further Work
 

@@ -77,18 +77,24 @@ $(function() {
 <code>#include &lt;U8g2lib.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="Device_8h_source.html">Device.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Buzzer_8h_source.html">Buzzer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Hardware_8h_source.html">Hardware.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="App_8h_source.html">App.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="LightApp_8h_source.html">LightApp.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for SunriseAlarm.ino:</div>
 <div class="dyncontent">
 <div class="center"><img src="SunriseAlarm_8ino__incl.png" border="0" usemap="#aSunriseAlarm_8ino" alt=""/></div>
 <map name="aSunriseAlarm_8ino" id="aSunriseAlarm_8ino">
-<area shape="rect" title="Software to run on the Sunrise Alarm V3." alt="" coords="167,5,301,32"/>
-<area shape="rect" title=" " alt="" coords="5,80,60,107"/>
-<area shape="rect" title=" " alt="" coords="85,80,167,107"/>
-<area shape="rect" title=" " alt="" coords="192,80,276,107"/>
-<area shape="rect" href="Device_8h.html" title="Defines the Device class." alt="" coords="300,80,379,107"/>
-<area shape="rect" href="Buzzer_8h.html" title="Defines the Buzzer class." alt="" coords="403,80,481,107"/>
-<area shape="rect" title=" " alt="" coords="348,155,432,181"/>
+<area shape="rect" title="Software to run on the Sunrise Alarm V3." alt="" coords="211,5,344,32"/>
+<area shape="rect" title=" " alt="" coords="126,304,181,331"/>
+<area shape="rect" title=" " alt="" coords="359,304,441,331"/>
+<area shape="rect" title=" " alt="" coords="466,304,550,331"/>
+<area shape="rect" href="Device_8h.html" title="Defines the Device class." alt="" coords="205,304,283,331"/>
+<area shape="rect" href="Buzzer_8h.html" title="Defines the Buzzer class." alt="" coords="575,304,652,331"/>
+<area shape="rect" href="Hardware_8h.html" title="Defines the Hardware struct." alt="" coords="273,229,370,256"/>
+<area shape="rect" href="App_8h.html" title="Implements the concrete functions from the App base class." alt="" coords="81,155,140,181"/>
+<area shape="rect" href="LightApp_8h.html" title="Implements the LightApp class." alt="" coords="5,80,96,107"/>
+<area shape="rect" title=" " alt="" coords="202,379,286,405"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -160,6 +166,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setup</b> ()</td></tr
 <tr class="memitem:afe461d27b9c48d5921c00d521181f12f"><td class="memItemLeft" align="right" valign="top"><a id="afe461d27b9c48d5921c00d521181f12f" name="afe461d27b9c48d5921c00d521181f12f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>loop</b> ()</td></tr>
 <tr class="separator:afe461d27b9c48d5921c00d521181f12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7eb3c8c2e8604801ee00f11d3af8c3f"><td class="memItemLeft" align="right" valign="top"><a id="ab7eb3c8c2e8604801ee00f11d3af8c3f" name="ab7eb3c8c2e8604801ee00f11d3af8c3f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateDisplay</b> ()</td></tr>
+<tr class="separator:ab7eb3c8c2e8604801ee00f11d3af8c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a9b647a28587c3704f3dc080cebe906"><td class="memItemLeft" align="right" valign="top"><a id="a3a9b647a28587c3704f3dc080cebe906" name="a3a9b647a28587c3704f3dc080cebe906"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>anyButtonPressed</b> ()</td></tr>
+<tr class="separator:a3a9b647a28587c3704f3dc080cebe906"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2ce40bc0236a98ba8aeadb4a4e2733e"><td class="memItemLeft" align="right" valign="top"><a id="ab2ce40bc0236a98ba8aeadb4a4e2733e" name="ab2ce40bc0236a98ba8aeadb4a4e2733e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>leftISR</b> ()</td></tr>
 <tr class="separator:ab2ce40bc0236a98ba8aeadb4a4e2733e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,6 +196,21 @@ Variables</h2></td></tr>
 <tr class="memitem:a9864dfd8340691ad3a7b9f6db2cd20e1"><td class="memItemLeft" align="right" valign="top"><a id="a9864dfd8340691ad3a7b9f6db2cd20e1" name="a9864dfd8340691ad3a7b9f6db2cd20e1"></a>
 <a class="el" href="classBuzzer.html">Buzzer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>buzzer</b> (BUZZER)</td></tr>
 <tr class="separator:a9864dfd8340691ad3a7b9f6db2cd20e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6cbe7d5ac57ec70044cee01ac1bd056"><td class="memItemLeft" align="right" valign="top"><a id="ae6cbe7d5ac57ec70044cee01ac1bd056" name="ae6cbe7d5ac57ec70044cee01ac1bd056"></a>
+struct <a class="el" href="structHardware.html">Hardware</a>&#160;</td><td class="memItemRight" valign="bottom"><b>hw</b> = {display, rtc, light, usb1, usb2, buzzer}</td></tr>
+<tr class="separator:ae6cbe7d5ac57ec70044cee01ac1bd056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa491d2bef3ac3c1b81c07681aef5846b"><td class="memItemLeft" align="right" valign="top"><a id="aa491d2bef3ac3c1b81c07681aef5846b" name="aa491d2bef3ac3c1b81c07681aef5846b"></a>
+<a class="el" href="classLightApp.html">LightApp</a>&#160;</td><td class="memItemRight" valign="bottom"><b>lightApp</b> (hw)</td></tr>
+<tr class="separator:aa491d2bef3ac3c1b81c07681aef5846b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32aa95f939b279598dfe4730276853e2"><td class="memItemLeft" align="right" valign="top"><a id="a32aa95f939b279598dfe4730276853e2" name="a32aa95f939b279598dfe4730276853e2"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>noOfApps</b> = 1</td></tr>
+<tr class="separator:a32aa95f939b279598dfe4730276853e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d27d9f0cb76dc546d082b5743fb0c9e"><td class="memItemLeft" align="right" valign="top"><a id="a2d27d9f0cb76dc546d082b5743fb0c9e" name="a2d27d9f0cb76dc546d082b5743fb0c9e"></a>
+<a class="el" href="classApp.html">App</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>apps</b> [noOfApps]</td></tr>
+<tr class="separator:a2d27d9f0cb76dc546d082b5743fb0c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9156ed676621e3b218e057a4e2094776"><td class="memItemLeft" align="right" valign="top"><a id="a9156ed676621e3b218e057a4e2094776" name="a9156ed676621e3b218e057a4e2094776"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>currentApp</b> = 0</td></tr>
+<tr class="separator:a9156ed676621e3b218e057a4e2094776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af065086ee579e71ebd05952f6a4513f3"><td class="memItemLeft" align="right" valign="top"><a id="af065086ee579e71ebd05952f6a4513f3" name="af065086ee579e71ebd05952f6a4513f3"></a>
 volatile bool&#160;</td><td class="memItemRight" valign="bottom"><b>leftPressed</b> = false</td></tr>
 <tr class="separator:af065086ee579e71ebd05952f6a4513f3"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -1,0 +1,9 @@
+<map id="Hardware.h" name="Hardware.h">
+<area shape="rect" id="node1" title="Defines the Hardware struct." alt="" coords="153,5,250,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="320,155,404,181"/>
+<area shape="rect" id="node3" title=" " alt="" coords="28,80,82,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="107,80,190,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="214,80,298,107"/>
+<area shape="rect" id="node6" href="$Device_8h.html" title="Defines the Device class." alt="" coords="322,80,401,107"/>
+<area shape="rect" id="node7" href="$Buzzer_8h.html" title="Defines the Buzzer class." alt="" coords="426,80,503,107"/>
+</map>

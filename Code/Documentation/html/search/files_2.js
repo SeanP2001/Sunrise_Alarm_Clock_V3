@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['sunrisealarm_2eino_0',['SunriseAlarm.ino',['../SunriseAlarm_8ino.html',1,'']]]
+  ['device_2ecpp_0',['Device.cpp',['../Device_8cpp.html',1,'']]],
+  ['device_2eh_1',['Device.h',['../Device_8h.html',1,'']]]
 ];

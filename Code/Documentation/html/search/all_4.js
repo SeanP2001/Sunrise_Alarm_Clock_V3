@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['stoptone_0',['stopTone',['../classBuzzer.html#a60e7439353659cccc72ab618c2a41e90',1,'Buzzer']]],
-  ['sunrisealarm_2eino_1',['SunriseAlarm.ino',['../SunriseAlarm_8ino.html',1,'']]]
+  ['hardware_0',['Hardware',['../structHardware.html',1,'']]],
+  ['hardware_2eh_1',['Hardware.h',['../Hardware_8h.html',1,'']]],
+  ['hw_2',['hw',['../classApp.html#aa73afafa3a5ff284f48b6cc1172c3738',1,'App']]]
 ];

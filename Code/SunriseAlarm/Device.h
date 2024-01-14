@@ -14,6 +14,7 @@
 #include <Arduino.h>
 
 /**
+ * @class Device
  * @brief A class representing a digital output device connected to a pin on the microcontroller.
  * 
  * This class implements basic functionality to control a digital output device.

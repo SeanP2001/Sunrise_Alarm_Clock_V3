@@ -1,0 +1,54 @@
+\hypertarget{App_8h_source}{}\doxysection{App.\+h}
+\mbox{\hyperlink{App_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef APP\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define APP\_H}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <Arduino.h>}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{Hardware_8h}{Hardware.h}}"{}}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{23 \textcolor{keyword}{class }\mbox{\hyperlink{classApp}{App}}}
+\DoxyCodeLine{24 \{}
+\DoxyCodeLine{25   \textcolor{keyword}{private}:}
+\DoxyCodeLine{26     \textcolor{keywordtype}{bool} openFlag;   }
+\DoxyCodeLine{27     }
+\DoxyCodeLine{28   \textcolor{keyword}{protected}:}
+\DoxyCodeLine{29     \mbox{\hyperlink{structHardware}{Hardware}}\& \mbox{\hyperlink{classApp_aa73afafa3a5ff284f48b6cc1172c3738}{hw}};    }
+\DoxyCodeLine{30 }
+\DoxyCodeLine{36     \mbox{\hyperlink{classApp_aa7738bf5a152b71ed2f30ecad2245e65}{App}}(\mbox{\hyperlink{structHardware}{Hardware}}\& hardware);  }
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38   \textcolor{keyword}{public}:}
+\DoxyCodeLine{44     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classApp_a68f77f8aa188556ec19441f04cdff346}{init}}() = 0;}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 }
+\DoxyCodeLine{53     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classApp_ae89494bd9b1a575529f13766c92a53a6}{displayMenuIcon}}() = 0;}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{60     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classApp_a9b1cc434b82d52c7ef1d5b9de18e613e}{display}}() = 0;}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63 }
+\DoxyCodeLine{69     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classApp_a2a32507fee501e2c11829523e7edbf7a}{leftAction}}() = 0;}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{76     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classApp_a56e902a0ca9101c666c1d426f59fa625}{middleAction}}() = 0;}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{83     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classApp_a85a1255904957c267539677f77b27cc5}{rightAction}}() = 0;}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86 }
+\DoxyCodeLine{92     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classApp_a1adc67cf6911cc0b18a0a8853ab33ecc}{openApp}}();}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{99     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classApp_aad52bf4410aa8e642833f4df3d6feff0}{closeApp}}();}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{107     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classApp_aee7e4f11abb130dcf54ccbaee34f6cdd}{isOpen}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110 }
+\DoxyCodeLine{116     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classApp_a985a33544db789c5332eb5c348965699}{backgroundFunctions}}() = 0;}
+\DoxyCodeLine{117 \};}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// APP\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,6 @@
+<map id="App" name="App">
+<area shape="rect" id="node1" title="Abstract base class for applications." alt="" coords="61,213,107,240"/>
+<area shape="rect" id="node2" href="$structHardware.html" title="Represents the hardware components used in the project." alt="" coords="41,124,127,151"/>
+<area shape="rect" id="node3" href="$classDevice.html" title="A class representing a digital output device connected to a pin on the microcontroller." alt="" coords="5,5,72,32"/>
+<area shape="rect" id="node4" href="$classBuzzer.html" title="A class representing a buzzer connected to a pin on the microcontroller." alt="" coords="96,5,163,32"/>
+</map>

@@ -41,9 +41,14 @@
 
 #include "Device.h"
 #include "Buzzer.h"
+#include "Hardware.h"
+
+#include "App.h"
+#include "LightApp.h"
 
 
-// --------------------------------------- I N S T A N T I A T E   O B J E C T S ---------------------------------------
+// -------------------------------------- I N S T A N T I A T E   H A R D W A R E --------------------------------------
+
 U8G2_SSD1327_WS_128X128_F_4W_SW_SPI display(U8G2_R0, SCREEN_CLK, SCREEN_DATA, SCREEN_CS, SCREEN_DC, SCREEN_RESET);
 
 Ds1302 rtc(RTC_RESET, RTC_CLK, RTC_DATA);
@@ -53,6 +58,18 @@ Device usb1(USB_1);
 Device usb2(USB_2);
 
 Buzzer buzzer(BUZZER);
+
+struct Hardware hw = {display, rtc, light, usb1, usb2, buzzer};  // Put all hardware component in a struct for portabilty
+
+
+// ---------------------------------- I N S T A N T I A T E   A P P L I C A T I O N S ----------------------------------
+
+LightApp lightApp(hw);
+
+const int noOfApps = 1;
+App* apps[noOfApps];
+
+uint8_t currentApp = 0;
 
 
 // ------------------------------------------------- V A R I A B L E S -------------------------------------------------
@@ -76,29 +93,105 @@ void setup()
   // Initialise Objects
   rtc.init();
   display.begin();
-}
 
+  // Setup Apps
+  apps[0] = &lightApp;
+
+  // Run App Initialisations
+  for(int i = 0; i < noOfApps; i++)
+  {
+    apps[i]->init(); 
+  }
+}
 
 // ------------------------------------------------------ M A I N ------------------------------------------------------
 void loop() 
 {
-  if(leftPressed)
+  if(millis() % 1000 == 0)                    // Update the display every second
   {
-    usb1.toggle();
-    leftPressed = false;
+    updateDisplay();
   }
-  if(middlePressed)
+  
+  
+  if(anyButtonPressed())                      // Handle any button presses (when they occur)
   {
-    light.toggle();
-    middlePressed = false;
-  }
-  if(rightPressed)
-  {
-    usb2.toggle();
-    rightPressed = false;
+    if(apps[currentApp]->isOpen())            // If an app is open, forward the button presses to the app
+    {
+      if(leftPressed)
+      {
+        apps[currentApp]->leftAction();
+        leftPressed = false;
+      }
+      if(middlePressed)
+      {
+        apps[currentApp]->middleAction();
+        middlePressed = false;
+      }
+      if(rightPressed)
+      {
+        apps[currentApp]->rightAction();
+        rightPressed = false;
+      }
+    }
+    else                                      // When in the menu
+    {
+      if(leftPressed)                         // Left button presses move to the previous app
+      {
+        currentApp--;
+        if(currentApp < 0)
+        {
+          currentApp = noOfApps - 1;
+        }
+
+        leftPressed = false;
+      }
+      
+      if(middlePressed)                       // Middle button presses open the current app
+      {
+        apps[currentApp]->openApp();
+        middlePressed = false;
+      }
+      
+      if(rightPressed)                        // Right button presses move to the next app
+      {
+        currentApp--;
+        if(currentApp < 0)
+        {
+          currentApp = noOfApps - 1;
+        }
+        rightPressed = false;
+      }
+    }
+
+    updateDisplay();
   }
 
-  delay(50); 
+  
+  for(int i = 0; i < noOfApps; i++)           // Run App Background Functions
+  {
+    apps[i]->backgroundFunctions(); 
+  }
+}
+
+
+// -------------------------------------------- U P D A T E   D I S P L A Y --------------------------------------------
+void updateDisplay()
+{
+  if(apps[currentApp]->isOpen())
+  {
+    apps[currentApp]->display();
+  }
+  else
+  {
+    apps[currentApp]->displayMenuIcon();
+  }
+}
+
+
+// ---------------------------------------- A N Y   B U T T O N   P R E S S E D ----------------------------------------
+bool anyButtonPressed()
+{
+  return (leftPressed || middlePressed || rightPressed);
 }
 
 
@@ -110,7 +203,7 @@ void leftISR()
 
 // ------------------------------------------ M I D D L E   I N T E R R U P T ------------------------------------------
 void middleISR() 
-{
+{ 
   middlePressed = true;
 }
 

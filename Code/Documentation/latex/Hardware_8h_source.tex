@@ -1,0 +1,29 @@
+\hypertarget{Hardware_8h_source}{}\doxysection{Hardware.\+h}
+\mbox{\hyperlink{Hardware_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef HARDWARE\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define HARDWARE\_H}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <Arduino.h>}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <SPI.h>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <Ds1302.h>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <U8g2lib.h>}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{Device_8h}{Device.h}}"{}}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{Buzzer_8h}{Buzzer.h}}"{}}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{29 \textcolor{keyword}{struct }\mbox{\hyperlink{structHardware}{Hardware}}}
+\DoxyCodeLine{30 \{}
+\DoxyCodeLine{31   U8G2\_SSD1327\_WS\_128X128\_F\_4W\_SW\_SPI \&\mbox{\hyperlink{structHardware_a44c7b0624c82b47fef0c11aeef2f4ac0}{display}}; }
+\DoxyCodeLine{32   Ds1302 \&\mbox{\hyperlink{structHardware_aa6ac7f524135439703fad83fa634af4d}{rtc}};                                  }
+\DoxyCodeLine{33   \mbox{\hyperlink{classDevice}{Device}} \&\mbox{\hyperlink{structHardware_a5ae345dde1b94c3251bede73072e8125}{light}};                                }
+\DoxyCodeLine{34   \mbox{\hyperlink{classDevice}{Device}} \&\mbox{\hyperlink{structHardware_a4025251ad5b50af22c68ae7217dcfe26}{usb1}};                                 }
+\DoxyCodeLine{35   \mbox{\hyperlink{classDevice}{Device}} \&\mbox{\hyperlink{structHardware_a05b80e737fe377ffa0e8695217a9dbd9}{usb2}};                                 }
+\DoxyCodeLine{36   \mbox{\hyperlink{classBuzzer}{Buzzer}} \&\mbox{\hyperlink{structHardware_a37be241ef1d34177749769073f88a6cd}{buzzer}};                               }
+\DoxyCodeLine{37 \};}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// HARDWARE\_H}}
+
+\end{DoxyCode}

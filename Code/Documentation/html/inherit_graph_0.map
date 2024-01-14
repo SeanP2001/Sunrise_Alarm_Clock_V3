@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classApp.html" title="Abstract base class for applications." alt="" coords="5,5,52,32"/>
+<area shape="rect" id="node2" href="$classLightApp.html" title="Represents an application for controlling a light, derived from the App base class." alt="" coords="100,5,179,32"/>
+</map>

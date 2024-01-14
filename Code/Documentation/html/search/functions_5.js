@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['toggle_0',['toggle',['../classBuzzer.html#a343e1db1c56b36951a11c4c1ab8394bb',1,'Buzzer::toggle()'],['../classDevice.html#aea74c0f721041d784c16b487a955b314',1,'Device::toggle()']]],
-  ['turnoff_1',['turnOff',['../classDevice.html#a94ab5a01517645d57f8ddbf7218bde85',1,'Device']]],
-  ['turnon_2',['turnOn',['../classDevice.html#a6b0a2674f57504a5df08f62e85d98578',1,'Device']]]
+  ['leftaction_0',['leftAction',['../classApp.html#a2a32507fee501e2c11829523e7edbf7a',1,'App::leftAction()'],['../classLightApp.html#ae795b88ae7f71c166f6a7ce9d47ac14c',1,'LightApp::leftAction() override']]],
+  ['lightapp_1',['LightApp',['../classLightApp.html#a60b1987a78d5da7ceeeef0fd1a568286',1,'LightApp']]]
 ];
