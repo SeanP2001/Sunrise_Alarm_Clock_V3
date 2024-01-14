@@ -43,12 +43,12 @@ class LightApp : public App
 
 
     /**
-     * @brief Displays the menu icon for the application.
+     * @brief Displays the menu page for the application.
      * 
      * Currently this just prints the word "OFF" to the display.
      * In future this will show an icon of a switched off light bulb.
      */
-    void displayMenuIcon() override;
+    void displayMenuPage() override;
 
     /**
      * @brief Displays the main content of the application.
@@ -100,7 +100,7 @@ class LightApp : public App
      * 
      * There are no background tasks associated with the Light App.
      */
-    void backgroundFunctions() override;
+    void backgroundTasks() override;
 };
 
 #endif // LIGHT_APP_H

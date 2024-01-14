@@ -1,12 +1,13 @@
 <map id="SunriseAlarm.ino" name="SunriseAlarm.ino">
-<area shape="rect" id="node1" title="Software to run on the Sunrise Alarm V3." alt="" coords="211,5,344,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="126,304,181,331"/>
-<area shape="rect" id="node3" title=" " alt="" coords="359,304,441,331"/>
-<area shape="rect" id="node4" title=" " alt="" coords="466,304,550,331"/>
-<area shape="rect" id="node5" href="$Device_8h.html" title="Defines the Device class." alt="" coords="205,304,283,331"/>
-<area shape="rect" id="node7" href="$Buzzer_8h.html" title="Defines the Buzzer class." alt="" coords="575,304,652,331"/>
-<area shape="rect" id="node8" href="$Hardware_8h.html" title="Defines the Hardware struct." alt="" coords="273,229,370,256"/>
-<area shape="rect" id="node9" href="$App_8h.html" title="Implements the concrete functions from the App base class." alt="" coords="81,155,140,181"/>
-<area shape="rect" id="node10" href="$LightApp_8h.html" title="Implements the LightApp class." alt="" coords="5,80,96,107"/>
-<area shape="rect" id="node6" title=" " alt="" coords="202,379,286,405"/>
+<area shape="rect" id="node1" title="Software to run on the Sunrise Alarm V3." alt="" coords="343,5,477,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,304,60,331"/>
+<area shape="rect" id="node3" title=" " alt="" coords="85,304,167,331"/>
+<area shape="rect" id="node4" title=" " alt="" coords="192,304,276,331"/>
+<area shape="rect" id="node5" href="$Device_8h.html" title="Defines the Device class." alt="" coords="300,304,379,331"/>
+<area shape="rect" id="node7" href="$Buzzer_8h.html" title="Defines the Buzzer class." alt="" coords="454,304,531,331"/>
+<area shape="rect" id="node8" href="$Hardware_8h.html" title="Defines the Hardware struct." alt="" coords="323,229,420,256"/>
+<area shape="rect" id="node9" href="$App_8h.html" title="Implements the concrete functions from the App base class." alt="" coords="602,155,661,181"/>
+<area shape="rect" id="node10" href="$LightApp_8h.html" title="Defines the LightApp class which is derrived from the App base class." alt="" coords="498,80,589,107"/>
+<area shape="rect" id="node11" href="$AlarmApp_8h.html" title="Defines the AlarmApp class which is derrived from the App base class." alt="" coords="663,80,762,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="488,379,572,405"/>
 </map>

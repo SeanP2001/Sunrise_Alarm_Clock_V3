@@ -45,6 +45,7 @@
 
 #include "App.h"
 #include "LightApp.h"
+#include "AlarmApp.h"
 
 
 // -------------------------------------- I N S T A N T I A T E   H A R D W A R E --------------------------------------
@@ -64,9 +65,10 @@ struct Hardware hw = {display, rtc, light, usb1, usb2, buzzer};  // Put all hard
 
 // ---------------------------------- I N S T A N T I A T E   A P P L I C A T I O N S ----------------------------------
 
+AlarmApp alarmApp(hw);
 LightApp lightApp(hw);
 
-const int noOfApps = 1;
+const int noOfApps = 2;
 App* apps[noOfApps];
 
 uint8_t currentApp = 0;
@@ -95,7 +97,8 @@ void setup()
   display.begin();
 
   // Setup Apps
-  apps[0] = &lightApp;
+  apps[0] = &alarmApp;
+  apps[1] = &lightApp;
 
   // Run App Initialisations
   for(int i = 0; i < noOfApps; i++)
@@ -137,10 +140,16 @@ void loop()
     {
       if(leftPressed)                         // Left button presses move to the previous app
       {
-        currentApp--;
-        if(currentApp < 0)
+        display.clearBuffer();
+        display.clearDisplay();
+
+        if(currentApp == 0)
         {
           currentApp = noOfApps - 1;
+        }
+        else
+        {
+          currentApp--;
         }
 
         leftPressed = false;
@@ -154,10 +163,13 @@ void loop()
       
       if(rightPressed)                        // Right button presses move to the next app
       {
-        currentApp--;
-        if(currentApp < 0)
+        display.clearBuffer();
+        display.clearDisplay();
+
+        currentApp++;
+        if(currentApp >= noOfApps)
         {
-          currentApp = noOfApps - 1;
+          currentApp = 0;
         }
         rightPressed = false;
       }
@@ -167,9 +179,9 @@ void loop()
   }
 
   
-  for(int i = 0; i < noOfApps; i++)           // Run App Background Functions
+  for(int i = 0; i < noOfApps; i++)           // Run App Background Tasks
   {
-    apps[i]->backgroundFunctions(); 
+    apps[i]->backgroundTasks(); 
   }
 }
 
@@ -183,7 +195,7 @@ void updateDisplay()
   }
   else
   {
-    apps[currentApp]->displayMenuIcon();
+    apps[currentApp]->displayMenuPage();
   }
 }
 

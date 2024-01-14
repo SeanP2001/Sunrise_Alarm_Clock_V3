@@ -1,0 +1,11 @@
+<map id="AlarmApp.h" name="AlarmApp.h">
+<area shape="rect" id="node1" title="Defines the AlarmApp class which is derrived from the App base class." alt="" coords="5,5,104,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="81,304,165,331"/>
+<area shape="rect" id="node3" href="$App_8h.html" title="Implements the concrete functions from the App base class." alt="" coords="59,80,117,107"/>
+<area shape="rect" id="node4" href="$Hardware_8h.html" title="Defines the Hardware struct." alt="" coords="233,155,330,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="161,229,215,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="240,229,323,256"/>
+<area shape="rect" id="node7" title=" " alt="" coords="347,229,431,256"/>
+<area shape="rect" id="node8" href="$Device_8h.html" title="Defines the Device class." alt="" coords="455,229,534,256"/>
+<area shape="rect" id="node9" href="$Buzzer_8h.html" title="Defines the Buzzer class." alt="" coords="559,229,636,256"/>
+</map>

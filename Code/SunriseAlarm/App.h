@@ -46,11 +46,11 @@ class App
 
 
     /**
-     * @brief Display the menu icon for the application.
+     * @brief Display the menu page for the application.
      * 
      * @details There is no default implementation and a specific behavior must be defined in the derived class.
      */
-    virtual void displayMenuIcon() = 0;
+    virtual void displayMenuPage() = 0;
 
     /**
      * @brief Display the main content of the application.
@@ -113,7 +113,7 @@ class App
      * 
      * @details There is no default implementation and a specific behavior must be defined in the derived class.
      */
-    virtual void backgroundFunctions() = 0;
+    virtual void backgroundTasks() = 0;
 };
 
 #endif // APP_H

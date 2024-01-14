@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['app_0',['App',['../classApp.html',1,'']]]
+  ['alarmapp_0',['AlarmApp',['../classAlarmApp.html',1,'']]],
+  ['app_1',['App',['../classApp.html',1,'']]]
 ];

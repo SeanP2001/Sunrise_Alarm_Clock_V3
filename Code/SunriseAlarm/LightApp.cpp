@@ -1,5 +1,5 @@
 /**
- * @file LightApp.h
+ * @file LightApp.cpp
  * @author Sean Price
  * @brief Implements the LightApp class.
  * @version 0.1
@@ -21,8 +21,8 @@ void LightApp::init()
 }
 
 
-//---------------------------------------------- D I S P L A Y   M E N U   I C O N -----------------------------------------------
-void LightApp::displayMenuIcon()
+//---------------------------------------------- D I S P L A Y   M E N U   P A G E -----------------------------------------------
+void LightApp::displayMenuPage()
 {
   hw.display.setFont(u8g2_font_inr16_mf);    // fornt without transparent background (no need to clear buffer)
   hw.display.setCursor(30,64);
@@ -76,8 +76,8 @@ void LightApp::openApp()
 }
 
 
-//------------------------------------------- B A C K G R O U N D   F U N C T I O N S -------------------------------------------
-void LightApp::backgroundFunctions()
+//----------------------------------------------- B A C K G R O U N D   T A S K S -----------------------------------------------
+void LightApp::backgroundTasks()
 {
   return;
 }

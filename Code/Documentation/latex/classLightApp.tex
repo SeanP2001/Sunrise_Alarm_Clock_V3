@@ -11,8 +11,7 @@ Represents an application for controlling a light, derived from the \mbox{\hyper
 
 
 
-Inheritance diagram for Light\+App\+:
-\nopagebreak
+Inheritance diagram for Light\+App\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,8 +20,7 @@ Inheritance diagram for Light\+App\+:
 \end{figure}
 
 
-Collaboration diagram for Light\+App\+:
-\nopagebreak
+Collaboration diagram for Light\+App\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -36,8 +34,8 @@ Collaboration diagram for Light\+App\+:
 \begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classLightApp}{Light\+App}} object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classLightApp_abdedf005dc6e15b219934c109f4bd67b}{init}} () override
 \begin{DoxyCompactList}\small\item\em Initialises the \mbox{\hyperlink{classLightApp}{Light\+App}}. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classLightApp_a89ab6e5e4cb875a53bd9d84914afcb2e}{display\+Menu\+Icon}} () override
-\begin{DoxyCompactList}\small\item\em Displays the menu icon for the application. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLightApp_adcbc13aa0c25fa18f17c1b6928065975}{display\+Menu\+Page}} () override
+\begin{DoxyCompactList}\small\item\em Displays the menu page for the application. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classLightApp_a0831069f33a9b1024bd800a4d7e52522}{display}} () override
 \begin{DoxyCompactList}\small\item\em Displays the main content of the application. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classLightApp_ae795b88ae7f71c166f6a7ce9d47ac14c}{left\+Action}} () override
@@ -48,7 +46,7 @@ void \mbox{\hyperlink{classLightApp_a81ac32730fbd7d97c6a4915d9751ff61}{right\+Ac
 \begin{DoxyCompactList}\small\item\em Handles right button presses. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classLightApp_a0b60b125d768e9838cbcc270ec4b2474}{open\+App}} () override
 \begin{DoxyCompactList}\small\item\em Open the application, turning on the light. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classLightApp_a3516711b7cd0662475455c9aad3045fc}{background\+Functions}} () override
+void \mbox{\hyperlink{classLightApp_a8724675054fadd66256f048e6b5d66ad}{background\+Tasks}} () override
 \begin{DoxyCompactList}\small\item\em Perform background tasks associated with the Light \mbox{\hyperlink{classApp}{App}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
@@ -75,11 +73,11 @@ Construct a new \mbox{\hyperlink{classLightApp}{Light\+App}} object.
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classLightApp_a3516711b7cd0662475455c9aad3045fc}\label{classLightApp_a3516711b7cd0662475455c9aad3045fc}} 
-\index{LightApp@{LightApp}!backgroundFunctions@{backgroundFunctions}}
-\index{backgroundFunctions@{backgroundFunctions}!LightApp@{LightApp}}
-\doxysubsubsection{\texorpdfstring{backgroundFunctions()}{backgroundFunctions()}}
-{\footnotesize\ttfamily void Light\+App\+::background\+Functions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+\mbox{\Hypertarget{classLightApp_a8724675054fadd66256f048e6b5d66ad}\label{classLightApp_a8724675054fadd66256f048e6b5d66ad}} 
+\index{LightApp@{LightApp}!backgroundTasks@{backgroundTasks}}
+\index{backgroundTasks@{backgroundTasks}!LightApp@{LightApp}}
+\doxysubsubsection{\texorpdfstring{backgroundTasks()}{backgroundTasks()}}
+{\footnotesize\ttfamily void Light\+App\+::background\+Tasks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -87,7 +85,7 @@ Perform background tasks associated with the Light \mbox{\hyperlink{classApp}{Ap
 
 There are no background tasks associated with the Light \mbox{\hyperlink{classApp}{App}}. 
 
-Implements \mbox{\hyperlink{classApp_a985a33544db789c5332eb5c348965699}{App}}.
+Implements \mbox{\hyperlink{classApp_a969cd3baccd4f3293b0fb6694b9df2c3}{App}}.
 
 \mbox{\Hypertarget{classLightApp_a0831069f33a9b1024bd800a4d7e52522}\label{classLightApp_a0831069f33a9b1024bd800a4d7e52522}} 
 \index{LightApp@{LightApp}!display@{display}}
@@ -103,19 +101,19 @@ Currently this just prints the word \char`\"{}\+ON\char`\"{} to the display. In 
 
 Implements \mbox{\hyperlink{classApp_a9b1cc434b82d52c7ef1d5b9de18e613e}{App}}.
 
-\mbox{\Hypertarget{classLightApp_a89ab6e5e4cb875a53bd9d84914afcb2e}\label{classLightApp_a89ab6e5e4cb875a53bd9d84914afcb2e}} 
-\index{LightApp@{LightApp}!displayMenuIcon@{displayMenuIcon}}
-\index{displayMenuIcon@{displayMenuIcon}!LightApp@{LightApp}}
-\doxysubsubsection{\texorpdfstring{displayMenuIcon()}{displayMenuIcon()}}
-{\footnotesize\ttfamily void Light\+App\+::display\+Menu\+Icon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+\mbox{\Hypertarget{classLightApp_adcbc13aa0c25fa18f17c1b6928065975}\label{classLightApp_adcbc13aa0c25fa18f17c1b6928065975}} 
+\index{LightApp@{LightApp}!displayMenuPage@{displayMenuPage}}
+\index{displayMenuPage@{displayMenuPage}!LightApp@{LightApp}}
+\doxysubsubsection{\texorpdfstring{displayMenuPage()}{displayMenuPage()}}
+{\footnotesize\ttfamily void Light\+App\+::display\+Menu\+Page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-Displays the menu icon for the application. 
+Displays the menu page for the application. 
 
 Currently this just prints the word \char`\"{}\+OFF\char`\"{} to the display. In future this will show an icon of a switched off light bulb. 
 
-Implements \mbox{\hyperlink{classApp_ae89494bd9b1a575529f13766c92a53a6}{App}}.
+Implements \mbox{\hyperlink{classApp_a072ad2ad6c1b731bee62644ac2458c82}{App}}.
 
 \mbox{\Hypertarget{classLightApp_abdedf005dc6e15b219934c109f4bd67b}\label{classLightApp_abdedf005dc6e15b219934c109f4bd67b}} 
 \index{LightApp@{LightApp}!init@{init}}
@@ -192,4 +190,4 @@ Implements \mbox{\hyperlink{classApp_a85a1255904957c267539677f77b27cc5}{App}}.
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{LightApp_8h}{Light\+App.\+h}}\item 
-Light\+App.\+cpp\end{DoxyCompactItemize}
+\mbox{\hyperlink{LightApp_8cpp}{Light\+App.\+cpp}}\end{DoxyCompactItemize}

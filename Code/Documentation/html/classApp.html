@@ -80,8 +80,9 @@ Inheritance diagram for App:</div>
 <div class="dyncontent">
 <div class="center"><img src="classApp__inherit__graph.png" border="0" usemap="#aApp_inherit__map" alt="Inheritance graph"/></div>
 <map name="aApp_inherit__map" id="aApp_inherit__map">
-<area shape="rect" title="Abstract base class for applications." alt="" coords="21,5,68,32"/>
-<area shape="rect" href="classLightApp.html" title="Represents an application for controlling a light, derived from the App base class." alt="" coords="5,80,84,107"/>
+<area shape="rect" title="Abstract base class for applications." alt="" coords="79,5,125,32"/>
+<area shape="rect" href="classAlarmApp.html" title="Represents an application for controlling a Alarm, derived from the App base class." alt="" coords="5,80,92,107"/>
+<area shape="rect" href="classLightApp.html" title="Represents an application for controlling a light, derived from the App base class." alt="" coords="116,80,195,107"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -101,9 +102,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a68f77f8aa188556ec19441f04cdff346"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApp.html#a68f77f8aa188556ec19441f04cdff346">init</a> ()=0</td></tr>
 <tr class="memdesc:a68f77f8aa188556ec19441f04cdff346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise the application.  <a href="classApp.html#a68f77f8aa188556ec19441f04cdff346">More...</a><br /></td></tr>
 <tr class="separator:a68f77f8aa188556ec19441f04cdff346"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae89494bd9b1a575529f13766c92a53a6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApp.html#ae89494bd9b1a575529f13766c92a53a6">displayMenuIcon</a> ()=0</td></tr>
-<tr class="memdesc:ae89494bd9b1a575529f13766c92a53a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the menu icon for the application.  <a href="classApp.html#ae89494bd9b1a575529f13766c92a53a6">More...</a><br /></td></tr>
-<tr class="separator:ae89494bd9b1a575529f13766c92a53a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a072ad2ad6c1b731bee62644ac2458c82"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApp.html#a072ad2ad6c1b731bee62644ac2458c82">displayMenuPage</a> ()=0</td></tr>
+<tr class="memdesc:a072ad2ad6c1b731bee62644ac2458c82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the menu page for the application.  <a href="classApp.html#a072ad2ad6c1b731bee62644ac2458c82">More...</a><br /></td></tr>
+<tr class="separator:a072ad2ad6c1b731bee62644ac2458c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b1cc434b82d52c7ef1d5b9de18e613e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApp.html#a9b1cc434b82d52c7ef1d5b9de18e613e">display</a> ()=0</td></tr>
 <tr class="memdesc:a9b1cc434b82d52c7ef1d5b9de18e613e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the main content of the application.  <a href="classApp.html#a9b1cc434b82d52c7ef1d5b9de18e613e">More...</a><br /></td></tr>
 <tr class="separator:a9b1cc434b82d52c7ef1d5b9de18e613e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,9 +126,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aee7e4f11abb130dcf54ccbaee34f6cdd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApp.html#aee7e4f11abb130dcf54ccbaee34f6cdd">isOpen</a> () const</td></tr>
 <tr class="memdesc:aee7e4f11abb130dcf54ccbaee34f6cdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the application is open.  <a href="classApp.html#aee7e4f11abb130dcf54ccbaee34f6cdd">More...</a><br /></td></tr>
 <tr class="separator:aee7e4f11abb130dcf54ccbaee34f6cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a985a33544db789c5332eb5c348965699"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApp.html#a985a33544db789c5332eb5c348965699">backgroundFunctions</a> ()=0</td></tr>
-<tr class="memdesc:a985a33544db789c5332eb5c348965699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform background tasks associated with the application.  <a href="classApp.html#a985a33544db789c5332eb5c348965699">More...</a><br /></td></tr>
-<tr class="separator:a985a33544db789c5332eb5c348965699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a969cd3baccd4f3293b0fb6694b9df2c3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApp.html#a969cd3baccd4f3293b0fb6694b9df2c3">backgroundTasks</a> ()=0</td></tr>
+<tr class="memdesc:a969cd3baccd4f3293b0fb6694b9df2c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform background tasks associated with the application.  <a href="classApp.html#a969cd3baccd4f3293b0fb6694b9df2c3">More...</a><br /></td></tr>
+<tr class="separator:a969cd3baccd4f3293b0fb6694b9df2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -180,8 +181,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a985a33544db789c5332eb5c348965699" name="a985a33544db789c5332eb5c348965699"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a985a33544db789c5332eb5c348965699">&#9670;&nbsp;</a></span>backgroundFunctions()</h2>
+<a id="a969cd3baccd4f3293b0fb6694b9df2c3" name="a969cd3baccd4f3293b0fb6694b9df2c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a969cd3baccd4f3293b0fb6694b9df2c3">&#9670;&nbsp;</a></span>backgroundTasks()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -190,7 +191,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void App::backgroundFunctions </td>
+          <td class="memname">virtual void App::backgroundTasks </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -206,7 +207,7 @@ Protected Attributes</h2></td></tr>
 <p>Perform background tasks associated with the application. </p>
 <p >There is no default implementation and a specific behavior must be defined in the derived class. </p>
 
-<p>Implemented in <a class="el" href="classLightApp.html#a3516711b7cd0662475455c9aad3045fc">LightApp</a>.</p>
+<p>Implemented in <a class="el" href="classAlarmApp.html#a372f3ae6f99780afd2c5af24c92044e3">AlarmApp</a>, and <a class="el" href="classLightApp.html#a8724675054fadd66256f048e6b5d66ad">LightApp</a>.</p>
 
 </div>
 </div>
@@ -264,12 +265,12 @@ Protected Attributes</h2></td></tr>
 <p>Display the main content of the application. </p>
 <p >There is no default implementation and a specific behavior must be defined in the derived class. </p>
 
-<p>Implemented in <a class="el" href="classLightApp.html#a0831069f33a9b1024bd800a4d7e52522">LightApp</a>.</p>
+<p>Implemented in <a class="el" href="classAlarmApp.html#a361cd81a448a20ef146ffcdcb9f8f8c1">AlarmApp</a>, and <a class="el" href="classLightApp.html#a0831069f33a9b1024bd800a4d7e52522">LightApp</a>.</p>
 
 </div>
 </div>
-<a id="ae89494bd9b1a575529f13766c92a53a6" name="ae89494bd9b1a575529f13766c92a53a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae89494bd9b1a575529f13766c92a53a6">&#9670;&nbsp;</a></span>displayMenuIcon()</h2>
+<a id="a072ad2ad6c1b731bee62644ac2458c82" name="a072ad2ad6c1b731bee62644ac2458c82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a072ad2ad6c1b731bee62644ac2458c82">&#9670;&nbsp;</a></span>displayMenuPage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -278,7 +279,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void App::displayMenuIcon </td>
+          <td class="memname">virtual void App::displayMenuPage </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -291,10 +292,10 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Display the menu icon for the application. </p>
+<p>Display the menu page for the application. </p>
 <p >There is no default implementation and a specific behavior must be defined in the derived class. </p>
 
-<p>Implemented in <a class="el" href="classLightApp.html#a89ab6e5e4cb875a53bd9d84914afcb2e">LightApp</a>.</p>
+<p>Implemented in <a class="el" href="classAlarmApp.html#a727c4f1ffa5127ba7b58cb88d35d8cf7">AlarmApp</a>, and <a class="el" href="classLightApp.html#adcbc13aa0c25fa18f17c1b6928065975">LightApp</a>.</p>
 
 </div>
 </div>
@@ -324,7 +325,7 @@ Protected Attributes</h2></td></tr>
 <p>Initialise the application. </p>
 <p >There is no default implementation and a specific behavior must be defined in the derived class. </p>
 
-<p>Implemented in <a class="el" href="classLightApp.html#abdedf005dc6e15b219934c109f4bd67b">LightApp</a>.</p>
+<p>Implemented in <a class="el" href="classAlarmApp.html#a40b79079fd063efc0086a38d2952df88">AlarmApp</a>, and <a class="el" href="classLightApp.html#abdedf005dc6e15b219934c109f4bd67b">LightApp</a>.</p>
 
 </div>
 </div>
@@ -376,7 +377,7 @@ false if the application isn't open </dd></dl>
 <p>Perform an action when the left button is pressed. </p>
 <p >There is no default implementation and a specific behavior must be defined in the derived class. </p>
 
-<p>Implemented in <a class="el" href="classLightApp.html#ae795b88ae7f71c166f6a7ce9d47ac14c">LightApp</a>.</p>
+<p>Implemented in <a class="el" href="classAlarmApp.html#abfc00147763d272924556366f6f201a9">AlarmApp</a>, and <a class="el" href="classLightApp.html#ae795b88ae7f71c166f6a7ce9d47ac14c">LightApp</a>.</p>
 
 </div>
 </div>
@@ -406,7 +407,7 @@ false if the application isn't open </dd></dl>
 <p>Perform an action when the middle button is pressed. </p>
 <p >There is no default implementation and a specific behavior must be defined in the derived class. </p>
 
-<p>Implemented in <a class="el" href="classLightApp.html#a3d2df3ac7a23e364b6e752932e3cc6b7">LightApp</a>.</p>
+<p>Implemented in <a class="el" href="classAlarmApp.html#ac26534aceb9a2e0727e0a8d069dabc6d">AlarmApp</a>, and <a class="el" href="classLightApp.html#a3d2df3ac7a23e364b6e752932e3cc6b7">LightApp</a>.</p>
 
 </div>
 </div>
@@ -436,7 +437,7 @@ false if the application isn't open </dd></dl>
 <p>Open the application. </p>
 <p >This is the default implementation but it can be overridden in derived classes. </p>
 
-<p>Reimplemented in <a class="el" href="classLightApp.html#a0b60b125d768e9838cbcc270ec4b2474">LightApp</a>.</p>
+<p>Reimplemented in <a class="el" href="classAlarmApp.html#a338893c6eafe51b5c071283a1a1383fb">AlarmApp</a>, and <a class="el" href="classLightApp.html#a0b60b125d768e9838cbcc270ec4b2474">LightApp</a>.</p>
 
 </div>
 </div>
@@ -466,7 +467,7 @@ false if the application isn't open </dd></dl>
 <p>Perform an action when the right button is pressed. </p>
 <p >There is no default implementation and a specific behavior must be defined in the derived class. </p>
 
-<p>Implemented in <a class="el" href="classLightApp.html#a81ac32730fbd7d97c6a4915d9751ff61">LightApp</a>.</p>
+<p>Implemented in <a class="el" href="classAlarmApp.html#a736ddf56f286e388f096ed40aa07267a">AlarmApp</a>, and <a class="el" href="classLightApp.html#a81ac32730fbd7d97c6a4915d9751ff61">LightApp</a>.</p>
 
 </div>
 </div>

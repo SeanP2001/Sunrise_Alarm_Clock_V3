@@ -16,13 +16,12 @@ Inheritance diagram for App\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=139pt]{classApp__inherit__graph}
+\includegraphics[width=222pt]{classApp__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Collaboration diagram for App\+:
-\nopagebreak
+Collaboration diagram for App\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -34,8 +33,8 @@ Collaboration diagram for App\+:
 \item 
 virtual void \mbox{\hyperlink{classApp_a68f77f8aa188556ec19441f04cdff346}{init}} ()=0
 \begin{DoxyCompactList}\small\item\em Initialise the application. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classApp_ae89494bd9b1a575529f13766c92a53a6}{display\+Menu\+Icon}} ()=0
-\begin{DoxyCompactList}\small\item\em Display the menu icon for the application. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classApp_a072ad2ad6c1b731bee62644ac2458c82}{display\+Menu\+Page}} ()=0
+\begin{DoxyCompactList}\small\item\em Display the menu page for the application. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classApp_a9b1cc434b82d52c7ef1d5b9de18e613e}{display}} ()=0
 \begin{DoxyCompactList}\small\item\em Display the main content of the application. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classApp_a2a32507fee501e2c11829523e7edbf7a}{left\+Action}} ()=0
@@ -50,7 +49,7 @@ virtual void \mbox{\hyperlink{classApp_aad52bf4410aa8e642833f4df3d6feff0}{close\
 \begin{DoxyCompactList}\small\item\em Close the application. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classApp_aee7e4f11abb130dcf54ccbaee34f6cdd}{is\+Open}} () const
 \begin{DoxyCompactList}\small\item\em Check if the application is open. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classApp_a985a33544db789c5332eb5c348965699}{background\+Functions}} ()=0
+virtual void \mbox{\hyperlink{classApp_a969cd3baccd4f3293b0fb6694b9df2c3}{background\+Tasks}} ()=0
 \begin{DoxyCompactList}\small\item\em Perform background tasks associated with the application. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -87,11 +86,11 @@ Construct a new \mbox{\hyperlink{classApp}{App}} object.
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classApp_a985a33544db789c5332eb5c348965699}\label{classApp_a985a33544db789c5332eb5c348965699}} 
-\index{App@{App}!backgroundFunctions@{backgroundFunctions}}
-\index{backgroundFunctions@{backgroundFunctions}!App@{App}}
-\doxysubsubsection{\texorpdfstring{backgroundFunctions()}{backgroundFunctions()}}
-{\footnotesize\ttfamily virtual void App\+::background\+Functions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\mbox{\Hypertarget{classApp_a969cd3baccd4f3293b0fb6694b9df2c3}\label{classApp_a969cd3baccd4f3293b0fb6694b9df2c3}} 
+\index{App@{App}!backgroundTasks@{backgroundTasks}}
+\index{backgroundTasks@{backgroundTasks}!App@{App}}
+\doxysubsubsection{\texorpdfstring{backgroundTasks()}{backgroundTasks()}}
+{\footnotesize\ttfamily virtual void App\+::background\+Tasks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -99,7 +98,7 @@ Perform background tasks associated with the application.
 
 There is no default implementation and a specific behavior must be defined in the derived class. 
 
-Implemented in \mbox{\hyperlink{classLightApp_a3516711b7cd0662475455c9aad3045fc}{Light\+App}}.
+Implemented in \mbox{\hyperlink{classAlarmApp_a372f3ae6f99780afd2c5af24c92044e3}{Alarm\+App}}, and \mbox{\hyperlink{classLightApp_a8724675054fadd66256f048e6b5d66ad}{Light\+App}}.
 
 \mbox{\Hypertarget{classApp_aad52bf4410aa8e642833f4df3d6feff0}\label{classApp_aad52bf4410aa8e642833f4df3d6feff0}} 
 \index{App@{App}!closeApp@{closeApp}}
@@ -123,21 +122,21 @@ Display the main content of the application.
 
 There is no default implementation and a specific behavior must be defined in the derived class. 
 
-Implemented in \mbox{\hyperlink{classLightApp_a0831069f33a9b1024bd800a4d7e52522}{Light\+App}}.
+Implemented in \mbox{\hyperlink{classAlarmApp_a361cd81a448a20ef146ffcdcb9f8f8c1}{Alarm\+App}}, and \mbox{\hyperlink{classLightApp_a0831069f33a9b1024bd800a4d7e52522}{Light\+App}}.
 
-\mbox{\Hypertarget{classApp_ae89494bd9b1a575529f13766c92a53a6}\label{classApp_ae89494bd9b1a575529f13766c92a53a6}} 
-\index{App@{App}!displayMenuIcon@{displayMenuIcon}}
-\index{displayMenuIcon@{displayMenuIcon}!App@{App}}
-\doxysubsubsection{\texorpdfstring{displayMenuIcon()}{displayMenuIcon()}}
-{\footnotesize\ttfamily virtual void App\+::display\+Menu\+Icon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\mbox{\Hypertarget{classApp_a072ad2ad6c1b731bee62644ac2458c82}\label{classApp_a072ad2ad6c1b731bee62644ac2458c82}} 
+\index{App@{App}!displayMenuPage@{displayMenuPage}}
+\index{displayMenuPage@{displayMenuPage}!App@{App}}
+\doxysubsubsection{\texorpdfstring{displayMenuPage()}{displayMenuPage()}}
+{\footnotesize\ttfamily virtual void App\+::display\+Menu\+Page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Display the menu icon for the application. 
+Display the menu page for the application. 
 
 There is no default implementation and a specific behavior must be defined in the derived class. 
 
-Implemented in \mbox{\hyperlink{classLightApp_a89ab6e5e4cb875a53bd9d84914afcb2e}{Light\+App}}.
+Implemented in \mbox{\hyperlink{classAlarmApp_a727c4f1ffa5127ba7b58cb88d35d8cf7}{Alarm\+App}}, and \mbox{\hyperlink{classLightApp_adcbc13aa0c25fa18f17c1b6928065975}{Light\+App}}.
 
 \mbox{\Hypertarget{classApp_a68f77f8aa188556ec19441f04cdff346}\label{classApp_a68f77f8aa188556ec19441f04cdff346}} 
 \index{App@{App}!init@{init}}
@@ -151,7 +150,7 @@ Initialise the application.
 
 There is no default implementation and a specific behavior must be defined in the derived class. 
 
-Implemented in \mbox{\hyperlink{classLightApp_abdedf005dc6e15b219934c109f4bd67b}{Light\+App}}.
+Implemented in \mbox{\hyperlink{classAlarmApp_a40b79079fd063efc0086a38d2952df88}{Alarm\+App}}, and \mbox{\hyperlink{classLightApp_abdedf005dc6e15b219934c109f4bd67b}{Light\+App}}.
 
 \mbox{\Hypertarget{classApp_aee7e4f11abb130dcf54ccbaee34f6cdd}\label{classApp_aee7e4f11abb130dcf54ccbaee34f6cdd}} 
 \index{App@{App}!isOpen@{isOpen}}
@@ -180,7 +179,7 @@ Perform an action when the left button is pressed.
 
 There is no default implementation and a specific behavior must be defined in the derived class. 
 
-Implemented in \mbox{\hyperlink{classLightApp_ae795b88ae7f71c166f6a7ce9d47ac14c}{Light\+App}}.
+Implemented in \mbox{\hyperlink{classAlarmApp_abfc00147763d272924556366f6f201a9}{Alarm\+App}}, and \mbox{\hyperlink{classLightApp_ae795b88ae7f71c166f6a7ce9d47ac14c}{Light\+App}}.
 
 \mbox{\Hypertarget{classApp_a56e902a0ca9101c666c1d426f59fa625}\label{classApp_a56e902a0ca9101c666c1d426f59fa625}} 
 \index{App@{App}!middleAction@{middleAction}}
@@ -194,7 +193,7 @@ Perform an action when the middle button is pressed.
 
 There is no default implementation and a specific behavior must be defined in the derived class. 
 
-Implemented in \mbox{\hyperlink{classLightApp_a3d2df3ac7a23e364b6e752932e3cc6b7}{Light\+App}}.
+Implemented in \mbox{\hyperlink{classAlarmApp_ac26534aceb9a2e0727e0a8d069dabc6d}{Alarm\+App}}, and \mbox{\hyperlink{classLightApp_a3d2df3ac7a23e364b6e752932e3cc6b7}{Light\+App}}.
 
 \mbox{\Hypertarget{classApp_a1adc67cf6911cc0b18a0a8853ab33ecc}\label{classApp_a1adc67cf6911cc0b18a0a8853ab33ecc}} 
 \index{App@{App}!openApp@{openApp}}
@@ -208,7 +207,7 @@ Open the application.
 
 This is the default implementation but it can be overridden in derived classes. 
 
-Reimplemented in \mbox{\hyperlink{classLightApp_a0b60b125d768e9838cbcc270ec4b2474}{Light\+App}}.
+Reimplemented in \mbox{\hyperlink{classAlarmApp_a338893c6eafe51b5c071283a1a1383fb}{Alarm\+App}}, and \mbox{\hyperlink{classLightApp_a0b60b125d768e9838cbcc270ec4b2474}{Light\+App}}.
 
 \mbox{\Hypertarget{classApp_a85a1255904957c267539677f77b27cc5}\label{classApp_a85a1255904957c267539677f77b27cc5}} 
 \index{App@{App}!rightAction@{rightAction}}
@@ -222,7 +221,7 @@ Perform an action when the right button is pressed.
 
 There is no default implementation and a specific behavior must be defined in the derived class. 
 
-Implemented in \mbox{\hyperlink{classLightApp_a81ac32730fbd7d97c6a4915d9751ff61}{Light\+App}}.
+Implemented in \mbox{\hyperlink{classAlarmApp_a736ddf56f286e388f096ed40aa07267a}{Alarm\+App}}, and \mbox{\hyperlink{classLightApp_a81ac32730fbd7d97c6a4915d9751ff61}{Light\+App}}.
 
 
 

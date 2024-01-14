@@ -1,5 +1,5 @@
 <map id="LightApp.h" name="LightApp.h">
-<area shape="rect" id="node1" title="Implements the LightApp class." alt="" coords="5,5,96,32"/>
+<area shape="rect" id="node1" title="Defines the LightApp class which is derrived from the App base class." alt="" coords="5,5,96,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="77,304,161,331"/>
 <area shape="rect" id="node3" href="$App_8h.html" title="Implements the concrete functions from the App base class." alt="" coords="55,80,113,107"/>
 <area shape="rect" id="node4" href="$Hardware_8h.html" title="Defines the Hardware struct." alt="" coords="229,155,326,181"/>

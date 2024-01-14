@@ -1,0 +1,57 @@
+\hypertarget{AlarmApp_8h_source}{}\doxysection{Alarm\+App.\+h}
+\mbox{\hyperlink{AlarmApp_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef ALARM\_APP\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define ALARM\_APP\_H}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <Arduino.h>}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{App_8h}{App.h}}"{}}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{23 \textcolor{keyword}{class }\mbox{\hyperlink{classAlarmApp}{AlarmApp}} : \textcolor{keyword}{public} \mbox{\hyperlink{classApp}{App}}}
+\DoxyCodeLine{24 \{}
+\DoxyCodeLine{25   \textcolor{keyword}{private}:}
+\DoxyCodeLine{26     \textcolor{keywordtype}{bool} alarmSet;      }
+\DoxyCodeLine{27     uint8\_t alarmHour;  }
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     Ds1302::DateTime now;  }
+\DoxyCodeLine{30   }
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32   \textcolor{keyword}{public}:}
+\DoxyCodeLine{41     \mbox{\hyperlink{classAlarmApp_af44dffceb8337ae08a46b805447a18ff}{AlarmApp}}(\mbox{\hyperlink{structHardware}{Hardware}}\& hardware); }
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 }
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} \mbox{\hyperlink{classAlarmApp_a40b79079fd063efc0086a38d2952df88}{init}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54 }
+\DoxyCodeLine{64     \textcolor{keywordtype}{void} \mbox{\hyperlink{classAlarmApp_a727c4f1ffa5127ba7b58cb88d35d8cf7}{displayMenuPage}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{72     \textcolor{keywordtype}{void} \mbox{\hyperlink{classAlarmApp_a361cd81a448a20ef146ffcdcb9f8f8c1}{display}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75 }
+\DoxyCodeLine{82     \textcolor{keywordtype}{void} \mbox{\hyperlink{classAlarmApp_abfc00147763d272924556366f6f201a9}{leftAction}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{89     \textcolor{keywordtype}{void} \mbox{\hyperlink{classAlarmApp_ac26534aceb9a2e0727e0a8d069dabc6d}{middleAction}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{90     }
+\DoxyCodeLine{96     \textcolor{keywordtype}{void} \mbox{\hyperlink{classAlarmApp_a736ddf56f286e388f096ed40aa07267a}{rightAction}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99 }
+\DoxyCodeLine{104     \textcolor{keywordtype}{void} \mbox{\hyperlink{classAlarmApp_a338893c6eafe51b5c071283a1a1383fb}{openApp}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107 }
+\DoxyCodeLine{114     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classAlarmApp_afe156618e2af8128b54c89a377182d67}{isSet}}();}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116 }
+\DoxyCodeLine{117 }
+\DoxyCodeLine{124     \textcolor{keywordtype}{void} \mbox{\hyperlink{classAlarmApp_a372f3ae6f99780afd2c5af24c92044e3}{backgroundTasks}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{125 \};}
+\DoxyCodeLine{126 }
+\DoxyCodeLine{127 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// ALARM\_APP\_H}}
+
+\end{DoxyCode}

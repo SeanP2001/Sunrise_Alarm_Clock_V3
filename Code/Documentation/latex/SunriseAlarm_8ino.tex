@@ -13,6 +13,7 @@ Software to run on the Sunrise Alarm V3.
 {\ttfamily \#include \char`\"{}Hardware.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}App.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}Light\+App.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Alarm\+App.\+h\char`\"{}}\newline
 Include dependency graph for Sunrise\+Alarm.\+ino\+:
 \nopagebreak
 \begin{figure}[H]
@@ -123,11 +124,14 @@ void {\bfseries right\+ISR} ()
 \mbox{\Hypertarget{SunriseAlarm_8ino_ae6cbe7d5ac57ec70044cee01ac1bd056}\label{SunriseAlarm_8ino_ae6cbe7d5ac57ec70044cee01ac1bd056}} 
 struct \mbox{\hyperlink{structHardware}{Hardware}} {\bfseries hw} = \{display, rtc, light, usb1, usb2, buzzer\}
 \item 
+\mbox{\Hypertarget{SunriseAlarm_8ino_a05e9284e72e093417461a3599214d38f}\label{SunriseAlarm_8ino_a05e9284e72e093417461a3599214d38f}} 
+\mbox{\hyperlink{classAlarmApp}{Alarm\+App}} {\bfseries alarm\+App} (hw)
+\item 
 \mbox{\Hypertarget{SunriseAlarm_8ino_aa491d2bef3ac3c1b81c07681aef5846b}\label{SunriseAlarm_8ino_aa491d2bef3ac3c1b81c07681aef5846b}} 
 \mbox{\hyperlink{classLightApp}{Light\+App}} {\bfseries light\+App} (hw)
 \item 
 \mbox{\Hypertarget{SunriseAlarm_8ino_a32aa95f939b279598dfe4730276853e2}\label{SunriseAlarm_8ino_a32aa95f939b279598dfe4730276853e2}} 
-const int {\bfseries no\+Of\+Apps} = 1
+const int {\bfseries no\+Of\+Apps} = 2
 \item 
 \mbox{\Hypertarget{SunriseAlarm_8ino_a2d27d9f0cb76dc546d082b5743fb0c9e}\label{SunriseAlarm_8ino_a2d27d9f0cb76dc546d082b5743fb0c9e}} 
 \mbox{\hyperlink{classApp}{App}} $\ast$ {\bfseries apps} \mbox{[}no\+Of\+Apps\mbox{]}

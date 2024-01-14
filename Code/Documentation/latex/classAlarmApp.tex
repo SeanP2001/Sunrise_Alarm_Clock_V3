@@ -1,0 +1,216 @@
+\hypertarget{classAlarmApp}{}\doxysection{Alarm\+App Class Reference}
+\label{classAlarmApp}\index{AlarmApp@{AlarmApp}}
+
+
+Represents an application for controlling a Alarm, derived from the \mbox{\hyperlink{classApp}{App}} base class.  
+
+
+
+
+{\ttfamily \#include $<$Alarm\+App.\+h$>$}
+
+
+
+Inheritance diagram for Alarm\+App\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{classAlarmApp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Alarm\+App\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classAlarmApp__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAlarmApp_af44dffceb8337ae08a46b805447a18ff}{Alarm\+App}} (\mbox{\hyperlink{structHardware}{Hardware}} \&hardware)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classAlarmApp}{Alarm\+App}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAlarmApp_a40b79079fd063efc0086a38d2952df88}{init}} () override
+\begin{DoxyCompactList}\small\item\em Initialises the \mbox{\hyperlink{classAlarmApp}{Alarm\+App}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAlarmApp_a727c4f1ffa5127ba7b58cb88d35d8cf7}{display\+Menu\+Page}} () override
+\begin{DoxyCompactList}\small\item\em Displays the menu page for the application. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAlarmApp_a361cd81a448a20ef146ffcdcb9f8f8c1}{display}} () override
+\begin{DoxyCompactList}\small\item\em Displays the main content of the application. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAlarmApp_abfc00147763d272924556366f6f201a9}{left\+Action}} () override
+\begin{DoxyCompactList}\small\item\em Handles left button presses. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAlarmApp_ac26534aceb9a2e0727e0a8d069dabc6d}{middle\+Action}} () override
+\begin{DoxyCompactList}\small\item\em Handles middle button presses. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAlarmApp_a736ddf56f286e388f096ed40aa07267a}{right\+Action}} () override
+\begin{DoxyCompactList}\small\item\em Handles right button presses. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAlarmApp_a338893c6eafe51b5c071283a1a1383fb}{open\+App}} () override
+\begin{DoxyCompactList}\small\item\em Opens the app, toggles the alarm and closes the app again. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classAlarmApp_afe156618e2af8128b54c89a377182d67}{is\+Set}} ()
+\begin{DoxyCompactList}\small\item\em Check if the alarm is set. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAlarmApp_a372f3ae6f99780afd2c5af24c92044e3}{background\+Tasks}} () override
+\begin{DoxyCompactList}\small\item\em Perform background tasks associated with the Alarm \mbox{\hyperlink{classApp}{App}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents an application for controlling a Alarm, derived from the \mbox{\hyperlink{classApp}{App}} base class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAlarmApp_af44dffceb8337ae08a46b805447a18ff}\label{classAlarmApp_af44dffceb8337ae08a46b805447a18ff}} 
+\index{AlarmApp@{AlarmApp}!AlarmApp@{AlarmApp}}
+\index{AlarmApp@{AlarmApp}!AlarmApp@{AlarmApp}}
+\doxysubsubsection{\texorpdfstring{AlarmApp()}{AlarmApp()}}
+{\footnotesize\ttfamily Alarm\+App\+::\+Alarm\+App (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structHardware}{Hardware}} \&}]{hardware }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classAlarmApp}{Alarm\+App}} object. 
+
+The alarm is not set by default when \mbox{\hyperlink{classAlarmApp}{Alarm\+App}} object is instantiated. Currently the alarm\+Hour is set by a magic number (7). In future, this setting will be passed to the constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em hardware} & Reference to a \mbox{\hyperlink{structHardware}{Hardware}} struct containing all the hardware-\/related objects \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAlarmApp_a372f3ae6f99780afd2c5af24c92044e3}\label{classAlarmApp_a372f3ae6f99780afd2c5af24c92044e3}} 
+\index{AlarmApp@{AlarmApp}!backgroundTasks@{backgroundTasks}}
+\index{backgroundTasks@{backgroundTasks}!AlarmApp@{AlarmApp}}
+\doxysubsubsection{\texorpdfstring{backgroundTasks()}{backgroundTasks()}}
+{\footnotesize\ttfamily void Alarm\+App\+::background\+Tasks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Perform background tasks associated with the Alarm \mbox{\hyperlink{classApp}{App}}. 
+
+There are currently no background tasks associated with the Alarm \mbox{\hyperlink{classApp}{App}}. In future, this function will check whether the alarm is due to go off, and sound the alarm if it is. 
+
+Implements \mbox{\hyperlink{classApp_a969cd3baccd4f3293b0fb6694b9df2c3}{App}}.
+
+\mbox{\Hypertarget{classAlarmApp_a361cd81a448a20ef146ffcdcb9f8f8c1}\label{classAlarmApp_a361cd81a448a20ef146ffcdcb9f8f8c1}} 
+\index{AlarmApp@{AlarmApp}!display@{display}}
+\index{display@{display}!AlarmApp@{AlarmApp}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Alarm\+App\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays the main content of the application. 
+
+Currently this function does nothing. 
+
+Implements \mbox{\hyperlink{classApp_a9b1cc434b82d52c7ef1d5b9de18e613e}{App}}.
+
+\mbox{\Hypertarget{classAlarmApp_a727c4f1ffa5127ba7b58cb88d35d8cf7}\label{classAlarmApp_a727c4f1ffa5127ba7b58cb88d35d8cf7}} 
+\index{AlarmApp@{AlarmApp}!displayMenuPage@{displayMenuPage}}
+\index{displayMenuPage@{displayMenuPage}!AlarmApp@{AlarmApp}}
+\doxysubsubsection{\texorpdfstring{displayMenuPage()}{displayMenuPage()}}
+{\footnotesize\ttfamily void Alarm\+App\+::display\+Menu\+Page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays the menu page for the application. 
+
+Currently this just prints the word \char`\"{}\+ALARM\char`\"{} to the display. If the alarm is set, the word \char`\"{}\+ON\char`\"{} is printed to the display.
+
+In future, this will show the current day, time and date. There will be a bell icon visible when the alarm is set. 
+
+Implements \mbox{\hyperlink{classApp_a072ad2ad6c1b731bee62644ac2458c82}{App}}.
+
+\mbox{\Hypertarget{classAlarmApp_a40b79079fd063efc0086a38d2952df88}\label{classAlarmApp_a40b79079fd063efc0086a38d2952df88}} 
+\index{AlarmApp@{AlarmApp}!init@{init}}
+\index{init@{init}!AlarmApp@{AlarmApp}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Alarm\+App\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initialises the \mbox{\hyperlink{classAlarmApp}{Alarm\+App}}. 
+
+During initialisation, the date and time are retrieved from the RTC module. 
+
+Implements \mbox{\hyperlink{classApp_a68f77f8aa188556ec19441f04cdff346}{App}}.
+
+\mbox{\Hypertarget{classAlarmApp_afe156618e2af8128b54c89a377182d67}\label{classAlarmApp_afe156618e2af8128b54c89a377182d67}} 
+\index{AlarmApp@{AlarmApp}!isSet@{isSet}}
+\index{isSet@{isSet}!AlarmApp@{AlarmApp}}
+\doxysubsubsection{\texorpdfstring{isSet()}{isSet()}}
+{\footnotesize\ttfamily bool Alarm\+App\+::is\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if the alarm is set. 
+
+\begin{DoxyReturn}{Returns}
+true if the alarm is set 
+
+false if the alarm isn\textquotesingle{}t set 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAlarmApp_abfc00147763d272924556366f6f201a9}\label{classAlarmApp_abfc00147763d272924556366f6f201a9}} 
+\index{AlarmApp@{AlarmApp}!leftAction@{leftAction}}
+\index{leftAction@{leftAction}!AlarmApp@{AlarmApp}}
+\doxysubsubsection{\texorpdfstring{leftAction()}{leftAction()}}
+{\footnotesize\ttfamily void Alarm\+App\+::left\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handles left button presses. 
+
+Currently this function does nothing. 
+
+Implements \mbox{\hyperlink{classApp_a2a32507fee501e2c11829523e7edbf7a}{App}}.
+
+\mbox{\Hypertarget{classAlarmApp_ac26534aceb9a2e0727e0a8d069dabc6d}\label{classAlarmApp_ac26534aceb9a2e0727e0a8d069dabc6d}} 
+\index{AlarmApp@{AlarmApp}!middleAction@{middleAction}}
+\index{middleAction@{middleAction}!AlarmApp@{AlarmApp}}
+\doxysubsubsection{\texorpdfstring{middleAction()}{middleAction()}}
+{\footnotesize\ttfamily void Alarm\+App\+::middle\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handles middle button presses. 
+
+Currently this function does nothing. 
+
+Implements \mbox{\hyperlink{classApp_a56e902a0ca9101c666c1d426f59fa625}{App}}.
+
+\mbox{\Hypertarget{classAlarmApp_a338893c6eafe51b5c071283a1a1383fb}\label{classAlarmApp_a338893c6eafe51b5c071283a1a1383fb}} 
+\index{AlarmApp@{AlarmApp}!openApp@{openApp}}
+\index{openApp@{openApp}!AlarmApp@{AlarmApp}}
+\doxysubsubsection{\texorpdfstring{openApp()}{openApp()}}
+{\footnotesize\ttfamily void Alarm\+App\+::open\+App (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Opens the app, toggles the alarm and closes the app again. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classApp_a1adc67cf6911cc0b18a0a8853ab33ecc}{App}}.
+
+\mbox{\Hypertarget{classAlarmApp_a736ddf56f286e388f096ed40aa07267a}\label{classAlarmApp_a736ddf56f286e388f096ed40aa07267a}} 
+\index{AlarmApp@{AlarmApp}!rightAction@{rightAction}}
+\index{rightAction@{rightAction}!AlarmApp@{AlarmApp}}
+\doxysubsubsection{\texorpdfstring{rightAction()}{rightAction()}}
+{\footnotesize\ttfamily void Alarm\+App\+::right\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handles right button presses. 
+
+Currently this function does nothing. 
+
+Implements \mbox{\hyperlink{classApp_a85a1255904957c267539677f77b27cc5}{App}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{AlarmApp_8h}{Alarm\+App.\+h}}\item 
+\mbox{\hyperlink{AlarmApp_8cpp}{Alarm\+App.\+cpp}}\end{DoxyCompactItemize}
