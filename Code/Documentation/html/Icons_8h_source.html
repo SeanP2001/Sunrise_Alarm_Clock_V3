@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sunrise Alarm V3: LightApp.cpp File Reference</title>
+<title>Sunrise Alarm V3: Icons.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,6 +46,7 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,39 +61,23 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
-  <div class="headertitle"><div class="title">LightApp.cpp File Reference</div></div>
+  <div class="headertitle"><div class="title">Icons.h</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Implements the <a class="el" href="classLightApp.html" title="Represents an application for controlling a light, derived from the App base class.">LightApp</a> class.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="LightApp_8h_source.html">LightApp.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for LightApp.cpp:</div>
-<div class="dyncontent">
-<div class="center"><img src="LightApp_8cpp__incl.png" border="0" usemap="#aLightApp_8cpp" alt=""/></div>
-<map name="aLightApp_8cpp" id="aLightApp_8cpp">
-<area shape="rect" title="Implements the LightApp class." alt="" coords="5,5,112,32"/>
-<area shape="rect" href="LightApp_8h.html" title="Defines the LightApp class which is derrived from the App base class." alt="" coords="13,80,104,107"/>
-<area shape="rect" title=" " alt="" coords="85,379,169,405"/>
-<area shape="rect" href="App_8h.html" title="Implements the concrete functions from the App base class." alt="" coords="112,155,171,181"/>
-<area shape="rect" href="Hardware_8h.html" title="Defines the Hardware struct." alt="" coords="190,229,287,256"/>
-<area shape="rect" href="Icons_8h.html" title="Contains icon data for various symbols." alt="" coords="311,229,379,256"/>
-<area shape="rect" title=" " alt="" coords="165,304,219,331"/>
-<area shape="rect" title=" " alt="" coords="244,304,327,331"/>
-<area shape="rect" title=" " alt="" coords="351,304,435,331"/>
-<area shape="rect" href="Device_8h.html" title="Defines the Device class." alt="" coords="459,304,538,331"/>
-<area shape="rect" href="Buzzer_8h.html" title="Defines the Buzzer class." alt="" coords="563,304,640,331"/>
-</map>
-</div>
-</div><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Implements the <a class="el" href="classLightApp.html" title="Represents an application for controlling a light, derived from the App base class.">LightApp</a> class. </p>
-<dl class="section author"><dt>Author</dt><dd>Sean Price </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>13/01/2024 </dd></dl>
-</div></div><!-- contents -->
+<a href="Icons_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// &#39;alarmOffIcon&#39;, 16x16px</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">const</span> uint8_t alarmOffIcon [] PROGMEM = {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  0x00, 0x80, 0x01, 0xc0, 0x07, 0x70, 0x04, 0x10, 0x0c, 0x18, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  0x08, 0x08, 0x08, 0x08, 0x18, 0x0c, 0x30, 0x06, 0x60, 0x03, 0x7f, 0xff, 0x00, 0xf0, 0x00, 0x60</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>};</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// &#39;alarmOnIcon&#39;, 16x16px</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">const</span> uint8_t alarmOnIcon [] PROGMEM = {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  0x00, 0x80, 0x01, 0xc1, 0x47, 0xf2, 0x27, 0xf0, 0x0f, 0xf8, 0x0f, 0xf8, 0x0f, 0xf8, 0x2f, 0xfa, </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  0x4f, 0xf9, 0x8f, 0xf8, 0x1f, 0xfc, 0x3f, 0xfe, 0x7f, 0xff, 0x7f, 0xff, 0x00, 0xf0, 0x00, 0x60</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>};</div>
+</div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4

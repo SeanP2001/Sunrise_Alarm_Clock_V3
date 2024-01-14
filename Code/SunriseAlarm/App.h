@@ -14,6 +14,7 @@
 #include <Arduino.h>
 
 #include "Hardware.h"
+#include "Icons.h"
 
 /**
  * @class App

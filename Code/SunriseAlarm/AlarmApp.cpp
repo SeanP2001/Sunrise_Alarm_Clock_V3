@@ -8,7 +8,20 @@
  * 
  */
 
- #include "AlarmApp.h"
+#include "AlarmApp.h"
+
+const char* AlarmApp::WeekDays[] =
+{
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday"
+};
+
+const uint8_t AlarmApp::WeekDayXPos[] = {45, 46, 38, 43, 49, 42, 47};
 
  //---------------------------------------------------- C O N S T R U C T O R ----------------------------------------------------
 AlarmApp::AlarmApp(Hardware& hardware) : App(hardware), alarmSet(false), alarmHour(7) {}  // WARNING: Temporary Magic Number (Will be rectified with settings struct)
@@ -25,24 +38,47 @@ void AlarmApp::init()
 //---------------------------------------------- D I S P L A Y   M E N U   P A G E -----------------------------------------------
 void AlarmApp::displayMenuPage()
 {
-  hw.display.setFont(u8g2_font_inr16_mf);    // fornt without transparent background (no need to clear buffer)
-  hw.display.setCursor(26,56);
-  
-  hw.display.print("ALARM");
+  hw.rtc.getDateTime(&now); 
 
+  hw.display.clearBuffer();  
+  hw.display.setFont(u8g2_font_helvR08_tf);	
+
+  // Print Weekday
+  hw.display.setCursor(WeekDayXPos[now.dow - 1],30);
+  hw.display.print(WeekDays[now.dow - 1]); // 1-7
+
+  // Print Date
+  hw.display.setCursor(38,99);
+  if (now.day < 10) hw.display.print('0');
+  hw.display.print(now.day);     // 01-31
+  hw.display.print('/');
+  if (now.month < 10) hw.display.print('0');
+  hw.display.print(now.month);   // 01-12
+  hw.display.print('/');
+  hw.display.print("20");
+  hw.display.print(now.year);    // 00-99
+  
+  // Print Time
+  hw.display.setCursor(2,75);
+  hw.display.setFont(u8g2_font_fur35_tn);
+  if (now.hour < 10) hw.display.print('0');
+  hw.display.print(now.hour);    // 00-23
+  hw.display.print(':');
+  if (now.minute < 10) hw.display.print('0');
+  hw.display.print(now.minute);  // 00-59
+
+  // Show bell icon (set or not set)
   if(alarmSet)
   {
-    hw.display.setCursor(20,80);
-    hw.display.print("  ON  ");
+    hw.display.drawBitmap(56, 0, 2, 16, alarmOnIcon);
   }
   else
   {
-    hw.display.setCursor(20,80);
-    hw.display.print("      ");
+    hw.display.drawBitmap(56, 0, 2, 16, alarmOffIcon);
   }
 
-  // Updates a small part of the display (much faster)
-  hw.display.updateDisplayArea(3, 5, 9, 5);  // Works in 8x8 blocks (x, y, w, h) 
+
+  hw.display.sendBuffer();
 }
 
 

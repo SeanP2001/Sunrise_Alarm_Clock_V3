@@ -27,6 +27,9 @@ class AlarmApp : public App
     uint8_t alarmHour;  ///< The hour which the alarm is set to go off at
 
     Ds1302::DateTime now;  ///< DateTime object to store the current time
+
+    const static char* WeekDays[];
+    const static uint8_t WeekDayXPos[];
   
 
   public:
@@ -54,12 +57,9 @@ class AlarmApp : public App
 
     /**
      * @brief Displays the menu page for the application.
-     * 
-     * Currently this just prints the word "ALARM" to the display.
-     * If the alarm is set, the word "ON" is printed to the display.
      *
-     * In future, this will show the current day, time and date. 
-     * There will be a bell icon visible when the alarm is set.
+     * Display the current day, time and date. 
+     * The bell icon is outlined when not set and filled when the alarm is set.
      */
     void displayMenuPage() override;
 
