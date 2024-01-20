@@ -196,7 +196,7 @@ I was really impressed by the quality of the PCBs sent by PCBWay. To order high-
 
 ### Documentation
 
-View the Doxygen documentation for this project [here](https://raw.githack.com/SeanP2001/Sunrise_Alarm_Clock_V3/main/Code/Documentation/html/index.html target="_blank").
+View the Doxygen documentation for this project [here](https://raw.githack.com/SeanP2001/Sunrise_Alarm_Clock_V3/main/Code/Documentation/html/index.html).
 
 ## Further Work
 

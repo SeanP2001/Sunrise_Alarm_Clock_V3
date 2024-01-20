@@ -23,26 +23,21 @@ void LightApp::init()
 
 //---------------------------------------------- D I S P L A Y   M E N U   P A G E -----------------------------------------------
 void LightApp::displayMenuPage()
-{
-  hw.display.setFont(u8g2_font_inr16_mf);    // fornt without transparent background (no need to clear buffer)
-  hw.display.setCursor(30,64);
-  
-  hw.display.print(" OFF ");
+{ 
+  hw.display.drawBitmap(16, 16, 12, 96, lightOffIcon);
 
   // Updates a small part of the display (much faster)
-  hw.display.updateDisplayArea(4, 6, 8, 2);  // Works in 8x8 blocks (x, y, w, h) 
+  hw.display.updateDisplayArea(2, 2, 12, 12);  // Works in 8x8 blocks (x, y, w, h) 
 }
 
 
 //-------------------------------------------------------- D I S P L A Y --------------------------------------------------------
 void LightApp::display() 
 {
-  hw.display.setCursor(20,64);
-  hw.display.setFont(u8g2_font_inr16_mf);
+  hw.display.drawBitmap(16, 16, 12, 96, lightOnIcon);
 
-  hw.display.print("  ON  ");
-
-  hw.display.updateDisplayArea(4, 6, 8, 2); 
+  // Updates a small part of the display (much faster)
+  hw.display.updateDisplayArea(2, 2, 12, 12);  // Works in 8x8 blocks (x, y, w, h) 
 }
 
 
