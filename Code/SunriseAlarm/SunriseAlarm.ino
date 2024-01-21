@@ -40,6 +40,7 @@
 #include <U8g2lib.h>
 
 #include "Device.h"
+#include "PWMDevice.h"
 #include "Buzzer.h"
 #include "Hardware.h"
 
@@ -54,7 +55,7 @@ U8G2_SSD1327_WS_128X128_F_4W_SW_SPI display(U8G2_R0, SCREEN_CLK, SCREEN_DATA, SC
 
 Ds1302 rtc(RTC_RESET, RTC_CLK, RTC_DATA);
 
-Device light(LIGHT);
+PWMDevice light(LIGHT);
 Device usb1(USB_1);
 Device usb2(USB_2);
 

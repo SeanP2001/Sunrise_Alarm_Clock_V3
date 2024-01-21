@@ -1,0 +1,90 @@
+\hypertarget{classPWMDevice}{}\doxysection{PWMDevice Class Reference}
+\label{classPWMDevice}\index{PWMDevice@{PWMDevice}}
+
+
+A class representing a PWM output device connected to a pin on the microcontroller.  
+
+
+
+
+{\ttfamily \#include $<$PWMDevice.\+h$>$}
+
+
+
+Inheritance diagram for PWMDevice\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{classPWMDevice__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for PWMDevice\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{classPWMDevice__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPWMDevice_afe34260d1fe31022be93e07a8850201e}{PWMDevice}} (uint8\+\_\+t pin\+No)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classPWMDevice}{PWMDevice}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPWMDevice_a80a1acf9fc40e45b9247184a3d965f74}{turn\+On}} () override
+\begin{DoxyCompactList}\small\item\em Turn ON the pin connected to the device at the set PWM level. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPWMDevice_ab824d7b345d44581a28d7a117cafdbcd}\label{classPWMDevice_ab824d7b345d44581a28d7a117cafdbcd}} 
+void {\bfseries increase\+Level} ()
+\begin{DoxyCompactList}\small\item\em Increase the current PWM level by one, up to the MAX\+\_\+\+LEVEL. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPWMDevice_a659a470f84d7c07177eae101783f7d7a}\label{classPWMDevice_a659a470f84d7c07177eae101783f7d7a}} 
+void {\bfseries decrease\+Level} ()
+\begin{DoxyCompactList}\small\item\em Decrease the current PWM level by one, down to 0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing a PWM output device connected to a pin on the microcontroller. 
+
+This class implements basic functionality to control a PWM output device. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPWMDevice_afe34260d1fe31022be93e07a8850201e}\label{classPWMDevice_afe34260d1fe31022be93e07a8850201e}} 
+\index{PWMDevice@{PWMDevice}!PWMDevice@{PWMDevice}}
+\index{PWMDevice@{PWMDevice}!PWMDevice@{PWMDevice}}
+\doxysubsubsection{\texorpdfstring{PWMDevice()}{PWMDevice()}}
+{\footnotesize\ttfamily PWMDevice\+::\+PWMDevice (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin\+No }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classPWMDevice}{PWMDevice}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin\+No} & The number of the pin which the device is connected to. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPWMDevice_a80a1acf9fc40e45b9247184a3d965f74}\label{classPWMDevice_a80a1acf9fc40e45b9247184a3d965f74}} 
+\index{PWMDevice@{PWMDevice}!turnOn@{turnOn}}
+\index{turnOn@{turnOn}!PWMDevice@{PWMDevice}}
+\doxysubsubsection{\texorpdfstring{turnOn()}{turnOn()}}
+{\footnotesize\ttfamily void PWMDevice\+::turn\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Turn ON the pin connected to the device at the set PWM level. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classDevice_a6b0a2674f57504a5df08f62e85d98578}{Device}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{PWMDevice_8h}{PWMDevice.\+h}}\item 
+\mbox{\hyperlink{PWMDevice_8cpp}{PWMDevice.\+cpp}}\end{DoxyCompactItemize}

@@ -10,6 +10,7 @@
 
 #include "LightApp.h"
 
+
 //---------------------------------------------------- C O N S T R U C T O R ----------------------------------------------------
 LightApp::LightApp(Hardware& hardware) : App(hardware) {}
 
@@ -44,6 +45,9 @@ void LightApp::display()
 //---------------------------------------------------- L E F T   A C T I O N ----------------------------------------------------
 void LightApp::leftAction() 
 {
+  hw.light.decreaseLevel();
+  hw.light.turnOn();
+
   return;
 }
 
@@ -59,6 +63,9 @@ void LightApp::middleAction()
 //--------------------------------------------------- R I G H T   A C T I O N ---------------------------------------------------
 void LightApp::rightAction()
 {
+  hw.light.increaseLevel();
+  hw.light.turnOn();
+
   return;
 }
 

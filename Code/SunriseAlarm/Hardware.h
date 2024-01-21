@@ -18,6 +18,7 @@
 #include <U8g2lib.h>
 
 #include "Device.h"
+#include "PWMDevice.h"
 #include "Buzzer.h"
 
 /**
@@ -30,7 +31,7 @@ struct Hardware
 {
   U8G2_SSD1327_WS_128X128_F_4W_SW_SPI &display; ///< OLED Display
   Ds1302 &rtc;                                  ///< Real-Time Clock
-  Device &light;                                ///< LED Ring Light
+  PWMDevice &light;                             ///< LED Ring Light
   Device &usb1;                                 ///< USB Port 1
   Device &usb2;                                 ///< USB Port 2
   Buzzer &buzzer;                               ///< Buzzer

@@ -64,8 +64,7 @@ class LightApp : public App
     /**
      * @brief Handles left button presses.
      * 
-     * Currently this function does nothing.
-     * In future this will decrease the light brightness.
+     * Decrease the light brightness.
      * 
      */
     void leftAction() override;
@@ -80,8 +79,7 @@ class LightApp : public App
     /**
      * @brief Handles right button presses.
      * 
-     * Currently this function does nothing.
-     * In future this will increase the light brightness.
+     * Increase the light brightness.
      */
     void rightAction() override;
 

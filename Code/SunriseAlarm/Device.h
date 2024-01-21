@@ -39,7 +39,7 @@ class Device
      * @brief Turn ON the pin connected to the device.
      * 
      */
-    void turnOn();
+    virtual void turnOn();
 
     /**
      * @brief Turn OFF the pin connected to the device.

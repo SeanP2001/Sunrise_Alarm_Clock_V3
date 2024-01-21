@@ -1,0 +1,37 @@
+\hypertarget{PWMDevice_8h_source}{}\doxysection{PWMDevice.\+h}
+\mbox{\hyperlink{PWMDevice_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef PWM\_DEVICE\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define PWM\_DEVICE\_H}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <Arduino.h>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{Device_8h}{Device.h}}"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{25 \textcolor{keyword}{class }\mbox{\hyperlink{classPWMDevice}{PWMDevice}} : \textcolor{keyword}{public} \mbox{\hyperlink{classDevice}{Device}}}
+\DoxyCodeLine{26 \{}
+\DoxyCodeLine{27   \textcolor{keyword}{private}:}
+\DoxyCodeLine{28     uint8\_t pinNo;  }
+\DoxyCodeLine{29     uint8\_t level;  }
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     \textcolor{keyword}{const} \textcolor{keyword}{static} uint8\_t MAX\_LEVEL;     }
+\DoxyCodeLine{32     \textcolor{keyword}{const} \textcolor{keyword}{static} uint8\_t DEFAULT\_LEVEL; }
+\DoxyCodeLine{33     \textcolor{keyword}{const} \textcolor{keyword}{static} uint8\_t MIN\_VAL;       }
+\DoxyCodeLine{34     \textcolor{keyword}{const} \textcolor{keyword}{static} uint8\_t MAX\_VAL;       }
+\DoxyCodeLine{35     }
+\DoxyCodeLine{36   \textcolor{keyword}{public}:}
+\DoxyCodeLine{42     \mbox{\hyperlink{classPWMDevice_afe34260d1fe31022be93e07a8850201e}{PWMDevice}}(uint8\_t pinNo);}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 }
+\DoxyCodeLine{49     \textcolor{keywordtype}{void} \mbox{\hyperlink{classPWMDevice_a80a1acf9fc40e45b9247184a3d965f74}{turnOn}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 }
+\DoxyCodeLine{56     \textcolor{keywordtype}{void} \mbox{\hyperlink{classPWMDevice_ab824d7b345d44581a28d7a117cafdbcd}{increaseLevel}}();}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58 }
+\DoxyCodeLine{63     \textcolor{keywordtype}{void} \mbox{\hyperlink{classPWMDevice_a659a470f84d7c07177eae101783f7d7a}{decreaseLevel}}();}
+\DoxyCodeLine{64 \};}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// PWM\_DEVICE\_H}}
+
+\end{DoxyCode}

@@ -1,7 +1,8 @@
 <map id="AlarmApp" name="AlarmApp">
-<area shape="rect" id="node1" title="Represents an application for controlling a Alarm, derived from the App base class." alt="" coords="41,289,127,316"/>
-<area shape="rect" id="node2" href="$classApp.html" title="Abstract base class for applications." alt="" coords="61,213,107,240"/>
-<area shape="rect" id="node3" href="$structHardware.html" title="Represents the hardware components used in the project." alt="" coords="41,124,127,151"/>
-<area shape="rect" id="node4" href="$classDevice.html" title="A class representing a digital output device connected to a pin on the microcontroller." alt="" coords="5,5,72,32"/>
-<area shape="rect" id="node5" href="$classBuzzer.html" title="A class representing a buzzer connected to a pin on the microcontroller." alt="" coords="96,5,163,32"/>
+<area shape="rect" id="node1" title="Represents an application for controlling a Alarm, derived from the App base class." alt="" coords="90,339,177,365"/>
+<area shape="rect" id="node2" href="$classApp.html" title="Abstract base class for applications." alt="" coords="110,263,157,289"/>
+<area shape="rect" id="node3" href="$structHardware.html" title="Represents the hardware components used in the project." alt="" coords="91,173,176,200"/>
+<area shape="rect" id="node4" href="$classPWMDevice.html" title="A class representing a PWM output device connected to a pin on the microcontroller." alt="" coords="83,83,183,109"/>
+<area shape="rect" id="node5" href="$classDevice.html" title="A class representing a digital output device connected to a pin on the microcontroller." alt="" coords="5,5,72,32"/>
+<area shape="rect" id="node6" href="$classBuzzer.html" title="A class representing a buzzer connected to a pin on the microcontroller." alt="" coords="208,83,275,109"/>
 </map>

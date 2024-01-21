@@ -9,13 +9,22 @@ A class representing a digital output device connected to a pin on the microcont
 
 {\ttfamily \#include $<$Device.\+h$>$}
 
+
+
+Inheritance diagram for Device\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{classDevice__inherit__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classDevice_a3a9a4c33baf85414c1be2ff603e672bb}{Device}} (uint8\+\_\+t pin\+No)
 \begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classDevice}{Device}} object. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classDevice_a6b0a2674f57504a5df08f62e85d98578}\label{classDevice_a6b0a2674f57504a5df08f62e85d98578}} 
-void {\bfseries turn\+On} ()
+virtual void \mbox{\hyperlink{classDevice_a6b0a2674f57504a5df08f62e85d98578}{turn\+On}} ()
 \begin{DoxyCompactList}\small\item\em Turn ON the pin connected to the device. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classDevice_a94ab5a01517645d57f8ddbf7218bde85}\label{classDevice_a94ab5a01517645d57f8ddbf7218bde85}} 
 void {\bfseries turn\+Off} ()
@@ -75,7 +84,21 @@ false if the device is currently switched OFF.
 
 Toggle the state of the pin connected to the device. 
 
-If the device is ON, turn it OFF. If the device is OFF, turn it ON. 
+If the device is ON, turn it OFF. If the device is OFF, turn it ON. \mbox{\Hypertarget{classDevice_a6b0a2674f57504a5df08f62e85d98578}\label{classDevice_a6b0a2674f57504a5df08f62e85d98578}} 
+\index{Device@{Device}!turnOn@{turnOn}}
+\index{turnOn@{turnOn}!Device@{Device}}
+\doxysubsubsection{\texorpdfstring{turnOn()}{turnOn()}}
+{\footnotesize\ttfamily void Device\+::turn\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Turn ON the pin connected to the device. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classPWMDevice_a80a1acf9fc40e45b9247184a3d965f74}{PWMDevice}}.
+
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
