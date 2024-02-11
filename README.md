@@ -23,6 +23,7 @@
   - [Assembled Enclosure](#assembled-enclosure)
 - [Code](#code)
   - [Documentation](#documentation)
+  - [How to Add a New App](#how-to-add-a-new-app)
 - [Further Work](#further-work)
 
 
@@ -197,6 +198,17 @@ I was really impressed by the quality of the PCBs sent by PCBWay. To order high-
 ### Documentation
 
 View the Doxygen documentation for this project [here](https://raw.githack.com/SeanP2001/Sunrise_Alarm_Clock_V3/main/Code/Documentation/html/index.html).
+
+### How to Add a New App
+
+1. Copy the `TemplateApp.h` and `TemplateApp.cpp` files, changing their names to reflect your app.  
+2. Change the header guards, file headers and and include statements to the new file names.  
+3. Do a find and replace for the phrase "TemplateApp" replacing it with the name of your app (both files).  
+4. Add code to each of the functions.  
+5. Include the header file in the main program.  
+6. Instantiate the new `____App` object.  
+7. Increment the `noOfApps` variable.  
+8. Add a reference to the new app object at the next index of the `apps` array. e.g.`apps[i] = &____App;`.
 
 ## Further Work
 

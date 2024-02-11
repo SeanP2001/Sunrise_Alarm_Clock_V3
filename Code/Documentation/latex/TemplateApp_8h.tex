@@ -1,0 +1,64 @@
+\hypertarget{TemplateApp_8h}{}\doxysection{Template\+App.\+h File Reference}
+\label{TemplateApp_8h}\index{TemplateApp.h@{TemplateApp.h}}
+
+
+Defines the \mbox{\hyperlink{classTemplateApp}{Template\+App}} class which is derrived from the \mbox{\hyperlink{classApp}{App}} base class.  
+
+
+{\ttfamily \#include $<$Arduino.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}App.\+h\char`\"{}}\newline
+Include dependency graph for Template\+App.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{TemplateApp_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{TemplateApp_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classTemplateApp}{Template\+App}}
+\begin{DoxyCompactList}\small\item\em Represents the basic structure of an application, derived from the \mbox{\hyperlink{classApp}{App}} base class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines the \mbox{\hyperlink{classTemplateApp}{Template\+App}} class which is derrived from the \mbox{\hyperlink{classApp}{App}} base class. 
+
+\begin{DoxyAuthor}{Author}
+Sean Price 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+11/02/2024
+\end{DoxyDate}
+This file serves as a template for creating new applications based on the \mbox{\hyperlink{classApp}{App}} base class. Follow the instructions below to create and customize your own app. ~\newline
+
+
+HOW TO CREATE A NEW APP ~\newline
+
+\begin{DoxyEnumerate}
+\item Copy the \char`\"{}\+Template\+App.\+h\char`\"{} and \char`\"{}\+Template\+App.\+cpp\char`\"{} files, changing their names to reflect your app. ~\newline
+
+\item Change the header guards, file headers and and include statements to the new file names. ~\newline
+
+\item Do a find and replace for the phrase \char`\"{}\+Template\+App\char`\"{} replacing it with the name of your app (both files). ~\newline
+
+\item Add code to each of the functions. ~\newline
+
+\item Include the header file in the main program. ~\newline
+
+\item Instantiate the new \char`\"{}\+\_\+\+\_\+\+\_\+\+\_\+\+App\char`\"{} object. ~\newline
+
+\item Increment the \char`\"{}no\+Of\+Apps\char`\"{}. ~\newline
+
+\item Add a reference to the new app object to the next index of the \char`\"{}apps\char`\"{} array. e.\+g.\char`\"{}apps\mbox{[}i\mbox{]} = \&\+\_\+\+\_\+\+\_\+\+\_\+\+App;\char`\"{}. 
+\end{DoxyEnumerate}

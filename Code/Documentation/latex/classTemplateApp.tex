@@ -1,0 +1,196 @@
+\hypertarget{classTemplateApp}{}\doxysection{Template\+App Class Reference}
+\label{classTemplateApp}\index{TemplateApp@{TemplateApp}}
+
+
+Represents the basic structure of an application, derived from the \mbox{\hyperlink{classApp}{App}} base class.  
+
+
+
+
+{\ttfamily \#include $<$Template\+App.\+h$>$}
+
+
+
+Inheritance diagram for Template\+App\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{classTemplateApp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Template\+App\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{classTemplateApp__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTemplateApp_a65f110ceb8dad697f57752cb4a46fdf7}{Template\+App}} (\mbox{\hyperlink{structHardware}{Hardware}} \&hardware)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classTemplateApp}{Template\+App}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTemplateApp_ad467212f75379b9ff290e516b51900ef}{init}} () override
+\begin{DoxyCompactList}\small\item\em Initialises the \mbox{\hyperlink{classTemplateApp}{Template\+App}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTemplateApp_ac91de3ec89427ef3e56b426fd0ddbd3f}{display\+Menu\+Page}} () override
+\begin{DoxyCompactList}\small\item\em Displays the menu page for the application. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTemplateApp_a12334e0515466a3394c6e52694631cb5}{display}} () override
+\begin{DoxyCompactList}\small\item\em Displays the main content of the application. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTemplateApp_a352ca2e826fd585a26c15f43c631b160}{left\+Action}} () override
+\begin{DoxyCompactList}\small\item\em Handles left button presses. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTemplateApp_a52bf6c78fa6bd9ac4c86c137a94a077a}{middle\+Action}} () override
+\begin{DoxyCompactList}\small\item\em Handles middle button presses. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTemplateApp_a414c5fbd96880af176c1b0c82b679763}{right\+Action}} () override
+\begin{DoxyCompactList}\small\item\em Handles right button presses. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTemplateApp_af4cbbf41783031b5e52b077ea82926d0}{open\+App}} () override
+\begin{DoxyCompactList}\small\item\em Open the application. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTemplateApp_ab178fad835a0c2e02d54d10660622544}{background\+Tasks}} () override
+\begin{DoxyCompactList}\small\item\em Perform background tasks associated with the \mbox{\hyperlink{classApp}{App}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents the basic structure of an application, derived from the \mbox{\hyperlink{classApp}{App}} base class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTemplateApp_a65f110ceb8dad697f57752cb4a46fdf7}\label{classTemplateApp_a65f110ceb8dad697f57752cb4a46fdf7}} 
+\index{TemplateApp@{TemplateApp}!TemplateApp@{TemplateApp}}
+\index{TemplateApp@{TemplateApp}!TemplateApp@{TemplateApp}}
+\doxysubsubsection{\texorpdfstring{TemplateApp()}{TemplateApp()}}
+{\footnotesize\ttfamily Template\+App\+::\+Template\+App (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structHardware}{Hardware}} \&}]{hardware }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classTemplateApp}{Template\+App}} object. 
+
+Add any extra parameters to the constructor arguments
+
+
+\begin{DoxyParams}{Parameters}
+{\em hardware} & Reference to a \mbox{\hyperlink{structHardware}{Hardware}} struct containing all the hardware-\/related objects, allowing the hardware to be directly accessed within the app functions. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTemplateApp_ab178fad835a0c2e02d54d10660622544}\label{classTemplateApp_ab178fad835a0c2e02d54d10660622544}} 
+\index{TemplateApp@{TemplateApp}!backgroundTasks@{backgroundTasks}}
+\index{backgroundTasks@{backgroundTasks}!TemplateApp@{TemplateApp}}
+\doxysubsubsection{\texorpdfstring{backgroundTasks()}{backgroundTasks()}}
+{\footnotesize\ttfamily void Template\+App\+::background\+Tasks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Perform background tasks associated with the \mbox{\hyperlink{classApp}{App}}. 
+
+This code will be executed once every cycle of the main program loop. Use \char`\"{}hw.\+rtc.\+get\+Date\+Time(\&now);\char`\"{} to get the current time and use this to determine which tasks should run. Do not add any delays as this will reduce program responsiveness. ~\newline
+ An example of a background task is turning on or off an output at a specified time. 
+
+Implements \mbox{\hyperlink{classApp_a969cd3baccd4f3293b0fb6694b9df2c3}{App}}.
+
+\mbox{\Hypertarget{classTemplateApp_a12334e0515466a3394c6e52694631cb5}\label{classTemplateApp_a12334e0515466a3394c6e52694631cb5}} 
+\index{TemplateApp@{TemplateApp}!display@{display}}
+\index{display@{display}!TemplateApp@{TemplateApp}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Template\+App\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays the main content of the application. 
+
+Contains all display related code which is to be shown when the app is open. May include a state machine switch-\/case statement if the application has multiple screens. 
+
+Implements \mbox{\hyperlink{classApp_a9b1cc434b82d52c7ef1d5b9de18e613e}{App}}.
+
+\mbox{\Hypertarget{classTemplateApp_ac91de3ec89427ef3e56b426fd0ddbd3f}\label{classTemplateApp_ac91de3ec89427ef3e56b426fd0ddbd3f}} 
+\index{TemplateApp@{TemplateApp}!displayMenuPage@{displayMenuPage}}
+\index{displayMenuPage@{displayMenuPage}!TemplateApp@{TemplateApp}}
+\doxysubsubsection{\texorpdfstring{displayMenuPage()}{displayMenuPage()}}
+{\footnotesize\ttfamily void Template\+App\+::display\+Menu\+Page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays the menu page for the application. 
+
+Contains all display related code which is to be shown on the main menu page. Use \char`\"{}hw.\+display\char`\"{} to access the display functions 
+
+Implements \mbox{\hyperlink{classApp_a072ad2ad6c1b731bee62644ac2458c82}{App}}.
+
+\mbox{\Hypertarget{classTemplateApp_ad467212f75379b9ff290e516b51900ef}\label{classTemplateApp_ad467212f75379b9ff290e516b51900ef}} 
+\index{TemplateApp@{TemplateApp}!init@{init}}
+\index{init@{init}!TemplateApp@{TemplateApp}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Template\+App\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initialises the \mbox{\hyperlink{classTemplateApp}{Template\+App}}. 
+
+Code within this function will execute once during the setup of the main program 
+
+Implements \mbox{\hyperlink{classApp_a68f77f8aa188556ec19441f04cdff346}{App}}.
+
+\mbox{\Hypertarget{classTemplateApp_a352ca2e826fd585a26c15f43c631b160}\label{classTemplateApp_a352ca2e826fd585a26c15f43c631b160}} 
+\index{TemplateApp@{TemplateApp}!leftAction@{leftAction}}
+\index{leftAction@{leftAction}!TemplateApp@{TemplateApp}}
+\doxysubsubsection{\texorpdfstring{leftAction()}{leftAction()}}
+{\footnotesize\ttfamily void Template\+App\+::left\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handles left button presses. 
+
+
+
+Implements \mbox{\hyperlink{classApp_a2a32507fee501e2c11829523e7edbf7a}{App}}.
+
+\mbox{\Hypertarget{classTemplateApp_a52bf6c78fa6bd9ac4c86c137a94a077a}\label{classTemplateApp_a52bf6c78fa6bd9ac4c86c137a94a077a}} 
+\index{TemplateApp@{TemplateApp}!middleAction@{middleAction}}
+\index{middleAction@{middleAction}!TemplateApp@{TemplateApp}}
+\doxysubsubsection{\texorpdfstring{middleAction()}{middleAction()}}
+{\footnotesize\ttfamily void Template\+App\+::middle\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handles middle button presses. 
+
+
+
+Implements \mbox{\hyperlink{classApp_a56e902a0ca9101c666c1d426f59fa625}{App}}.
+
+\mbox{\Hypertarget{classTemplateApp_af4cbbf41783031b5e52b077ea82926d0}\label{classTemplateApp_af4cbbf41783031b5e52b077ea82926d0}} 
+\index{TemplateApp@{TemplateApp}!openApp@{openApp}}
+\index{openApp@{openApp}!TemplateApp@{TemplateApp}}
+\doxysubsubsection{\texorpdfstring{openApp()}{openApp()}}
+{\footnotesize\ttfamily void Template\+App\+::open\+App (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Open the application. 
+
+Add any code which is to be executed a single time when the app is opened. 
+
+Reimplemented from \mbox{\hyperlink{classApp_a1adc67cf6911cc0b18a0a8853ab33ecc}{App}}.
+
+\mbox{\Hypertarget{classTemplateApp_a414c5fbd96880af176c1b0c82b679763}\label{classTemplateApp_a414c5fbd96880af176c1b0c82b679763}} 
+\index{TemplateApp@{TemplateApp}!rightAction@{rightAction}}
+\index{rightAction@{rightAction}!TemplateApp@{TemplateApp}}
+\doxysubsubsection{\texorpdfstring{rightAction()}{rightAction()}}
+{\footnotesize\ttfamily void Template\+App\+::right\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handles right button presses. 
+
+
+
+Implements \mbox{\hyperlink{classApp_a85a1255904957c267539677f77b27cc5}{App}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{TemplateApp_8h}{Template\+App.\+h}}\item 
+\mbox{\hyperlink{TemplateApp_8cpp}{Template\+App.\+cpp}}\end{DoxyCompactItemize}

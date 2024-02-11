@@ -1,8 +1,10 @@
 <map id="App.h" name="App.h">
-<area shape="rect" id="node1" title="Implements the concrete functions from the App base class." alt="" coords="181,5,239,32"/>
-<area shape="rect" id="node2" href="$AlarmApp_8h.html" title="Defines the AlarmApp class which is derrived from the App base class." alt="" coords="74,80,173,107"/>
+<area shape="rect" id="node1" title="Implements the concrete functions from the App base class." alt="" coords="241,5,299,32"/>
+<area shape="rect" id="node2" href="$AlarmApp_8h.html" title="Defines the AlarmApp class which is derrived from the App base class." alt="" coords="93,80,191,107"/>
 <area shape="rect" id="node4" href="$SunriseAlarm_8ino.html" title="Software to run on the Sunrise Alarm V3." alt="" coords="143,155,277,181"/>
-<area shape="rect" id="node5" href="$LightApp_8h.html" title="Defines the LightApp class which is derrived from the App base class." alt="" coords="247,80,338,107"/>
+<area shape="rect" id="node5" href="$LightApp_8h.html" title="Defines the LightApp class which is derrived from the App base class." alt="" coords="266,80,357,107"/>
+<area shape="rect" id="node7" href="$TemplateApp_8h.html" title="Defines the TemplateApp class which is derrived from the App base class." alt="" coords="420,80,539,107"/>
 <area shape="rect" id="node3" href="$AlarmApp_8cpp.html" title="Implements the AlarmApp class." alt="" coords="5,155,119,181"/>
 <area shape="rect" id="node6" href="$LightApp_8cpp.html" title="Implements the LightApp class." alt="" coords="301,155,407,181"/>
+<area shape="rect" id="node8" href="$TemplateApp_8cpp.html" title="Implements the TemplateApp class." alt="" coords="432,155,567,181"/>
 </map>
