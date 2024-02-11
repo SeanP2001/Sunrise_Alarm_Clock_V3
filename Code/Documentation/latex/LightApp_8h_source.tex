@@ -11,36 +11,42 @@
 \DoxyCodeLine{17 }
 \DoxyCodeLine{23 \textcolor{keyword}{class }\mbox{\hyperlink{classLightApp}{LightApp}} : \textcolor{keyword}{public} \mbox{\hyperlink{classApp}{App}}}
 \DoxyCodeLine{24 \{}
-\DoxyCodeLine{25   \textcolor{keyword}{public}:}
-\DoxyCodeLine{31     \mbox{\hyperlink{classLightApp_a60b1987a78d5da7ceeeef0fd1a568286}{LightApp}}(\mbox{\hyperlink{structHardware}{Hardware}}\& hardware); }
-\DoxyCodeLine{32 }
-\DoxyCodeLine{33 }
-\DoxyCodeLine{34 }
-\DoxyCodeLine{41     \textcolor{keywordtype}{void} \mbox{\hyperlink{classLightApp_abdedf005dc6e15b219934c109f4bd67b}{init}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{25   \textcolor{keyword}{private}:}
+\DoxyCodeLine{26     uint8\_t lightOnTime;   }
+\DoxyCodeLine{27     uint8\_t lightOffTime;  }
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     Ds1302::DateTime now;  }
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31   \textcolor{keyword}{public}:}
+\DoxyCodeLine{39     \mbox{\hyperlink{classLightApp_a60b1987a78d5da7ceeeef0fd1a568286}{LightApp}}(\mbox{\hyperlink{structHardware}{Hardware}}\& hardware); }
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 }
 \DoxyCodeLine{42 }
-\DoxyCodeLine{43 }
-\DoxyCodeLine{44 }
-\DoxyCodeLine{51     \textcolor{keywordtype}{void} \mbox{\hyperlink{classLightApp_adcbc13aa0c25fa18f17c1b6928065975}{displayMenuPage}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{49     \textcolor{keywordtype}{void} \mbox{\hyperlink{classLightApp_abdedf005dc6e15b219934c109f4bd67b}{init}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 }
 \DoxyCodeLine{52 }
-\DoxyCodeLine{60     \textcolor{keywordtype}{void} \mbox{\hyperlink{classLightApp_a0831069f33a9b1024bd800a4d7e52522}{display}}() \textcolor{keyword}{override};}
-\DoxyCodeLine{61 }
-\DoxyCodeLine{62 }
-\DoxyCodeLine{63 }
-\DoxyCodeLine{70     \textcolor{keywordtype}{void} \mbox{\hyperlink{classLightApp_ae795b88ae7f71c166f6a7ce9d47ac14c}{leftAction}}() \textcolor{keyword}{override};}
-\DoxyCodeLine{71 }
-\DoxyCodeLine{77     \textcolor{keywordtype}{void} \mbox{\hyperlink{classLightApp_a3d2df3ac7a23e364b6e752932e3cc6b7}{middleAction}}() \textcolor{keyword}{override};}
-\DoxyCodeLine{78     }
-\DoxyCodeLine{84     \textcolor{keywordtype}{void} \mbox{\hyperlink{classLightApp_a81ac32730fbd7d97c6a4915d9751ff61}{rightAction}}() \textcolor{keyword}{override};}
-\DoxyCodeLine{85 }
-\DoxyCodeLine{86 }
-\DoxyCodeLine{87 }
-\DoxyCodeLine{92     \textcolor{keywordtype}{void} \mbox{\hyperlink{classLightApp_a0b60b125d768e9838cbcc270ec4b2474}{openApp}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{58     \textcolor{keywordtype}{void} \mbox{\hyperlink{classLightApp_adcbc13aa0c25fa18f17c1b6928065975}{displayMenuPage}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{66     \textcolor{keywordtype}{void} \mbox{\hyperlink{classLightApp_a0831069f33a9b1024bd800a4d7e52522}{display}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69 }
+\DoxyCodeLine{76     \textcolor{keywordtype}{void} \mbox{\hyperlink{classLightApp_ae795b88ae7f71c166f6a7ce9d47ac14c}{leftAction}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{83     \textcolor{keywordtype}{void} \mbox{\hyperlink{classLightApp_a3d2df3ac7a23e364b6e752932e3cc6b7}{middleAction}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{84     }
+\DoxyCodeLine{90     \textcolor{keywordtype}{void} \mbox{\hyperlink{classLightApp_a81ac32730fbd7d97c6a4915d9751ff61}{rightAction}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92 }
 \DoxyCodeLine{93 }
-\DoxyCodeLine{94 }
-\DoxyCodeLine{95 }
-\DoxyCodeLine{101     \textcolor{keywordtype}{void} \mbox{\hyperlink{classLightApp_a8724675054fadd66256f048e6b5d66ad}{backgroundTasks}}() \textcolor{keyword}{override};}
-\DoxyCodeLine{102 \};}
-\DoxyCodeLine{103 }
-\DoxyCodeLine{104 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// LIGHT\_APP\_H}}
+\DoxyCodeLine{98     \textcolor{keywordtype}{void} \mbox{\hyperlink{classLightApp_a0b60b125d768e9838cbcc270ec4b2474}{openApp}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101 }
+\DoxyCodeLine{108     \textcolor{keywordtype}{void} \mbox{\hyperlink{classLightApp_a8724675054fadd66256f048e6b5d66ad}{backgroundTasks}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{109 \};}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// LIGHT\_APP\_H}}
 
 \end{DoxyCode}

@@ -22,9 +22,17 @@
  */
 class LightApp : public App
 {
+  private:
+    uint8_t lightOnTime;   ///< The hour which the light is set to turn on
+    uint8_t lightOffTime;  ///< The hour which the light is set to turn off
+
+    Ds1302::DateTime now;  ///< DateTime struct to store the current time
+
   public:
     /**
      * @brief Construct a new LightApp object
+     *
+     * Currently the lightOnTime and lightOffTime are set to magic numbers (6 and 9). In future, this setting will be passed to the constructor.
      * 
      * @param hardware Reference to a Hardware struct containing all the hardware-related objects
      */
@@ -45,16 +53,14 @@ class LightApp : public App
     /**
      * @brief Displays the menu page for the application.
      * 
-     * Currently this just prints the word "OFF" to the display.
-     * In future this will show an icon of a switched off light bulb.
+     * Shows an icon of a switched off light bulb.
      */
     void displayMenuPage() override;
 
     /**
      * @brief Displays the main content of the application.
      * 
-     * Currently this just prints the word "ON" to the display.
-     * In future this will show an icon of a glowing light bulb.
+     * Shows an icon of a glowing light bulb.
      * 
      */
     void display() override;
@@ -96,7 +102,8 @@ class LightApp : public App
     /**
      * @brief Perform background tasks associated with the Light App.
      * 
-     * There are no background tasks associated with the Light App.
+     * Retrieve the date and time from the RTC module. 
+     * Check whether the light is due to be on, and turn the light on full if it is.
      */
     void backgroundTasks() override;
 };

@@ -12,7 +12,7 @@
 
 
 //---------------------------------------------------- C O N S T R U C T O R ----------------------------------------------------
-LightApp::LightApp(Hardware& hardware) : App(hardware) {}
+LightApp::LightApp(Hardware& hardware) : App(hardware), lightOnTime(6), lightOffTime(9) {}
 
 
 //----------------------------------------------------------- I N I T -----------------------------------------------------------
@@ -81,5 +81,29 @@ void LightApp::openApp()
 //----------------------------------------------- B A C K G R O U N D   T A S K S -----------------------------------------------
 void LightApp::backgroundTasks()
 {
+  hw.rtc.getDateTime(&now);                // Update the time
+
+  
+  // If the Light is due to be on (This will all be streamlined when the datetime class is added (comparisons))
+  if(lightOnTime < lightOffTime)
+  {
+    if((now.hour >= lightOnTime) && (now.hour < lightOffTime))  // if the current hour is between the on and off hour
+    {
+      hw.light.turnOnFull();
+    }
+  }
+  if(lightOnTime > lightOffTime)
+  {
+    if((now.hour >= lightOnTime && now.hour <= 23) || (now.hour >= 0 && now.hour < lightOffTime))     // if it is after the on time at night or before the off time in the morning
+    {
+      hw.light.turnOnFull();
+    }
+  }
+  
+  if((now.hour == lightOffTime) && now.minute == 0)
+  {
+    hw.light.turnOff();
+  }
+
   return;
 }

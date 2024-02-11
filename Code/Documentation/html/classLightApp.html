@@ -189,6 +189,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Construct a new <a class="el" href="classLightApp.html" title="Represents an application for controlling a light, derived from the App base class.">LightApp</a> object. </p>
+<p >Currently the lightOnTime and lightOffTime are set to magic numbers (6 and 9). In future, this setting will be passed to the constructor.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hardware</td><td>Reference to a <a class="el" href="structHardware.html" title="Represents the hardware components used in the project.">Hardware</a> struct containing all the hardware-related objects </td></tr>
@@ -223,7 +224,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Perform background tasks associated with the Light <a class="el" href="classApp.html" title="Abstract base class for applications.">App</a>. </p>
-<p >There are no background tasks associated with the Light <a class="el" href="classApp.html" title="Abstract base class for applications.">App</a>. </p>
+<p >Retrieve the date and time from the RTC module. Check whether the light is due to be on, and turn the light on full if it is. </p>
 
 <p>Implements <a class="el" href="classApp.html#a969cd3baccd4f3293b0fb6694b9df2c3">App</a>.</p>
 
@@ -253,7 +254,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Displays the main content of the application. </p>
-<p >Currently this just prints the word "ON" to the display. In future this will show an icon of a glowing light bulb. </p>
+<p >Shows an icon of a glowing light bulb. </p>
 
 <p>Implements <a class="el" href="classApp.html#a9b1cc434b82d52c7ef1d5b9de18e613e">App</a>.</p>
 
@@ -283,7 +284,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Displays the menu page for the application. </p>
-<p >Currently this just prints the word "OFF" to the display. In future this will show an icon of a switched off light bulb. </p>
+<p >Shows an icon of a switched off light bulb. </p>
 
 <p>Implements <a class="el" href="classApp.html#a072ad2ad6c1b731bee62644ac2458c82">App</a>.</p>
 

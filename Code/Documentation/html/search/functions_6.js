@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['middleaction_0',['middleAction',['../classAlarmApp.html#ac26534aceb9a2e0727e0a8d069dabc6d',1,'AlarmApp::middleAction()'],['../classApp.html#a56e902a0ca9101c666c1d426f59fa625',1,'App::middleAction()'],['../classLightApp.html#a3d2df3ac7a23e364b6e752932e3cc6b7',1,'LightApp::middleAction()']]]
+  ['leftaction_0',['leftAction',['../classAlarmApp.html#abfc00147763d272924556366f6f201a9',1,'AlarmApp::leftAction()'],['../classApp.html#a2a32507fee501e2c11829523e7edbf7a',1,'App::leftAction()'],['../classLightApp.html#ae795b88ae7f71c166f6a7ce9d47ac14c',1,'LightApp::leftAction() override']]],
+  ['lightapp_1',['LightApp',['../classLightApp.html#a60b1987a78d5da7ceeeef0fd1a568286',1,'LightApp']]]
 ];

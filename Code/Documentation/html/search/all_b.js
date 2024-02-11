@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['stoptone_0',['stopTone',['../classBuzzer.html#a60e7439353659cccc72ab618c2a41e90',1,'Buzzer']]],
-  ['sunrisealarm_2eino_1',['SunriseAlarm.ino',['../SunriseAlarm_8ino.html',1,'']]]
+  ['rightaction_0',['rightAction',['../classAlarmApp.html#a736ddf56f286e388f096ed40aa07267a',1,'AlarmApp::rightAction()'],['../classApp.html#a85a1255904957c267539677f77b27cc5',1,'App::rightAction()'],['../classLightApp.html#a81ac32730fbd7d97c6a4915d9751ff61',1,'LightApp::rightAction()']]],
+  ['rtc_1',['rtc',['../structHardware.html#aa6ac7f524135439703fad83fa634af4d',1,'Hardware']]]
 ];

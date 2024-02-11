@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['openapp_0',['openApp',['../classAlarmApp.html#a338893c6eafe51b5c071283a1a1383fb',1,'AlarmApp::openApp()'],['../classApp.html#a1adc67cf6911cc0b18a0a8853ab33ecc',1,'App::openApp()'],['../classLightApp.html#a0b60b125d768e9838cbcc270ec4b2474',1,'LightApp::openApp()']]]
+  ['middleaction_0',['middleAction',['../classAlarmApp.html#ac26534aceb9a2e0727e0a8d069dabc6d',1,'AlarmApp::middleAction()'],['../classApp.html#a56e902a0ca9101c666c1d426f59fa625',1,'App::middleAction()'],['../classLightApp.html#a3d2df3ac7a23e364b6e752932e3cc6b7',1,'LightApp::middleAction()']]]
 ];

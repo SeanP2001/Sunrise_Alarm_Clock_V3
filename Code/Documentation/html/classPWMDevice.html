@@ -97,17 +97,26 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afe34260d1fe31022be93e07a8850201e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPWMDevice.html#afe34260d1fe31022be93e07a8850201e">PWMDevice</a> (uint8_t pinNo)</td></tr>
 <tr class="memdesc:afe34260d1fe31022be93e07a8850201e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classPWMDevice.html" title="A class representing a PWM output device connected to a pin on the microcontroller.">PWMDevice</a> object.  <a href="classPWMDevice.html#afe34260d1fe31022be93e07a8850201e">More...</a><br /></td></tr>
 <tr class="separator:afe34260d1fe31022be93e07a8850201e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4cedcb5ed3ee369a4c148cef6836c00"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPWMDevice.html#ae4cedcb5ed3ee369a4c148cef6836c00">PWMDevice</a> (uint8_t pinNo, uint8_t maxLevel)</td></tr>
+<tr class="memdesc:ae4cedcb5ed3ee369a4c148cef6836c00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classPWMDevice.html" title="A class representing a PWM output device connected to a pin on the microcontroller.">PWMDevice</a> object.  <a href="classPWMDevice.html#ae4cedcb5ed3ee369a4c148cef6836c00">More...</a><br /></td></tr>
+<tr class="separator:ae4cedcb5ed3ee369a4c148cef6836c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80a1acf9fc40e45b9247184a3d965f74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPWMDevice.html#a80a1acf9fc40e45b9247184a3d965f74">turnOn</a> () override</td></tr>
 <tr class="memdesc:a80a1acf9fc40e45b9247184a3d965f74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn ON the pin connected to the device at the set PWM level.  <a href="classPWMDevice.html#a80a1acf9fc40e45b9247184a3d965f74">More...</a><br /></td></tr>
 <tr class="separator:a80a1acf9fc40e45b9247184a3d965f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e76e753f0b0669ba28de2e0514f413f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPWMDevice.html#a8e76e753f0b0669ba28de2e0514f413f">turnOnFull</a> ()</td></tr>
+<tr class="memdesc:a8e76e753f0b0669ba28de2e0514f413f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn ON the pin connected to the device at the maximum PWM level.  <a href="classPWMDevice.html#a8e76e753f0b0669ba28de2e0514f413f">More...</a><br /></td></tr>
+<tr class="separator:a8e76e753f0b0669ba28de2e0514f413f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab824d7b345d44581a28d7a117cafdbcd"><td class="memItemLeft" align="right" valign="top"><a id="ab824d7b345d44581a28d7a117cafdbcd" name="ab824d7b345d44581a28d7a117cafdbcd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>increaseLevel</b> ()</td></tr>
-<tr class="memdesc:ab824d7b345d44581a28d7a117cafdbcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increase the current PWM level by one, up to the MAX_LEVEL. <br /></td></tr>
+<tr class="memdesc:ab824d7b345d44581a28d7a117cafdbcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increase the current PWM level by one, up to the maxLevel. <br /></td></tr>
 <tr class="separator:ab824d7b345d44581a28d7a117cafdbcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a659a470f84d7c07177eae101783f7d7a"><td class="memItemLeft" align="right" valign="top"><a id="a659a470f84d7c07177eae101783f7d7a" name="a659a470f84d7c07177eae101783f7d7a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>decreaseLevel</b> ()</td></tr>
 <tr class="memdesc:a659a470f84d7c07177eae101783f7d7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrease the current PWM level by one, down to 0. <br /></td></tr>
 <tr class="separator:a659a470f84d7c07177eae101783f7d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a532992c1296e3794541a660d729266a7"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPWMDevice.html#a532992c1296e3794541a660d729266a7">getLevel</a> ()</td></tr>
+<tr class="memdesc:a532992c1296e3794541a660d729266a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current level of the PWM device.  <a href="classPWMDevice.html#a532992c1296e3794541a660d729266a7">More...</a><br /></td></tr>
+<tr class="separator:a532992c1296e3794541a660d729266a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classDevice"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classDevice')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classDevice.html">Device</a></td></tr>
 <tr class="memitem:a3a9a4c33baf85414c1be2ff603e672bb inherit pub_methods_classDevice"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDevice.html#a3a9a4c33baf85414c1be2ff603e672bb">Device</a> (uint8_t pinNo)</td></tr>
 <tr class="memdesc:a3a9a4c33baf85414c1be2ff603e672bb inherit pub_methods_classDevice"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classDevice.html" title="A class representing a digital output device connected to a pin on the microcontroller.">Device</a> object.  <a href="classDevice.html#a3a9a4c33baf85414c1be2ff603e672bb">More...</a><br /></td></tr>
@@ -131,7 +140,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>turnOff</b> ()</td></
 <p >This class implements basic functionality to control a PWM output device. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afe34260d1fe31022be93e07a8850201e" name="afe34260d1fe31022be93e07a8850201e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe34260d1fe31022be93e07a8850201e">&#9670;&nbsp;</a></span>PWMDevice()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afe34260d1fe31022be93e07a8850201e">&#9670;&nbsp;</a></span>PWMDevice() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -156,7 +165,64 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>turnOff</b> ()</td></
 
 </div>
 </div>
+<a id="ae4cedcb5ed3ee369a4c148cef6836c00" name="ae4cedcb5ed3ee369a4c148cef6836c00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4cedcb5ed3ee369a4c148cef6836c00">&#9670;&nbsp;</a></span>PWMDevice() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PWMDevice::PWMDevice </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>pinNo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>maxLevel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a new <a class="el" href="classPWMDevice.html" title="A class representing a PWM output device connected to a pin on the microcontroller.">PWMDevice</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pinNo</td><td>The number of the pin which the device is connected to. </td></tr>
+    <tr><td class="paramname">maxLevel</td><td>The maximum number of PWM levels available for the device. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a532992c1296e3794541a660d729266a7" name="a532992c1296e3794541a660d729266a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a532992c1296e3794541a660d729266a7">&#9670;&nbsp;</a></span>getLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t PWMDevice::getLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the current level of the PWM device. </p>
+<dl class="section return"><dt>Returns</dt><dd>The current PWM level the device is set to output at. </dd></dl>
+
+</div>
+</div>
 <a id="a80a1acf9fc40e45b9247184a3d965f74" name="a80a1acf9fc40e45b9247184a3d965f74"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a80a1acf9fc40e45b9247184a3d965f74">&#9670;&nbsp;</a></span>turnOn()</h2>
 
@@ -183,6 +249,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>turnOff</b> ()</td></
 <p>Turn ON the pin connected to the device at the set PWM level. </p>
 
 <p>Reimplemented from <a class="el" href="classDevice.html#a6b0a2674f57504a5df08f62e85d98578">Device</a>.</p>
+
+</div>
+</div>
+<a id="a8e76e753f0b0669ba28de2e0514f413f" name="a8e76e753f0b0669ba28de2e0514f413f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e76e753f0b0669ba28de2e0514f413f">&#9670;&nbsp;</a></span>turnOnFull()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PWMDevice::turnOnFull </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Turn ON the pin connected to the device at the maximum PWM level. </p>
+<p >Calls <a class="el" href="classDevice.html#a6b0a2674f57504a5df08f62e85d98578" title="Turn ON the pin connected to the device.">Device::turnOn()</a> </p>
 
 </div>
 </div>

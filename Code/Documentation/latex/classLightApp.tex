@@ -20,8 +20,7 @@ Inheritance diagram for Light\+App\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Light\+App\+:
-\nopagebreak
+Collaboration diagram for Light\+App\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -66,6 +65,8 @@ Represents an application for controlling a light, derived from the \mbox{\hyper
 
 Construct a new \mbox{\hyperlink{classLightApp}{Light\+App}} object. 
 
+Currently the light\+On\+Time and light\+Off\+Time are set to magic numbers (6 and 9). In future, this setting will be passed to the constructor.
+
 
 \begin{DoxyParams}{Parameters}
 {\em hardware} & Reference to a \mbox{\hyperlink{structHardware}{Hardware}} struct containing all the hardware-\/related objects \\
@@ -84,7 +85,7 @@ Construct a new \mbox{\hyperlink{classLightApp}{Light\+App}} object.
 
 Perform background tasks associated with the Light \mbox{\hyperlink{classApp}{App}}. 
 
-There are no background tasks associated with the Light \mbox{\hyperlink{classApp}{App}}. 
+Retrieve the date and time from the RTC module. Check whether the light is due to be on, and turn the light on full if it is. 
 
 Implements \mbox{\hyperlink{classApp_a969cd3baccd4f3293b0fb6694b9df2c3}{App}}.
 
@@ -98,7 +99,7 @@ Implements \mbox{\hyperlink{classApp_a969cd3baccd4f3293b0fb6694b9df2c3}{App}}.
 
 Displays the main content of the application. 
 
-Currently this just prints the word \char`\"{}\+ON\char`\"{} to the display. In future this will show an icon of a glowing light bulb. 
+Shows an icon of a glowing light bulb. 
 
 Implements \mbox{\hyperlink{classApp_a9b1cc434b82d52c7ef1d5b9de18e613e}{App}}.
 
@@ -112,7 +113,7 @@ Implements \mbox{\hyperlink{classApp_a9b1cc434b82d52c7ef1d5b9de18e613e}{App}}.
 
 Displays the menu page for the application. 
 
-Currently this just prints the word \char`\"{}\+OFF\char`\"{} to the display. In future this will show an icon of a switched off light bulb. 
+Shows an icon of a switched off light bulb. 
 
 Implements \mbox{\hyperlink{classApp_a072ad2ad6c1b731bee62644ac2458c82}{App}}.
 

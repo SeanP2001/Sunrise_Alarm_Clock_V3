@@ -55,7 +55,7 @@ U8G2_SSD1327_WS_128X128_F_4W_SW_SPI display(U8G2_R0, SCREEN_CLK, SCREEN_DATA, SC
 
 Ds1302 rtc(RTC_RESET, RTC_CLK, RTC_DATA);
 
-PWMDevice light(LIGHT);
+PWMDevice light(LIGHT, 4);
 Device usb1(USB_1);
 Device usb2(USB_2);
 

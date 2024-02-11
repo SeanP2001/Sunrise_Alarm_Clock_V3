@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['hardware_0',['Hardware',['../structHardware.html',1,'']]],
-  ['hardware_2eh_1',['Hardware.h',['../Hardware_8h.html',1,'']]],
-  ['hw_2',['hw',['../classApp.html#aa73afafa3a5ff284f48b6cc1172c3738',1,'App']]]
+  ['getlevel_0',['getLevel',['../classPWMDevice.html#a532992c1296e3794541a660d729266a7',1,'PWMDevice']]]
 ];
