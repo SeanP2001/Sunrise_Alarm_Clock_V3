@@ -65,7 +65,70 @@ $(function() {
   <div class="headertitle"><div class="title">USBApp.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"></div><!-- fragment --></div><!-- contents -->
+<a href="USBApp_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef USB_APP_H</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define USB_APP_H</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;Arduino.h&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="App_8h.html">App.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classUSBApp.html">   23</a></span><span class="keyword">class </span><a class="code hl_class" href="classUSBApp.html">USBApp</a> : <span class="keyword">public</span> <a class="code hl_class" href="classApp.html">App</a></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    uint8_t usb1OnTime;   </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    uint8_t usb1OffTime;  </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    uint8_t usb2OnTime;   </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    uint8_t usb2OffTime;  </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    Ds1302::DateTime now;  </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_function" href="classUSBApp.html#aabd108b0332074628b3203babc81515d">USBApp</a>(<a class="code hl_struct" href="structHardware.html">Hardware</a>&amp; hardware); </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classUSBApp.html#a16dafe83369a3f0f7bcb78df1b3044a9">init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classUSBApp.html#a5bd0dd2802c622bcbeeb679774c9be44">displayMenuPage</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classUSBApp.html#a1b08c9f334c622c5289dc7a61a004577">display</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classUSBApp.html#ab955c8b465f0ebbc1c68908a4d80b976">leftAction</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classUSBApp.html#a691bb3e3bf4069d513eca9b9be606731">middleAction</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classUSBApp.html#a6ae585de8ccb5b12654402157295a4d3">rightAction</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classUSBApp.html#a242944e6e5666af7531d071adc06cc18">openApp</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classUSBApp.html#a3cbc9309a6560ffa46ff415fa8606124">backgroundTasks</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>};</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="preprocessor">#endif </span><span class="comment">// USB_APP_H</span></div>
+<div class="ttc" id="aApp_8h_html"><div class="ttname"><a href="App_8h.html">App.h</a></div><div class="ttdoc">Implements the concrete functions from the App base class.</div></div>
+<div class="ttc" id="aclassApp_html"><div class="ttname"><a href="classApp.html">App</a></div><div class="ttdoc">Abstract base class for applications.</div><div class="ttdef"><b>Definition:</b> App.h:25</div></div>
+<div class="ttc" id="aclassUSBApp_html"><div class="ttname"><a href="classUSBApp.html">USBApp</a></div><div class="ttdoc">Represents an application for controlling USB ports, derived from the App base class.</div><div class="ttdef"><b>Definition:</b> USBApp.h:24</div></div>
+<div class="ttc" id="aclassUSBApp_html_a16dafe83369a3f0f7bcb78df1b3044a9"><div class="ttname"><a href="classUSBApp.html#a16dafe83369a3f0f7bcb78df1b3044a9">USBApp::init</a></div><div class="ttdeci">void init() override</div><div class="ttdoc">Initialises the USBApp.</div><div class="ttdef"><b>Definition:</b> USBApp.cpp:18</div></div>
+<div class="ttc" id="aclassUSBApp_html_a1b08c9f334c622c5289dc7a61a004577"><div class="ttname"><a href="classUSBApp.html#a1b08c9f334c622c5289dc7a61a004577">USBApp::display</a></div><div class="ttdeci">void display() override</div><div class="ttdoc">Displays the main content of the application.</div><div class="ttdef"><b>Definition:</b> USBApp.cpp:36</div></div>
+<div class="ttc" id="aclassUSBApp_html_a242944e6e5666af7531d071adc06cc18"><div class="ttname"><a href="classUSBApp.html#a242944e6e5666af7531d071adc06cc18">USBApp::openApp</a></div><div class="ttdeci">void openApp() override</div><div class="ttdoc">Open the application.</div><div class="ttdef"><b>Definition:</b> USBApp.cpp:88</div></div>
+<div class="ttc" id="aclassUSBApp_html_a3cbc9309a6560ffa46ff415fa8606124"><div class="ttname"><a href="classUSBApp.html#a3cbc9309a6560ffa46ff415fa8606124">USBApp::backgroundTasks</a></div><div class="ttdeci">void backgroundTasks() override</div><div class="ttdoc">Perform background tasks associated with the App.</div><div class="ttdef"><b>Definition:</b> USBApp.cpp:99</div></div>
+<div class="ttc" id="aclassUSBApp_html_a5bd0dd2802c622bcbeeb679774c9be44"><div class="ttname"><a href="classUSBApp.html#a5bd0dd2802c622bcbeeb679774c9be44">USBApp::displayMenuPage</a></div><div class="ttdeci">void displayMenuPage() override</div><div class="ttdoc">Displays the menu page for the application.</div><div class="ttdef"><b>Definition:</b> USBApp.cpp:25</div></div>
+<div class="ttc" id="aclassUSBApp_html_a691bb3e3bf4069d513eca9b9be606731"><div class="ttname"><a href="classUSBApp.html#a691bb3e3bf4069d513eca9b9be606731">USBApp::middleAction</a></div><div class="ttdeci">void middleAction() override</div><div class="ttdoc">Handles middle button presses.</div><div class="ttdef"><b>Definition:</b> USBApp.cpp:71</div></div>
+<div class="ttc" id="aclassUSBApp_html_a6ae585de8ccb5b12654402157295a4d3"><div class="ttname"><a href="classUSBApp.html#a6ae585de8ccb5b12654402157295a4d3">USBApp::rightAction</a></div><div class="ttdeci">void rightAction() override</div><div class="ttdoc">Handles right button presses.</div><div class="ttdef"><b>Definition:</b> USBApp.cpp:80</div></div>
+<div class="ttc" id="aclassUSBApp_html_aabd108b0332074628b3203babc81515d"><div class="ttname"><a href="classUSBApp.html#aabd108b0332074628b3203babc81515d">USBApp::USBApp</a></div><div class="ttdeci">USBApp(Hardware &amp;hardware)</div><div class="ttdoc">Construct a new USBApp object.</div><div class="ttdef"><b>Definition:</b> USBApp.cpp:14</div></div>
+<div class="ttc" id="aclassUSBApp_html_ab955c8b465f0ebbc1c68908a4d80b976"><div class="ttname"><a href="classUSBApp.html#ab955c8b465f0ebbc1c68908a4d80b976">USBApp::leftAction</a></div><div class="ttdeci">void leftAction() override</div><div class="ttdoc">Handles left button presses.</div><div class="ttdef"><b>Definition:</b> USBApp.cpp:63</div></div>
+<div class="ttc" id="astructHardware_html"><div class="ttname"><a href="structHardware.html">Hardware</a></div><div class="ttdoc">Represents the hardware components used in the project.</div><div class="ttdef"><b>Definition:</b> Hardware.h:31</div></div>
+</div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4

@@ -1,0 +1,197 @@
+\hypertarget{classUSBApp}{}\doxysection{USBApp Class Reference}
+\label{classUSBApp}\index{USBApp@{USBApp}}
+
+
+Represents an application for controlling USB ports, derived from the \mbox{\hyperlink{classApp}{App}} base class.  
+
+
+
+
+{\ttfamily \#include $<$USBApp.\+h$>$}
+
+
+
+Inheritance diagram for USBApp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{classUSBApp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for USBApp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{classUSBApp__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUSBApp_aabd108b0332074628b3203babc81515d}{USBApp}} (\mbox{\hyperlink{structHardware}{Hardware}} \&hardware)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classUSBApp}{USBApp}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUSBApp_a16dafe83369a3f0f7bcb78df1b3044a9}{init}} () override
+\begin{DoxyCompactList}\small\item\em Initialises the \mbox{\hyperlink{classUSBApp}{USBApp}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUSBApp_a5bd0dd2802c622bcbeeb679774c9be44}{display\+Menu\+Page}} () override
+\begin{DoxyCompactList}\small\item\em Displays the menu page for the application. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUSBApp_a1b08c9f334c622c5289dc7a61a004577}{display}} () override
+\begin{DoxyCompactList}\small\item\em Displays the main content of the application. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUSBApp_ab955c8b465f0ebbc1c68908a4d80b976}{left\+Action}} () override
+\begin{DoxyCompactList}\small\item\em Handles left button presses. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUSBApp_a691bb3e3bf4069d513eca9b9be606731}{middle\+Action}} () override
+\begin{DoxyCompactList}\small\item\em Handles middle button presses. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUSBApp_a6ae585de8ccb5b12654402157295a4d3}{right\+Action}} () override
+\begin{DoxyCompactList}\small\item\em Handles right button presses. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUSBApp_a242944e6e5666af7531d071adc06cc18}{open\+App}} () override
+\begin{DoxyCompactList}\small\item\em Open the application. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUSBApp_a3cbc9309a6560ffa46ff415fa8606124}{background\+Tasks}} () override
+\begin{DoxyCompactList}\small\item\em Perform background tasks associated with the \mbox{\hyperlink{classApp}{App}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents an application for controlling USB ports, derived from the \mbox{\hyperlink{classApp}{App}} base class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classUSBApp_aabd108b0332074628b3203babc81515d}\label{classUSBApp_aabd108b0332074628b3203babc81515d}} 
+\index{USBApp@{USBApp}!USBApp@{USBApp}}
+\index{USBApp@{USBApp}!USBApp@{USBApp}}
+\doxysubsubsection{\texorpdfstring{USBApp()}{USBApp()}}
+{\footnotesize\ttfamily USBApp\+::\+USBApp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structHardware}{Hardware}} \&}]{hardware }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classUSBApp}{USBApp}} object. 
+
+Currently both USB ports are set to come on at 6 and turn off at 9. In future, these magic numbers will be handled by the settings struct.
+
+
+\begin{DoxyParams}{Parameters}
+{\em hardware} & Reference to a \mbox{\hyperlink{structHardware}{Hardware}} struct containing all the hardware-\/related objects, allowing the hardware to be directly accessed within the app functions. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classUSBApp_a3cbc9309a6560ffa46ff415fa8606124}\label{classUSBApp_a3cbc9309a6560ffa46ff415fa8606124}} 
+\index{USBApp@{USBApp}!backgroundTasks@{backgroundTasks}}
+\index{backgroundTasks@{backgroundTasks}!USBApp@{USBApp}}
+\doxysubsubsection{\texorpdfstring{backgroundTasks()}{backgroundTasks()}}
+{\footnotesize\ttfamily void USBApp\+::background\+Tasks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Perform background tasks associated with the \mbox{\hyperlink{classApp}{App}}. 
+
+Turns the USB ports ON or OFF depending on the time. 
+
+Implements \mbox{\hyperlink{classApp_a969cd3baccd4f3293b0fb6694b9df2c3}{App}}.
+
+\mbox{\Hypertarget{classUSBApp_a1b08c9f334c622c5289dc7a61a004577}\label{classUSBApp_a1b08c9f334c622c5289dc7a61a004577}} 
+\index{USBApp@{USBApp}!display@{display}}
+\index{display@{display}!USBApp@{USBApp}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void USBApp\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays the main content of the application. 
+
+Shows a USB icon for each of the two ports. The icons are filled in when their port is switched on and not filled when switched off. 
+
+Implements \mbox{\hyperlink{classApp_a9b1cc434b82d52c7ef1d5b9de18e613e}{App}}.
+
+\mbox{\Hypertarget{classUSBApp_a5bd0dd2802c622bcbeeb679774c9be44}\label{classUSBApp_a5bd0dd2802c622bcbeeb679774c9be44}} 
+\index{USBApp@{USBApp}!displayMenuPage@{displayMenuPage}}
+\index{displayMenuPage@{displayMenuPage}!USBApp@{USBApp}}
+\doxysubsubsection{\texorpdfstring{displayMenuPage()}{displayMenuPage()}}
+{\footnotesize\ttfamily void USBApp\+::display\+Menu\+Page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays the menu page for the application. 
+
+Shows the USB icon. 
+
+Implements \mbox{\hyperlink{classApp_a072ad2ad6c1b731bee62644ac2458c82}{App}}.
+
+\mbox{\Hypertarget{classUSBApp_a16dafe83369a3f0f7bcb78df1b3044a9}\label{classUSBApp_a16dafe83369a3f0f7bcb78df1b3044a9}} 
+\index{USBApp@{USBApp}!init@{init}}
+\index{init@{init}!USBApp@{USBApp}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void USBApp\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initialises the \mbox{\hyperlink{classUSBApp}{USBApp}}. 
+
+Currently no code runs at initialisation 
+
+Implements \mbox{\hyperlink{classApp_a68f77f8aa188556ec19441f04cdff346}{App}}.
+
+\mbox{\Hypertarget{classUSBApp_ab955c8b465f0ebbc1c68908a4d80b976}\label{classUSBApp_ab955c8b465f0ebbc1c68908a4d80b976}} 
+\index{USBApp@{USBApp}!leftAction@{leftAction}}
+\index{leftAction@{leftAction}!USBApp@{USBApp}}
+\doxysubsubsection{\texorpdfstring{leftAction()}{leftAction()}}
+{\footnotesize\ttfamily void USBApp\+::left\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handles left button presses. 
+
+Toggles the status of USB 1. 
+
+Implements \mbox{\hyperlink{classApp_a2a32507fee501e2c11829523e7edbf7a}{App}}.
+
+\mbox{\Hypertarget{classUSBApp_a691bb3e3bf4069d513eca9b9be606731}\label{classUSBApp_a691bb3e3bf4069d513eca9b9be606731}} 
+\index{USBApp@{USBApp}!middleAction@{middleAction}}
+\index{middleAction@{middleAction}!USBApp@{USBApp}}
+\doxysubsubsection{\texorpdfstring{middleAction()}{middleAction()}}
+{\footnotesize\ttfamily void USBApp\+::middle\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handles middle button presses. 
+
+Clears the screen and closes the app, returning to the main menu. (Does not turn off the USB ports) 
+
+Implements \mbox{\hyperlink{classApp_a56e902a0ca9101c666c1d426f59fa625}{App}}.
+
+\mbox{\Hypertarget{classUSBApp_a242944e6e5666af7531d071adc06cc18}\label{classUSBApp_a242944e6e5666af7531d071adc06cc18}} 
+\index{USBApp@{USBApp}!openApp@{openApp}}
+\index{openApp@{openApp}!USBApp@{USBApp}}
+\doxysubsubsection{\texorpdfstring{openApp()}{openApp()}}
+{\footnotesize\ttfamily void USBApp\+::open\+App (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Open the application. 
+
+Calls the parent function and clears the screen. 
+
+Reimplemented from \mbox{\hyperlink{classApp_a1adc67cf6911cc0b18a0a8853ab33ecc}{App}}.
+
+\mbox{\Hypertarget{classUSBApp_a6ae585de8ccb5b12654402157295a4d3}\label{classUSBApp_a6ae585de8ccb5b12654402157295a4d3}} 
+\index{USBApp@{USBApp}!rightAction@{rightAction}}
+\index{rightAction@{rightAction}!USBApp@{USBApp}}
+\doxysubsubsection{\texorpdfstring{rightAction()}{rightAction()}}
+{\footnotesize\ttfamily void USBApp\+::right\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handles right button presses. 
+
+Toggles the status of USB 2. 
+
+Implements \mbox{\hyperlink{classApp_a85a1255904957c267539677f77b27cc5}{App}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{USBApp_8h}{USBApp.\+h}}\item 
+\mbox{\hyperlink{USBApp_8cpp}{USBApp.\+cpp}}\end{DoxyCompactItemize}

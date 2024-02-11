@@ -47,6 +47,7 @@
 #include "App.h"
 #include "LightApp.h"
 #include "AlarmApp.h"
+#include "USBApp.h"  
 
 
 // -------------------------------------- I N S T A N T I A T E   H A R D W A R E --------------------------------------
@@ -68,8 +69,9 @@ struct Hardware hw = {display, rtc, light, usb1, usb2, buzzer};  // Put all hard
 
 AlarmApp alarmApp(hw);
 LightApp lightApp(hw);
+USBApp usbApp(hw);
 
-const int noOfApps = 2;
+const int noOfApps = 3;
 App* apps[noOfApps];
 
 uint8_t currentApp = 0;
@@ -100,6 +102,7 @@ void setup()
   // Setup Apps
   apps[0] = &alarmApp;
   apps[1] = &lightApp;
+  apps[2] = &usbApp;
 
   // Run App Initialisations
   for(int i = 0; i < noOfApps; i++)

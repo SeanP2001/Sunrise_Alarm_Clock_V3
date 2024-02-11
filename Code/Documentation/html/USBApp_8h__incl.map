@@ -1,0 +1,13 @@
+<map id="USBApp.h" name="USBApp.h">
+<area shape="rect" id="node1" title="Defines the USBApp class which is derrived from the App base class." alt="" coords="5,5,92,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="248,379,332,405"/>
+<area shape="rect" id="node3" href="$App_8h.html" title="Implements the concrete functions from the App base class." alt="" coords="149,80,207,107"/>
+<area shape="rect" id="node4" href="$Hardware_8h.html" title="Defines the Hardware struct." alt="" coords="227,155,324,181"/>
+<area shape="rect" id="node11" href="$Icons_8h.html" title="Contains icon data for various symbols." alt="" coords="348,155,416,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="155,229,209,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="234,229,317,256"/>
+<area shape="rect" id="node7" title=" " alt="" coords="341,229,425,256"/>
+<area shape="rect" id="node8" href="$Device_8h.html" title="Defines the Device class." alt="" coords="424,304,503,331"/>
+<area shape="rect" id="node9" href="$PWMDevice_8h.html" title="Defines the PWMDevice class, a subclass of the Device class." alt="" coords="501,229,613,256"/>
+<area shape="rect" id="node10" href="$Buzzer_8h.html" title="Defines the Buzzer class." alt="" coords="598,304,675,331"/>
+</map>

@@ -1,5 +1,55 @@
 \hypertarget{USBApp_8h_source}{}\doxysection{USBApp.\+h}
-
+\mbox{\hyperlink{USBApp_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#ifndef USB\_APP\_H}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#define USB\_APP\_H}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <Arduino.h>}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{App_8h}{App.h}}"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 }
+\DoxyCodeLine{23 \textcolor{keyword}{class }\mbox{\hyperlink{classUSBApp}{USBApp}} : \textcolor{keyword}{public} \mbox{\hyperlink{classApp}{App}}}
+\DoxyCodeLine{24 \{}
+\DoxyCodeLine{25   \textcolor{keyword}{private}:}
+\DoxyCodeLine{26     uint8\_t usb1OnTime;   }
+\DoxyCodeLine{27     uint8\_t usb1OffTime;  }
+\DoxyCodeLine{28     uint8\_t usb2OnTime;   }
+\DoxyCodeLine{29     uint8\_t usb2OffTime;  }
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     Ds1302::DateTime now;  }
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33   \textcolor{keyword}{public}:}
+\DoxyCodeLine{41     \mbox{\hyperlink{classUSBApp_aabd108b0332074628b3203babc81515d}{USBApp}}(\mbox{\hyperlink{structHardware}{Hardware}}\& hardware); }
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 }
+\DoxyCodeLine{50     \textcolor{keywordtype}{void} \mbox{\hyperlink{classUSBApp_a16dafe83369a3f0f7bcb78df1b3044a9}{init}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 }
+\DoxyCodeLine{59     \textcolor{keywordtype}{void} \mbox{\hyperlink{classUSBApp_a5bd0dd2802c622bcbeeb679774c9be44}{displayMenuPage}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{67     \textcolor{keywordtype}{void} \mbox{\hyperlink{classUSBApp_a1b08c9f334c622c5289dc7a61a004577}{display}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70 }
+\DoxyCodeLine{76     \textcolor{keywordtype}{void} \mbox{\hyperlink{classUSBApp_ab955c8b465f0ebbc1c68908a4d80b976}{leftAction}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{83     \textcolor{keywordtype}{void} \mbox{\hyperlink{classUSBApp_a691bb3e3bf4069d513eca9b9be606731}{middleAction}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{84     }
+\DoxyCodeLine{90     \textcolor{keywordtype}{void} \mbox{\hyperlink{classUSBApp_a6ae585de8ccb5b12654402157295a4d3}{rightAction}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93 }
+\DoxyCodeLine{99     \textcolor{keywordtype}{void} \mbox{\hyperlink{classUSBApp_a242944e6e5666af7531d071adc06cc18}{openApp}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102 }
+\DoxyCodeLine{108     \textcolor{keywordtype}{void} \mbox{\hyperlink{classUSBApp_a3cbc9309a6560ffa46ff415fa8606124}{backgroundTasks}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{109 \};}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// USB\_APP\_H}}
 
 \end{DoxyCode}

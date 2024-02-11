@@ -82,24 +82,26 @@ $(function() {
 <code>#include &quot;<a class="el" href="App_8h_source.html">App.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="LightApp_8h_source.html">LightApp.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="AlarmApp_8h_source.html">AlarmApp.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="USBApp_8h_source.html">USBApp.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for SunriseAlarm.ino:</div>
 <div class="dyncontent">
 <div class="center"><img src="SunriseAlarm_8ino__incl.png" border="0" usemap="#aSunriseAlarm_8ino" alt=""/></div>
 <map name="aSunriseAlarm_8ino" id="aSunriseAlarm_8ino">
-<area shape="rect" title="Software to run on the Sunrise Alarm V3." alt="" coords="393,5,527,32"/>
-<area shape="rect" title=" " alt="" coords="265,304,319,331"/>
-<area shape="rect" title=" " alt="" coords="581,304,664,331"/>
-<area shape="rect" title=" " alt="" coords="689,304,773,331"/>
-<area shape="rect" href="Device_8h.html" title="Defines the Device class." alt="" coords="531,379,610,405"/>
-<area shape="rect" href="PWMDevice_8h.html" title="Defines the PWMDevice class, a subclass of the Device class." alt="" coords="344,304,456,331"/>
-<area shape="rect" href="Buzzer_8h.html" title="Defines the Buzzer class." alt="" coords="848,304,925,331"/>
-<area shape="rect" href="Hardware_8h.html" title="Defines the Hardware struct." alt="" coords="455,229,553,256"/>
-<area shape="rect" href="App_8h.html" title="Implements the concrete functions from the App base class." alt="" coords="276,155,335,181"/>
-<area shape="rect" href="LightApp_8h.html" title="Defines the LightApp class which is derrived from the App base class." alt="" coords="5,80,96,107"/>
-<area shape="rect" href="AlarmApp_8h.html" title="Defines the AlarmApp class which is derrived from the App base class." alt="" coords="231,80,329,107"/>
-<area shape="rect" title=" " alt="" coords="358,453,442,480"/>
-<area shape="rect" href="Icons_8h.html" title="Contains icon data for various symbols." alt="" coords="214,229,282,256"/>
+<area shape="rect" title="Software to run on the Sunrise Alarm V3." alt="" coords="382,5,516,32"/>
+<area shape="rect" title=" " alt="" coords="44,304,99,331"/>
+<area shape="rect" title=" " alt="" coords="124,304,206,331"/>
+<area shape="rect" title=" " alt="" coords="231,304,315,331"/>
+<area shape="rect" href="Device_8h.html" title="Defines the Device class." alt="" coords="328,379,407,405"/>
+<area shape="rect" href="PWMDevice_8h.html" title="Defines the PWMDevice class, a subclass of the Device class." alt="" coords="390,304,502,331"/>
+<area shape="rect" href="Buzzer_8h.html" title="Defines the Buzzer class." alt="" coords="577,304,654,331"/>
+<area shape="rect" href="Hardware_8h.html" title="Defines the Hardware struct." alt="" coords="314,229,411,256"/>
+<area shape="rect" href="App_8h.html" title="Implements the concrete functions from the App base class." alt="" coords="729,155,788,181"/>
+<area shape="rect" href="LightApp_8h.html" title="Defines the LightApp class which is derrived from the App base class." alt="" coords="544,80,634,107"/>
+<area shape="rect" href="AlarmApp_8h.html" title="Defines the AlarmApp class which is derrived from the App base class." alt="" coords="709,80,808,107"/>
+<area shape="rect" href="USBApp_8h.html" title="Defines the USBApp class which is derrived from the App base class." alt="" coords="832,80,919,107"/>
+<area shape="rect" title=" " alt="" coords="623,453,707,480"/>
+<area shape="rect" href="Icons_8h.html" title="Contains icon data for various symbols." alt="" coords="780,229,848,256"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -210,8 +212,11 @@ struct <a class="el" href="structHardware.html">Hardware</a>&#160;</td><td class
 <tr class="memitem:aa491d2bef3ac3c1b81c07681aef5846b"><td class="memItemLeft" align="right" valign="top"><a id="aa491d2bef3ac3c1b81c07681aef5846b" name="aa491d2bef3ac3c1b81c07681aef5846b"></a>
 <a class="el" href="classLightApp.html">LightApp</a>&#160;</td><td class="memItemRight" valign="bottom"><b>lightApp</b> (hw)</td></tr>
 <tr class="separator:aa491d2bef3ac3c1b81c07681aef5846b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7944c55f065d6c946880a3bf7ead82c0"><td class="memItemLeft" align="right" valign="top"><a id="a7944c55f065d6c946880a3bf7ead82c0" name="a7944c55f065d6c946880a3bf7ead82c0"></a>
+<a class="el" href="classUSBApp.html">USBApp</a>&#160;</td><td class="memItemRight" valign="bottom"><b>usbApp</b> (hw)</td></tr>
+<tr class="separator:a7944c55f065d6c946880a3bf7ead82c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32aa95f939b279598dfe4730276853e2"><td class="memItemLeft" align="right" valign="top"><a id="a32aa95f939b279598dfe4730276853e2" name="a32aa95f939b279598dfe4730276853e2"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>noOfApps</b> = 2</td></tr>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>noOfApps</b> = 3</td></tr>
 <tr class="separator:a32aa95f939b279598dfe4730276853e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d27d9f0cb76dc546d082b5743fb0c9e"><td class="memItemLeft" align="right" valign="top"><a id="a2d27d9f0cb76dc546d082b5743fb0c9e" name="a2d27d9f0cb76dc546d082b5743fb0c9e"></a>
 <a class="el" href="classApp.html">App</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>apps</b> [noOfApps]</td></tr>

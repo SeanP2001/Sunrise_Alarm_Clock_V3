@@ -12,7 +12,7 @@
 
 
 //---------------------------------------------------- C O N S T R U C T O R ----------------------------------------------------
-LightApp::LightApp(Hardware& hardware) : App(hardware), lightOnTime(6), lightOffTime(9) {}
+LightApp::LightApp(Hardware& hardware) : App(hardware), lightOnTime(6), lightOffTime(9) {} // WARNING: Temporary Magic Numbers (Will be rectified with settings struct)
 
 
 //----------------------------------------------------------- I N I T -----------------------------------------------------------
@@ -28,7 +28,7 @@ void LightApp::displayMenuPage()
   hw.display.drawBitmap(16, 16, 12, 96, lightOffIcon);
 
   // Updates a small part of the display (much faster)
-  hw.display.updateDisplayArea(2, 2, 12, 12);  // Works in 8x8 blocks (x, y, w, h) 
+  hw.display.updateDisplayArea(2, 2, 12, 12);  // Works in 8x8 blocks (x, y, w, h)
 }
 
 

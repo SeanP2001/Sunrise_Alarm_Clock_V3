@@ -17,7 +17,7 @@
 
 /**
  * @class AlarmApp
- * @brief Represents an application for controlling a Alarm, derived from the App base class.
+ * @brief Represents an application for controlling an Alarm, derived from the App base class.
  * 
  */
 class AlarmApp : public App

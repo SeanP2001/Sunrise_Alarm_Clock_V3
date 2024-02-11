@@ -1,6 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classApp.html" title="Abstract base class for applications." alt="" coords="5,56,52,83"/>
-<area shape="rect" id="node2" href="$classAlarmApp.html" title="Represents an application for controlling a Alarm, derived from the App base class." alt="" coords="110,5,197,32"/>
+<area shape="rect" id="node1" href="$classApp.html" title="Abstract base class for applications." alt="" coords="5,81,52,108"/>
+<area shape="rect" id="node2" href="$classAlarmApp.html" title="Represents an application for controlling an Alarm, derived from the App base class." alt="" coords="110,5,197,32"/>
 <area shape="rect" id="node3" href="$classLightApp.html" title="Represents an application for controlling a light, derived from the App base class." alt="" coords="114,56,193,83"/>
 <area shape="rect" id="node4" href="$classTemplateApp.html" title="Represents the basic structure of an application, derived from the App base class." alt="" coords="100,107,207,133"/>
+<area shape="rect" id="node5" href="$classUSBApp.html" title="Represents an application for controlling USB ports, derived from the App base class." alt="" coords="116,157,191,184"/>
 </map>
