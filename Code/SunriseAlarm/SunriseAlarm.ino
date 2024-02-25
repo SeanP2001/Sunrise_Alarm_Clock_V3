@@ -122,7 +122,18 @@ void loop()
   
   if(anyButtonPressed())                      // Handle any button presses (when they occur)
   {
-    if(apps[currentApp]->isOpen())            // If an app is open, forward the button presses to the app
+    if(buzzer.isSounding())                   // If the alarms is currently sounding, any button will turn it off
+    {
+      alarmApp.openApp();                     // Turn off the alarm
+      updateDisplay();                        // Update the display to turn off the bell icon
+
+      delay(2000);                            // Wait to prevent extra button presses affecting the program
+
+      leftPressed = false;                    // Cancel any extra button presses
+      middlePressed = false;
+      rightPressed = false;
+    }
+    else if(apps[currentApp]->isOpen())       // If an app is open, forward the button presses to the app
     {
       if(leftPressed)
       {
