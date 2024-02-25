@@ -82,6 +82,14 @@ volatile bool leftPressed = false;
 volatile bool middlePressed = false;
 volatile bool rightPressed = false;
 
+uint8_t screenTimeoutStart = 22;      // Sets when the screen timeout period begins
+uint8_t screenTimeoutEnd = 7;         // Sets when the screen timeout period ends
+uint8_t lastTimeoutMin = 0;           // Stores the minute when the device was last woken during the timeout period
+uint8_t lastTimeoutSec = 0;           // Stores the second when the device was last woken during the timeout period
+bool screenOn = true;                 // Shows whether the screen should currently be on or off
+
+Ds1302::DateTime now;                 // DateTime struct to store the current time
+
 
 // ----------------------------------------------------- S E T U P -----------------------------------------------------
 void setup() 
@@ -114,15 +122,28 @@ void setup()
 // ------------------------------------------------------ M A I N ------------------------------------------------------
 void loop() 
 {
-  if(millis() % 1000 == 0)                    // Update the display every second
+  if(millis() % 1000 == 0)                    // Update the time and display every second
   {
-    updateDisplay();
+    hw.rtc.getDateTime(&now);  
+    
+    if(screenOn)
+    {
+      updateDisplay();
+    }    
   }
   
   
   if(anyButtonPressed())                      // Handle any button presses (when they occur)
   {
-    if(buzzer.isSounding())                   // If the alarms is currently sounding, any button will turn it off
+    if(duringTimeoutPeriod())                 // If the button press occurred during the screen timeout period
+    {
+      screenOn = true;                        // Turn on the screen 
+
+      lastTimeoutMin = now.minute;            // and update the variables so that the screen turns off after 1 minute    
+      lastTimeoutSec = now.second;  
+    }
+    
+    if(buzzer.isSounding())                   // If the alarm is currently sounding, any button will turn it off
     {
       alarmApp.openApp();                     // Turn off the alarm
       updateDisplay();                        // Update the display to turn off the bell icon
@@ -198,6 +219,22 @@ void loop()
   {
     apps[i]->backgroundTasks(); 
   }
+
+  if(dueToTimeoutScreen())                    // Turn off the screen when it is due to timeout
+  {
+    screenOn = false;
+
+    display.clearBuffer();
+    display.clearDisplay();
+  }
+
+  if(endOfTimeoutPeriod())                    // At the end of the timeout period
+  {
+    lastTimeoutMin = 0;                       // Reset the timeout
+    lastTimeoutSec = 0;  
+
+    screenOn = true;                          // Turn the display back on
+  }
 }
 
 
@@ -219,6 +256,28 @@ void updateDisplay()
 bool anyButtonPressed()
 {
   return (leftPressed || middlePressed || rightPressed);
+}
+
+
+// ------------------------------------- D U E   T O   T I M E O U T   S C R E E N -------------------------------------
+bool dueToTimeoutScreen()
+{
+  // True if within the timeout period, 1 minute has passed since the last button press and the screen is currently on
+  return duringTimeoutPeriod() && ((now.minute == lastTimeoutMin + 1) && (now.second == lastTimeoutSec) && screenOn);
+}
+
+
+// ------------------------------------- D U R I N G   T I M E O U T   P E R I O D -------------------------------------
+bool duringTimeoutPeriod()
+{
+  return ((now.hour >= screenTimeoutStart && now.hour <= 23) || (now.hour >= 0 && now.hour < screenTimeoutEnd));
+}
+
+
+// ------------------------------------- E N D   O F   T I M E O U T   P E R I O D -------------------------------------
+bool endOfTimeoutPeriod()
+{
+  return (now.hour == screenTimeoutEnd && now.minute == 0 && now.second == 0);
 }
 
 
